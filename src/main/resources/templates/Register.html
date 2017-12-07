@@ -12,20 +12,19 @@
   <body>
 
     <div class="container">
-      <form class="form-Register"
-        data-toggle = "validator">
+      <form class="form-Register">
         <div class="form-group row">
-          <label for="firstname" class="col-sm-2 col-form-label">Imie</label>
+          <label for="firstname" class="col-sm-2 col-form-label">Imię</label>
           <div class="col-sm-10">
             <input type="text"
               class="form-control " 
               name="firstname" 
               id="firstname" 
               aria-describedby="firstnameHelpId" 
-              placeholder="Wpisz imie"
+              placeholder="Wpisz imię"
               pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+"
               required>
-            <small id="firstnameHelpId" class="form-text text-muted">Podaj imie, Bez znaków specjalnych ani cyfr</small>
+            <small id="firstnameHelpId" class="form-text text-muted">Podaj imię, Bez znaków specjalnych ani cyfr</small>
           </div>
         </div>
         <div class="form-group row">
@@ -72,18 +71,17 @@
             <small id="passwordHelpId" class="form-text text-muted">Minimum 6 znaków, brak znaków specjalnych</small>
           </div>
         </div>
-        <div class="form-group row has-danger" >
+        <div class="form-group row" >
           <label for="passwordConfirm" class="col-sm-2 col-form-label">Potwierdź hasło</label>
           <div class="col-sm-10">
             <input type="password" 
-              class="form-control form-control-danger " 
+              class="form-control" 
               name="passwordConfirm" 
               id="passwordConfirm" 
               data-match="#password"  
-              data0match-error="Hasła nie są takie same"
+              data-match-error="Hasła nie są takie same"
               placeholder="Potwierdź hasło"
               required>
-            <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
           </div>
         </div>
         <div class="form-group row">
