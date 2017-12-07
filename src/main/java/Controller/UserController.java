@@ -1,7 +1,11 @@
 package Controller;
 
-/**
- * Created by User on 2017-12-07.
- */
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/user")
 public class UserController {
+
+
 }
