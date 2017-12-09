@@ -87,15 +87,15 @@
             <div class="input-group">
               <div class="input-group-addon"><span class="fa-stack">
                   <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
-              <input type="password" data-toggle="tooltip" title="Podaj hasło. Minimum 6 znaków, bez znaków specjalnych."
+              <input type="password" data-toggle="tooltip" title="Podaj hasło. Minimum 6 znaków, bez znaków specjalnych. Hasło musi zawierać dużą literę i cyfrę"
                 class="form-control " 
                 name="password" 
                 id="password" 
                 aria-describedby="passwordHelpId"
-                data-minlength="6"
+                minlength="6"
                 #passwordRef="ngModel"
                 [(ngModel)] = "registerUser.password"
-                pattern="[a-zA-Z1-9]+"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 placeholder="Hasło"
                 required>
             </div>
@@ -109,8 +109,6 @@
                 name="passwordConfirm" 
                 id="passwordConfirm" 
                 #passwordConfirmRef="ngModel"
-                data-match="#password"  
-                data-match-error="Hasła nie są takie same"
                 placeholder="Ponów hasło"
                 required>
             </div>
