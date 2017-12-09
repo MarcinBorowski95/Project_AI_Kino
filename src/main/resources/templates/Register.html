@@ -8,74 +8,105 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <style>
+      .btn-submit{
+        text-align:center;
+      }
+    </style>
+
   </head>
   <body>
 
-    <div class="container">
-      <form class="form-Register"
-        data-toggle = "validator">
-        <div class="form-group">
-          <label for="firstname" class="control-label">Imie</label>
-          <input type="text"
-            class="form-control" 
-            name="firstname" 
-            id="firstname" 
-            aria-describedby="firstnameHelpId" 
-            placeholder="Wpisz imie"
-            required>
-          <small id="firstnameHelpId" class="form-text text-muted">Podaj imie, Bez znaków specjalnych ani cyfr</small>
+    <br>
+
+    <div class="container col-md-8">
+      <h1 style ="text-align:center">Rejestracja</h1>
+      <form class="form-Register">
+        <div class="form-group row">
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user-o fa-stack-1x fa-inverse"></i></span></div>
+            <input type="text" data-toggle="tooltip" title="Podaj imię. Bez znaków specjalnych i cyfr."
+              class="form-control " 
+              name="firstname" 
+              id="firstname" 
+              aria-describedby="firstnameHelpId" 
+              placeholder="Imię"
+              pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+"
+              required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="lastname" class="control-label">Nazwisko</label>
-          <input type="text"
-            class="form-control" 
-            name="lastname" 
-            id="lastname" 
-            aria-describedby="lastnameHelpId" 
-            placeholder="Wpisz nazwisko"
-            required>
-          <small id="lastnameHelpId" class="form-text text-muted">Podaj nazwisko, Bez znaków specjalnych ani cyfr</small>
+        <div class="form-group row">
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user-o fa-stack-1x fa-inverse"></i></span></div>
+            <input type="text" data-toggle="tooltip" title="Podaj nazwisko. Bez znaków specjalnych i cyfr."
+              class="form-control " 
+              name="lastname" 
+              id="lastname" 
+              aria-describedby="lastnameHelpId" 
+              placeholder="Nazwisko"
+              pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+"
+              required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email" class="control-label">Email</label>
-          <input type="email"
-            class="form-control" 
-            name="email" 
-            id="email" 
-            aria-describedby="emailHelpId" 
-            placeholder="przykład@gmail.com"
-            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
-            data-error="Błędnie podany e-mail" 
-            required>
-          <small id="emailHelpId" class="form-text text-muted">Podaj swój adres e-mail</small>
+        <div class="form-group row">
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span></div>
+            <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail, np. imie.nazwisko@gmail.com"
+              class="form-control " 
+              name="email" 
+              id="email" 
+              aria-describedby="emailHelpId" 
+              placeholder="E-mail"
+              pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+              data-error="Błędnie podany e-mail" 
+              required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password" class="control-label">Hasło</label>
-          <input type="password" 
-            class="form-control" 
-            name="password" 
-            id="password" 
-            aria-describedby="passwordHelpId"
-            data-minlength="6"
-            pattern="[a-zA-Z1-9]+"
-            placeholder="Wpisz hasło"
-            required>
-          <small id="passwordHelpId" class="form-text text-muted">Minimum 6 znaków, brak znaków specjalnych</small>
+        <div class="form-group row">
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
+            <input type="password" data-toggle="tooltip" title="Podaj hasło. Minimum 6 znaków, bez znaków specjalnych."
+              class="form-control " 
+              name="password" 
+              id="password" 
+              aria-describedby="passwordHelpId"
+              data-minlength="6"
+              pattern="[a-zA-Z1-9]+"
+              placeholder="Hasło"
+              required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="passwordConfirm" class="control-label">Wpisz hasło ponownie</label>
-          <input type="password" 
-            class="form-control" 
-            name="passwordConfirm" 
-            id="passwordConfirm" 
-            data-match="#password"  
-            data0match-error="Hasła nie są takie same"
-            placeholder="Potwierdź hasło"
-            required>
+        <div class="form-group row" >
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
+            <input type="password" data-toggle="tooltip" title="Ponów wprowadzone hasło."
+              class="form-control" 
+              name="passwordConfirm" 
+              id="passwordConfirm" 
+              data-match="#password"  
+              data-match-error="Hasła nie są takie same"
+              placeholder="Ponów hasło"
+              required>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group btn-submit">
+            <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+        </div>
       </form>
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
 
   </body>
 </html>
