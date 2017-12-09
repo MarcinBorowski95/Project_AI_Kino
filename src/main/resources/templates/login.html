@@ -8,48 +8,65 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    <style>
+      .btn-submit{
+        text-align:center;
+      }
+    </style>
+  
+  
+
   </head>
   <body>
 
-    <div class="container">
+    <br>
+
+    <div class="container col-md-8">
+      <h1 style ="text-align:center">Logowanie</h1>
       <form class="form-Login">
         <div class="form-group row">
-          <label for="email" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email"
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span></div>
+            <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail."
               class="form-control " 
               name="email" 
               id="email" 
               aria-describedby="emailHelpId" 
-              placeholder="przykład@gmail.com"
+              placeholder="E-mail"
               pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
               data-error="Błędnie podany e-mail" 
               required>
-            <small id="emailHelpId" class="form-text text-muted">Podaj swój adres e-mail</small>
           </div>
         </div>
         <div class="form-group row">
-          <label for="password" class="col-sm-2 col-form-label">Hasło</label>
-          <div class="col-sm-10">
-            <input type="password" 
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
+            <input type="password" data-toggle="tooltip" title="Podaj swoje hasło."
               class="form-control " 
               name="password" 
               id="password" 
               aria-describedby="passwordHelpId"
               data-minlength="6"
               pattern="[a-zA-Z1-9]+"
-              placeholder="Wpisz hasło"
+              placeholder="Hasło"
               required>
-            <small id="passwordHelpId" class="form-text text-muted">Minimum 6 znaków, brak znaków specjalnych</small>
           </div>
         </div>
-        <div class="form-group row">
-          <div class="offset-sm-2 col-sm-10">
-            <button type="submit" class="btn btn-primary">Zaloguj</button>
-          </div>
+        <div class="form-group btn-submit">
+          <button type="submit" class="btn btn-primary">Zaloguj się</button>
         </div>
       </form>
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
 
   </body>
 </html>
