@@ -1,44 +1,39 @@
 <div class="container col-md-8">
-    <h1 style ="text-align:center">Logowanie</h1>
-    <form class="form-Login">
-      <div class="form-group row">
-        <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span></div>
-          <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail."
-            class="form-control " 
-            name="email" 
-            id="email" 
-            aria-describedby="emailHelpId" 
-            placeholder="E-mail"
-            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
-            data-error="Błędnie podany e-mail" 
-            required>
+  <h1 style="text-align:center">Logowanie</h1>
+  <form class="form-Login">
+    <div class="form-group row">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+          </span>
         </div>
+        <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail." class="form-control " name="email" id="email"
+          aria-describedby="emailHelpId" placeholder="E-mail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-error="Błędnie podany e-mail"
+          required>
       </div>
-      <div class="form-group row">
-        <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
-          <input type="password" data-toggle="tooltip" title="Podaj swoje hasło."
-            class="form-control " 
-            name="password" 
-            id="password" 
-            aria-describedby="passwordHelpId"
-            data-minlength="6"
-            pattern="[a-zA-Z1-9]+"
-            placeholder="Hasło"
-            required>
+    </div>
+    <div class="form-group row">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
+          </span>
         </div>
+        <input type="password" data-toggle="tooltip" title="Podaj swoje hasło." class="form-control " name="password" id="password"
+          aria-describedby="passwordHelpId" data-minlength="6" pattern="[a-zA-Z1-9]+" placeholder="Hasło" required>
       </div>
-      <div class="form-group btn-submit">
-        <button type="submit" class="btn btn-primary">Zaloguj się</button>
-      </div>
-    </form>
-  </div>
+    </div>
+    <div class="form-group btn-submit">
+      <button type="submit" class="btn btn-primary">Zaloguj się</button>
+    </div>
+  </form>
+</div>
 
-  <script>
-      $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();   
-      });
-  </script>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>

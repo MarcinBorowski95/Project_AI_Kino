@@ -1,84 +1,118 @@
 <div class="container col-md-8">
-    <h1 style ="text-align:center">Rejestracja</h1>
-    <form class="form-Register">
+  <h1 style="text-align:center">Rejestracja</h1>
+  <form class="form-Register" #formRef="ngForm" (ngSubmit)="register(formRef.valid)" autocomplete="off">
+    <fieldset class="register" ngModelGroup="register">
       <div class="form-group row">
         <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user-o fa-stack-1x fa-inverse"></i></span></div>
-          <input type="text" data-toggle="tooltip" title="Podaj imię. Bez znaków specjalnych i cyfr."
-            class="form-control " 
-            name="firstname" 
-            id="firstname" 
-            aria-describedby="firstnameHelpId" 
-            placeholder="Imię"
-            pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+"
-            required>
+          <div class="input-group-addon">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-user-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <input type="text" data-toggle="tooltip" title="Podaj imię. Bez znaków specjalnych i cyfr." class="form-control " name="firstname"
+            id="firstname" aria-describedby="firstnameHelpId" #firstnameRef="ngModel" [(ngModel)]="registerUser.firstname"
+            placeholder="Imię*" pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+" required>
+        </div>
+        <div class="error" *ngIf="formRef.submitted && firstnameRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error" *ngIf="formRef.submitted && firstnameRef.errors?.pattern">
+          Imie posiada tylko litery
         </div>
       </div>
       <div class="form-group row">
         <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-user-o fa-stack-1x fa-inverse"></i></span></div>
-          <input type="text" data-toggle="tooltip" title="Podaj nazwisko. Bez znaków specjalnych i cyfr."
-            class="form-control " 
-            name="lastname" 
-            id="lastname" 
-            aria-describedby="lastnameHelpId" 
-            placeholder="Nazwisko"
-            pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+"
-            required>
+          <div class="input-group-addon">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-user-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <input type="text" data-toggle="tooltip" title="Podaj nazwisko. Bez znaków specjalnych i cyfr." class="form-control " name="lastname"
+            id="lastname" aria-describedby="lastnameHelpId" #lastnameRef="ngModel" [(ngModel)]="registerUser.lastname" placeholder="Nazwisko*"
+            pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+" required>
+        </div>
+        <div class="error" *ngIf="formRef.submitted && lastnameRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error" *ngIf="formRef.submitted && lastnameRef.errors?.pattern">
+          Nazwisko posiada tylko litery
         </div>
       </div>
       <div class="form-group row">
         <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span></div>
-          <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail, np. imie.nazwisko@gmail.com"
-            class="form-control " 
-            name="email" 
-            id="email" 
-            aria-describedby="emailHelpId" 
-            placeholder="E-mail"
-            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
-            data-error="Błędnie podany e-mail" 
-            required>
+          <div class="input-group-addon">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail, np. imie.nazwisko@gmail.com" class="form-control "
+            name="email" id="email" aria-describedby="emailHelpId" #emailRef="ngModel" [(ngModel)]="registerUser.email" placeholder="E-mail*"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-error="Błędnie podany e-mail" required autocomplete="nope">
+        </div>
+        <div class="error" *ngIf="formRef.submitted && emailRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error" *ngIf="formRef.submitted && emailRef.errors?.pattern">
+          Błędny E-Mail
         </div>
       </div>
       <div class="form-group row">
         <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
-          <input type="password" data-toggle="tooltip" title="Podaj hasło. Minimum 6 znaków, bez znaków specjalnych."
-            class="form-control " 
-            name="password" 
-            id="password" 
-            aria-describedby="passwordHelpId"
-            data-minlength="6"
-            pattern="[a-zA-Z1-9]+"
-            placeholder="Hasło"
-            required>
+          <div class="input-group-addon">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <input type="password" data-toggle="tooltip" title="Podaj hasło. Minimum 6 znaków, bez znaków specjalnych." class="form-control "
+            name="password" id="password" aria-describedby="passwordHelpId" #passwordRef="ngModel" [(ngModel)]="registerUser.password"
+            minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Hasło*" required autocomplete="new-password">
         </div>
+        <div class="hint" *ngIf="passwordRef.errors?.minlength || passwordRef.pristine || passwordRef.errors?.required">
+          To pole musi mieć minimum 6 znaków
+        </div>
+        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.pattern">
+          Błędny format hasła. Upewnij się że ma przynajmniej jedną literę wielką oraz jedną cyfrę.
+        </div>
+        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.minlength">
+          Hasło zbyt krótkie
+        </div>
+
       </div>
-      <div class="form-group row" >
+      <div class="form-group row">
         <div class="input-group">
-          <div class="input-group-addon"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shield fa-stack-1x fa-inverse"></i></span></div>
-          <input type="password" data-toggle="tooltip" title="Ponów wprowadzone hasło."
-            class="form-control" 
-            name="passwordConfirm" 
-            id="passwordConfirm" 
-            placeholder="Ponów hasło"
-            required>
+          <div class="input-group-addon">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <input type="password" data-toggle="tooltip" title="Ponów wprowadzone hasło." class="form-control" name="passwordConfirm"
+            id="passwordConfirm" #passwordConfirmRef="ngModel" [(ngModel)]="registerUser.passwordConfirm" placeholder="Ponów hasło*"
+            required autocomplete="new-password">
+        </div>
+        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error" *ngIf="formRef.submitted && passwordRef.value != passwordConfirmRef.value">
+          Hasła nie są takie same
         </div>
       </div>
       <div class="form-group btn-submit">
-          <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+        <button type="submit" class="btn btn-primary">Zarejestruj się</button>
       </div>
-    </form>
-  </div>
+    </fieldset>
+  </form>
+</div>
 
-  <script>
-      $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();   
-      });
-  </script>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
