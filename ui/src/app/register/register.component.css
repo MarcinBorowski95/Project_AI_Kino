@@ -1,20 +1,20 @@
+.container
+{
+  position: relative;
+  margin: 10px auto;
+}
+
 .hint
 {
-  font-family:sans-serif;
   font-size:14px;
   color:grey;
-  padding-bottom:3px;
-  padding-left:3px;
   text-align:center;
 }
 
 .error
 {
-  font-family:sans-serif;
   font-size:13px;
   color:red;
-  padding-top:3px;
-  padding-left:3px;
   text-align:center;
 }
 

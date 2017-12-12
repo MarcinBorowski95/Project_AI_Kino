@@ -14,10 +14,10 @@
             id="firstname" aria-describedby="firstnameHelpId" #firstnameRef="ngModel" [(ngModel)]="registerUser.firstname"
             placeholder="Imię*" pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+" required>
         </div>
-        <div class="error" *ngIf="formRef.submitted && firstnameRef.errors?.required">
+        <div class="error form-control" *ngIf="formRef.submitted && firstnameRef.errors?.required">
           To pole jest obowiązkowe
         </div>
-        <div class="error" *ngIf="formRef.submitted && firstnameRef.errors?.pattern">
+        <div class="error form-control" *ngIf="formRef.submitted && firstnameRef.errors?.pattern">
           Imie posiada tylko litery
         </div>
       </div>
@@ -33,10 +33,10 @@
             id="lastname" aria-describedby="lastnameHelpId" #lastnameRef="ngModel" [(ngModel)]="registerUser.lastname" placeholder="Nazwisko*"
             pattern="[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ]+" required>
         </div>
-        <div class="error" *ngIf="formRef.submitted && lastnameRef.errors?.required">
+        <div class="error form-control" *ngIf="formRef.submitted && lastnameRef.errors?.required">
           To pole jest obowiązkowe
         </div>
-        <div class="error" *ngIf="formRef.submitted && lastnameRef.errors?.pattern">
+        <div class="error form-control" *ngIf="formRef.submitted && lastnameRef.errors?.pattern">
           Nazwisko posiada tylko litery
         </div>
       </div>
@@ -52,10 +52,10 @@
             name="email" id="email" aria-describedby="emailHelpId" #emailRef="ngModel" [(ngModel)]="registerUser.email" placeholder="E-mail*"
             pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-error="Błędnie podany e-mail" required autocomplete="nope">
         </div>
-        <div class="error" *ngIf="formRef.submitted && emailRef.errors?.required">
+        <div class="error form-control" *ngIf="formRef.submitted && emailRef.errors?.required">
           To pole jest obowiązkowe
         </div>
-        <div class="error" *ngIf="formRef.submitted && emailRef.errors?.pattern">
+        <div class="error form-control" *ngIf="formRef.submitted && emailRef.errors?.pattern">
           Błędny E-Mail
         </div>
       </div>
@@ -71,16 +71,16 @@
             name="password" id="password" aria-describedby="passwordHelpId" #passwordRef="ngModel" [(ngModel)]="registerUser.password"
             minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Hasło*" required autocomplete="new-password">
         </div>
-        <div class="hint" *ngIf="passwordRef.errors?.minlength || passwordRef.pristine || passwordRef.errors?.required">
+        <div class="hint form-control" *ngIf="passwordRef.errors?.minlength || passwordRef.pristine || passwordRef.errors?.required">
           To pole musi mieć minimum 6 znaków
         </div>
-        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.required">
+        <div class="error form-control" *ngIf="formRef.submitted && passwordRef.errors?.required">
           To pole jest obowiązkowe
         </div>
-        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.pattern">
+        <div class="error form-control" *ngIf="formRef.submitted && passwordRef.errors?.pattern">
           Błędny format hasła. Upewnij się że ma przynajmniej jedną literę wielką oraz jedną cyfrę.
         </div>
-        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.minlength">
+        <div class="error form-control" *ngIf="formRef.submitted && passwordRef.errors?.minlength">
           Hasło zbyt krótkie
         </div>
 
@@ -97,14 +97,14 @@
             id="passwordConfirm" #passwordConfirmRef="ngModel" [(ngModel)]="registerUser.passwordConfirm" placeholder="Ponów hasło*"
             required autocomplete="new-password">
         </div>
-        <div class="error" *ngIf="formRef.submitted && passwordRef.errors?.required">
+        <div class="error form-control" *ngIf="formRef.submitted && passwordRef.errors?.required">
           To pole jest obowiązkowe
         </div>
-        <div class="error" *ngIf="formRef.submitted && passwordRef.value != passwordConfirmRef.value">
+        <div class="error form-control" *ngIf="formRef.submitted && passwordRef.value != passwordConfirmRef.value">
           Hasła nie są takie same
         </div>
       </div>
-      <div class="form-group btn-submit">
+      <div class="form-group btn-submit" align="center">
         <button type="submit" class="btn btn-primary">Zarejestruj się</button>
       </div>
     </fieldset>
