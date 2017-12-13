@@ -18,11 +18,11 @@
         <result property="e_mail" column="e_mail"/>
     </resultMap>
 
-    <select id="getUsers" resultMap="userResultMap">
+    <select id="getUsers" resultMap="userEmailResultMap">
         SELECT e_mail FROM users WHERE e_mail = #{e_mail}
     </select>
 
-    <resultMap id="userResultMap" type="User">
+    <resultMap id="userEmailResultMap" type="com.cinema.Domain.User">
         <result column="e_mail" property="e_mail"/>
     </resultMap>
 
