@@ -4,6 +4,7 @@ package com.cinema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
@@ -29,4 +30,15 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
                     .inMemoryAuthentication()
                     .withUser("user").password("password").roles("USER");
         }
+
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//        http.csrf().disable()
+//                .httpBasic()
+//                .and()
+//                .authorizeRequests()
+//                .antMatchers("/index.html", "/appRoute.js", "/app/**","/",
+//                        "/user").permitAll()
+//                .anyRequest().authenticated().and().logout();
+//    }
 }
