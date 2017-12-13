@@ -11,6 +11,7 @@ const routes: Routes = [
     {path: "repertoire" , loadChildren: 'app/repertoire/repertoire.module#RepertoireModule'},
     {path: "priceList" , loadChildren: 'app/priceList/priceList.module#PriceListModule'},
     {path: "movies" , loadChildren: 'app/movies/movies.module#MoviesModule'},
+    {path: "buyTicket" , loadChildren: 'app/buyTicket/buyTicket.module#BuyTicketModule'},
     {path: "**" , redirectTo: "/" }
     
   ];
