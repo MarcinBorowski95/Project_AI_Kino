@@ -33,55 +33,6 @@ h1, h2, h3, h4, h5{
   text-shadow: 2px 2px black;
 }
 
-/* do widoku sali
-.screen {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.opacity {
-  opacity: 0.5;
-}
-
-.opacity:hover {
-  opacity: 1.0;
-}
-
-.square {
-  float: left;
-  position: relative;
-  width: 5%;
-  padding-bottom: 5%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  background-color: #1E1E1E;
-  overflow: hidden;
-}
-
-.square-1 {
-  float: left;
-  position: relative;
-  width: 5%;
-  padding-bottom: 5%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  margin-left: 2.5%;
-  background-color: #1E1E1E;
-  overflow: hidden;
-}
-
-.content {
-  position: absolute;
-  height: 80%;
-  width: 90%;
-  padding: 10% 5%;
-  color: white;
-}
-
-.click {
-  background-color: #4daf8f;
-  opacity: 1.0;
-}
-*/
 .btn{
   color:white;
   background-color: #279972;
