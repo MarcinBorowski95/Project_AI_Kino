@@ -9,4 +9,5 @@ import java.util.List;
 @Mapper
 public interface MovieMapper {
     List<Movie> getMovies(@Param("day") int day);
+    List<Movie> getAllMovies();
 }
