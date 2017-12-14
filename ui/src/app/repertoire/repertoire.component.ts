@@ -14,7 +14,7 @@ export class RepertoireComponent implements OnInit {
   private movies: any[];
   private hours: any[];
   private day: String = "1";
-  private movieUrl = 'http://localhost:4200/api/movies?day=' + this.day;
+  private movieUrl;
   private seanseUrl
   
 
@@ -25,17 +25,28 @@ export class RepertoireComponent implements OnInit {
   }
 
   getMovie(): any {
+    this.movieUrl = 'http://localhost:4200/api/movies?day=' + this.day;
     return this.http.get(this.movieUrl).subscribe(res => {
       this.movies = res.json();
       console.log(this.movies);
+      console.log(this.movieUrl);
+      console.log(this.day);
+      this.movies.forEach(element => {
+        this.getSeans(element.id_movie)
+      });
     });
   }
 
-  getSeans(movieID: any): any {
-    this.seanseUrl = 'http://localhost:4200/api/showtime?id_movie=' + movieID + '&day=' + this.day
+  getSeans(ID): any {
+    this.seanseUrl = 'http://localhost:4200/api/showtime?id_movie=' + ID + '&day=' + this.day
     return this.http.get(this.seanseUrl).subscribe(res => {
       this.hours = res.json();
       console.log(this.hours);
     });
+  }
+
+  changeDay(day) {
+    this.day=day;
+    this.getMovie();
   }
 }
