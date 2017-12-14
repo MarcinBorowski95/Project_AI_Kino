@@ -1,3 +1,35 @@
-<p>
-  buyTicket works!
-</p>
+<div class="container col-md-8">
+  <h1 style="text-align:center">Zakup biletu</h1>
+
+  <div *ngFor="let spot of spots" class="ticket-list">
+    <div class="ticket-row row">
+      <div class="col-md-2">
+        {{ spot.ID }}
+      </div>
+      <div class="col-md-3">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Rodzaj biletu
+          </button>
+          <div class="dropdown-menu" aria-labelledby="triggerId">
+            <a class="dropdown-item" href="#">Normalny</a>
+            <a class="dropdown-item" href="#">Dziecięcy</a>
+            <a class="dropdown-item" href="#">Senior</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        Cena biletu
+      </div>
+    </div>
+  </div>
+  <div class="ticket-final row">
+    <div class="cost col-md-4">
+      Cena końcowa
+    </div>
+    <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block>Zatwierdź zakup </button>
+  </div>
+
+
+</div>

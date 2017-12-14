@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyTicketComponent implements OnInit {
 
+  spots: any[] = [
+    { ID: 'A1' },
+    { ID: 'A2' },
+    { ID: 'A3' }
+  ];
+
+
   constructor() { }
 
   ngOnInit() {
