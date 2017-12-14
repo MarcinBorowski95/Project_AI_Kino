@@ -14,30 +14,12 @@
   <h1> Przykładowa lista filmów Statyczna</h1>
 
   <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <a *ngFor="let movie of movies" class="list-group-item list-group-item-action flex-column align-items-start">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Nazwa filmu</h5>
+        <h5 class="mb-1">{{ movie.title }}</h5>
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
-          <button type="button" class="btn btn-primary">Godzina filmu</button>
-        </div>
-      </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Nazwa filmu</h5>
-
-        <div class="btn-group btn-group-sm" role="group" aria-label="">
-          <button type="button" class="btn btn-primary">Godzina filmu</button>
-        </div>
-      </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Nazwa filmu</h5>
-
-        <div class="btn-group btn-group-sm" role="group" aria-label="">
-          <button type="button" class="btn btn-primary">Godzina filmu</button>
+          <button *ngFor="let hour of hours" type="button" class="btn btn-primary">Godzina filmu</button>
         </div>
       </div>
     </a>

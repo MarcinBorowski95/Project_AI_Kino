@@ -4,10 +4,10 @@
   <div class="list-group">
     <a *ngFor="let movie of movies" class="list-group-item flex-column align-items-start borderless">
       <div class="d-flex w-100">
-        <img class="mr-3" src="{{movie.picture}}" height="200px" width="150px">
+        <img class="mr-3" src="{{movie.image_url}}" height="200px" width="150px">
         <div>
           <h2> {{ movie.title }}</h2>
-          <p class="mb-1">{{movie.desc}}</p>
+          <p class="mb-1">{{movie.description}}</p>
         </div>
       </div>
     </a>
