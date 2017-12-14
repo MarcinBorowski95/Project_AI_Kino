@@ -12,6 +12,7 @@ const routes: Routes = [
     {path: "priceList" , loadChildren: 'app/priceList/priceList.module#PriceListModule'},
     {path: "movies" , loadChildren: 'app/movies/movies.module#MoviesModule'},
     {path: "buyTicket" , loadChildren: 'app/buyTicket/buyTicket.module#BuyTicketModule'},
+    {path: "sala" , loadChildren: 'app/sala/sala.module#SalaModule'},
     {path: "**" , redirectTo: "/" }
     
   ];
