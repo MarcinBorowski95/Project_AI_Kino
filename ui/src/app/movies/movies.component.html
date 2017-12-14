@@ -1,0 +1,15 @@
+<div class="container col-md-8">
+  <h1 style="text-align:center">Teraz Grane</h1>
+
+  <div class="list-group">
+    <a *ngFor="let item of items" class="list-group-item flex-column align-items-start borderless" >
+      <div class="d-flex w-100">
+        <img class="mr-3" src="{{item.image_url}}" height="200px" width="150px">
+        <div>
+          <h2>{{ item.title }}</h2>
+          <p class="mb-1">{{ item.description }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

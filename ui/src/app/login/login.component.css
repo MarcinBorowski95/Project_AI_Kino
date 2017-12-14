@@ -1,0 +1,28 @@
+.container
+{
+  position: relative;
+  margin: 10px auto;
+}
+
+.hint
+{
+  font-size:14px;
+  color:grey;
+  text-align:center;
+}
+
+.error
+{
+  font-size:13px;
+  color:red;
+  text-align:center;
+}
+
+input.ng-valid
+{
+  border:1px solid green;
+  -webkit-transition:.3s linear;
+  -moz-transition:.3s linear;
+  -o-transition:.3s linear;
+  transition:.3s linear;
+}
