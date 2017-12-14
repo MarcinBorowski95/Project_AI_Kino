@@ -3,7 +3,7 @@
 <mapper namespace="com.cinema.MapperJava.ShowtimeMapper">
 
     <select id="getShowtimesByIdMovie" resultMap="showtimes">
-        SELECT id_showtime, id_movie, id_room, date_start, "Time"
+        SELECT id_showtime, id_movie, id_room, date_start, "time"
         FROM showtimes
         WHERE date_start = CURRENT_DATE+#{day} AND id_movie = #{id_movie}
     </select>
