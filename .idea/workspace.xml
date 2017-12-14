@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/40e5a752-6243-462f-8160-67c02cf591c7.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/40e5a752-6243-462f-8160-67c02cf591c7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40e5a752-6243-462f-8160-67c02cf591c7/storage_v2/_src_/database/d411p799b0iqf.OQpuWg/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/40e5a752-6243-462f-8160-67c02cf591c7/storage_v2/_src_/database/d411p799b0iqf.OQpuWg/schema/public.abK9xQ.meta" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/movies/movies.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/movies/movies.component.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" />
+      <change beforePath="$PROJECT_DIR$/project_cinema.iml" afterPath="$PROJECT_DIR$/project_cinema.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,17 +35,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding>
                 <element signature="e#626#627#0" expanded="true" />
                 <element signature="e#676#677#0" expanded="true" />
                 <element signature="e#929#930#0" expanded="true" />
                 <element signature="e#979#980#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectCinemaApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <marker date="1513271751138" expanded="true" signature="260:544" ph="SELECT m.id_... movies" />
                 <marker date="1513271751138" expanded="true" signature="1259:1479" ph="SELECT m.id_... movies" />
@@ -253,9 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -356,6 +360,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,6 +389,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Boro\Documents\GitHub\Project_AI_Kino\src\main\java\com\cinema" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Project_AI_Kino\src\main\resources\com\cinema\MapperJava" />
@@ -688,6 +698,8 @@
       <workItem from="1513272254983" duration="621000" />
       <workItem from="1513273671517" duration="2601000" />
       <workItem from="1513278336164" duration="201000" />
+      <workItem from="1513278943416" duration="820000" />
+      <workItem from="1513279789323" duration="24000" />
     </task>
     <servers />
   </component>
@@ -697,7 +709,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54923000" />
+    <option name="totallyTimeSpent" value="55767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,7 +725,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23233405" sideWeight="0.4163763" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23233405" sideWeight="0.4221835" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,7 +742,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20095949" sideWeight="0.51941746" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23233405" sideWeight="0.5836237" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23233405" sideWeight="0.5778165" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18641116" sideWeight="0.48058254" order="1" side_tool="false" content_ui="combo" />
@@ -879,7 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql" />
     <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms" />
     <entry file="file://$PROJECT_DIR$/ui/proxy.conf.json">
@@ -919,9 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -949,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,7 +1183,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <marker date="1513271751138" expanded="true" signature="260:544" ph="SELECT m.id_... movies" />
             <marker date="1513271751138" expanded="true" signature="1259:1479" ph="SELECT m.id_... movies" />
@@ -1188,14 +1193,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding>
             <element signature="e#626#627#0" expanded="true" />
             <element signature="e#676#677#0" expanded="true" />
             <element signature="e#929#930#0" expanded="true" />
             <element signature="e#979#980#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,7 +1223,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1278,7 +1290,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2</last-edited>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
