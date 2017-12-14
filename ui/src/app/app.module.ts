@@ -1,9 +1,11 @@
+import { Http } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { Routing } from './app.routing';
+import { HttpModule } from '@angular/http/src/http_module';
 
 
 @NgModule({
@@ -13,9 +15,11 @@ import { Routing } from './app.routing';
   imports: [
     BrowserModule,
     Routing,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
+  providers: [ 
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

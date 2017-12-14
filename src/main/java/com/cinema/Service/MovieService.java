@@ -16,4 +16,9 @@ public class MovieService {
     public List<Movie> getMovies(int day){
         return movieMapper.getMovies(day);
     }
+
+    public List<Movie> getAllMovies(){
+        return movieMapper.getAllMovies();
+    }
+
 }

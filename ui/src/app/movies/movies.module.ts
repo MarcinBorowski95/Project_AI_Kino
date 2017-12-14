@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,6 +12,7 @@ const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    HttpModule
   ],
   declarations: [MoviesComponent]
 })
