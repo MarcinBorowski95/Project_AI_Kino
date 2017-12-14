@@ -1,6 +1,6 @@
 package com.cinema.Controller;
 
-import com.cinema.Domain.Showtime;
+import com.cinema.Domain.Movie;
 import com.cinema.Service.MovieService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +11,13 @@ import java.util.List;
 
 @RestController
 public class MovieController {
+
     @Autowired
-    MovieService movieService;
+    private MovieService movieService;
 
-    @RequestMapping( value = "/showtimes", method = RequestMethod.GET)
+    @RequestMapping( value = "/movie", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "pobieranie wszystkich aktualnych seansów")
-    List<Showtime> getShowtimes() {
-        return movieService.getShowtimes();
-    }
-
+    @ApiOperation(value = "pobieranie filmów")
+    List<Movie> getUsers(@RequestParam(value = "day", required = true) int day){
+        return movieService.getMovies(day);}
 }

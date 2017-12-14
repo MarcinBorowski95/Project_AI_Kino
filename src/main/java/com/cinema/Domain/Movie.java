@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Alias("Movie")
 public class Movie {
-    private Long id_movie;
+    private long id_movie;
     private String title;
     private String title_pl;
     private String genre;
@@ -17,11 +17,11 @@ public class Movie {
     private String description;
     private String image_url;
 
-    public Long getId_movie() {
+    public long getId_movie() {
         return id_movie;
     }
 
-    public void setId_movie(Long id_movie) {
+    public void setId_movie(long id_movie) {
         this.id_movie = id_movie;
     }
 

@@ -1,11 +1,12 @@
 package com.cinema.MapperJava;
 
-import com.cinema.Domain.Showtime;
+import com.cinema.Domain.Movie;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 @Mapper
 public interface MovieMapper {
-    List<Showtime> getShowtimes();
+    List<Movie> getMovies(@Param("day") int day);
 }

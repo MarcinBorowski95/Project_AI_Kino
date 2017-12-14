@@ -6,33 +6,33 @@ import java.util.Date;
 
 @Alias("Showtime")
 public class Showtime {
-    int id_showtimes;
-    int id_movie;
-    int id_room;
-    String time;
-    Date date_start;
+    private long id_showtime;
+    private long id_movie;
+    private long id_room;
+    private String time;
+    private Date date_start;
 
-    public int getId_showtimes() {
-        return id_showtimes;
+    public long getId_showtime() {
+        return id_showtime;
     }
 
-    public void setId_showtimes(int id_showtimes) {
-        this.id_showtimes = id_showtimes;
+    public void setId_showtimes(long id_showtimes) {
+        this.id_showtime = id_showtimes;
     }
 
-    public int getId_movie() {
+    public long getId_movie() {
         return id_movie;
     }
 
-    public void setId_movie(int id_movie) {
+    public void setId_movie(long id_movie) {
         this.id_movie = id_movie;
     }
 
-    public int getId_room() {
+    public long getId_room() {
         return id_room;
     }
 
-    public void setId_room(int id_room) {
+    public void setId_room(long id_room) {
         this.id_room = id_room;
     }
 
