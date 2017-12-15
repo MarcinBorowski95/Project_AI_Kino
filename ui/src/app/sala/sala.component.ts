@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sala',
@@ -12,9 +13,11 @@ export class SalaComponent implements OnInit {
   rows;
   seats;
   private roomUrl;
+  seans = "1";
 
   constructor(
     private http: Http,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -22,7 +25,7 @@ export class SalaComponent implements OnInit {
   }
 
   getRoom(): any {
-    this.roomUrl = 'http://localhost:4200/api/getRoomByIdShowtime?id_showtime=1';
+    this.roomUrl = 'http://localhost:4200/api/getRoomByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.roomUrl).subscribe(res => {
       this.room = res.json();
       console.log(this.room);
@@ -30,6 +33,11 @@ export class SalaComponent implements OnInit {
       console.log(this.rows)
       this.seats= Array(this.room.seatsInRow).fill(1);
     });
+  }
+
+  buyTicket()
+  {
+    this.router.navigate(['/buyTicket']);
   }
 
 }
