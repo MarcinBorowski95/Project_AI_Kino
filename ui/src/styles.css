@@ -4,3 +4,51 @@
   position: relative;
   margin: 10px auto;
 }
+body {
+  background-color: #4b3843;
+}
+
+.bg-dark {
+  background-color: #2a1f2d !important;
+}
+
+.navbar-nav li a,
+.navbar-brand {
+  color: white !important;
+}
+
+.h {
+  height: 110%;
+  /*    background:url(t6b.jpg);      */
+  background-color: #4daf8f;
+  box-shadow: 2px 2px black;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+h1, h2, h3, h4, h5{
+  color:white;
+}
+
+.t-shadow {
+  text-shadow: 2px 2px black;
+}
+
+.btn{
+  color:white;
+  background-color: #279972;
+  box-shadow: 2px 2px black;
+}
+
+.btn-gradient {
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 2px 2px black;
+  background-image: linear-gradient(to right, #2ecc9d 0%, #4daf8f 51%, #2ecc9d 100%);
+}
+
+.btn:hover {
+  background-position: right center;
+}

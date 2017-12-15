@@ -1,14 +1,21 @@
-<div class="container col-md-8">
-  <h1 style="text-align:center">Zakup biletu</h1>
+<br><br>
 
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Zakup biletu</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <br>
   <div *ngFor="let spot of spots" class="ticket-list">
     <div class="ticket-row row">
-      <div class="col-md-2">
+      <div class="col-md-3" style="color: white;">
         {{ spot.ID }}
       </div>
       <div class="col-md-3">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+          <button class="btn btn-ticket dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Rodzaj biletu
           </button>
@@ -19,16 +26,22 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" style="color: white;">
         Cena biletu
       </div>
     </div>
   </div>
   <div class="ticket-final row">
-    <div class="cost col-md-4">
+    <div class="cost col-md-4" style="color: white;">
       Cena końcowa
     </div>
-    <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block>Zatwierdź zakup </button>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <br><br>
+      <button type="button" name="" id="" class="btn btn-gradient" btn-lg btn-block>Zatwierdź zakup </button>
+    </div>
   </div>
 
 

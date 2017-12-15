@@ -1,5 +1,14 @@
-<div class="container col-md-8">
-  <h1 style="text-align:center">Rejestracja</h1>
+<br><br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Rejestracja</h3>
+  </div>
+</div>
+
+
+<div class="container col-md-10 mx-auto">
+  <br>
   <form class="form-Register" #formRef="ngForm" (ngSubmit)="register(formRef.valid)" autocomplete="off">
     <fieldset class="register" ngModelGroup="register">
       <div class="form-group row">
@@ -71,9 +80,6 @@
             name="password" id="password" aria-describedby="passwordHelpId" #passwordRef="ngModel" [(ngModel)]="registerUser.password"
             minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Hasło*" required autocomplete="new-password">
         </div>
-        <div class="hint form-control" *ngIf="passwordRef.errors?.minlength || passwordRef.pristine || passwordRef.errors?.required">
-          To pole musi mieć minimum 6 znaków
-        </div>
         <div class="error form-control" *ngIf="formRef.submitted && passwordRef.errors?.required">
           To pole jest obowiązkowe
         </div>
@@ -105,7 +111,7 @@
         </div>
       </div>
       <div class="form-group btn-submit" align="center">
-        <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+        <button type="submit" class="btn btn-gradient">Zarejestruj się</button>
       </div>
     </fieldset>
   </form>
