@@ -51,6 +51,6 @@ export class RepertoireComponent implements OnInit {
 
   buyTicket(hour) {
     console.log(hour);
-    this.router.navigate(["/buyTicket"])
+    this.router.navigate(["/sala"])
   }
 }
