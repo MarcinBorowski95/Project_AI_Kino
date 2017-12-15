@@ -15,17 +15,23 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
 
-    @RequestMapping( value = "/allMovies", method = RequestMethod.GET)
+    @RequestMapping( value = "/getAllCurrentMovies", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "pobieranie filmów aktualnych")
+    @ApiOperation(value = "Pobieranie filmow aktualnie granych")
     List<Movie> getAllMovie(){
-        return movieService.getAllMovies();
+        return movieService.getAllCurrentMovies();
     }
 
-    @RequestMapping( value = "/movies", method = RequestMethod.GET)
+    @RequestMapping( value = "/getMoviesByDay", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "pobieranie filmów granych danego dnia")
-    List<Movie> getMovies(@RequestParam(value = "day", required = true) int day){
-        return movieService.getMovies(day);
+    @ApiOperation(value = "Pobieranie filmów granych danego dnia")
+    List<Movie> getMoviesByDay(@RequestParam(value = "day", required = true) int day){
+        return movieService.getMoviesByDay(day);
+    }
+    @RequestMapping( value = "/getMovieByIdMovie", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie filmu po id filmu")
+    Movie getMovieByIdMovie(@RequestParam(value = "id_movie", required = true) long id_movie){
+        return movieService.getMovieByIdMovie(id_movie);
     }
 }
