@@ -13,12 +13,15 @@ public class MovieService {
     @Autowired
     private MovieMapper movieMapper;
 
-    public List<Movie> getMovies(int day){
-        return movieMapper.getMovies(day);
+    public List<Movie> getMoviesByDay(int day){
+        return movieMapper.getMoviesByDay(day);
     }
 
-    public List<Movie> getAllMovies(){
-        return movieMapper.getAllMovies();
+    public List<Movie> getAllCurrentMovies(){
+        return movieMapper.getAllCurrentMovies();
+    }
+    public Movie getMovieByIdMovie(long id_movie){
+        return movieMapper.getMovieByIdMovie(id_movie);
     }
 
 }
