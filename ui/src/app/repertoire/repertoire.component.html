@@ -10,13 +10,13 @@
 
   <br>
   <div class="btn-group" role="group" aria-label="">
-    <button type="button" class="btn btn-repertoire">PN</button>
-    <button type="button" class="btn btn-repertoire">WT</button>
-    <button type="button" class="btn btn-repertoire">ŚR</button>
-    <button type="button" class="btn btn-repertoire">CZ</button>
-    <button type="button" class="btn btn-repertoire">PT</button>
-    <button type="button" class="btn btn-repertoire">SB</button>
-    <button type="button" class="btn btn-repertoire">ND</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(0)">PN</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(1)">WT</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(2)">ŚR</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(3)">CZ</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(4)">PT</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(5)">SB</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(6)">ND</button>
   </div>
   <br><br>
   <h3>Przykładowa lista filmów Statyczna</h3>
@@ -27,7 +27,9 @@
         <h5 class="mb-1">{{ movie.title }}</h5>
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
-          <button *ngFor="let hour of hours" type="button" class="btn btn-primary">Godzina filmu</button>
+          <div *ngFor="let hour of hours" >
+            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn btn-primary" (click)="buyTicket(hour)">{{hour.time}}</button>
+          </div>
         </div>
       </div>
     </a>

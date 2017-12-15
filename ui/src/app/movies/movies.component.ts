@@ -16,7 +16,7 @@ export class MoviesComponent implements OnInit {
   constructor(private http: Http) { }
 
   // private instance variable to hold base url
-  private movieUrl = 'http://localhost:4200/api/movies';
+  private movieUrl = 'http://localhost:4200/api/getAllCurrentMovies';
 
   ngOnInit() {
     this.getMovie();
