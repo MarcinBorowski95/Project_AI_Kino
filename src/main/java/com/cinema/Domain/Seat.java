@@ -5,7 +5,6 @@ public class Seat {
     private long id_room;
     private int row;
     private int seat;
-    private long id_ticket;
 
     public long getId_seat() {
         return id_seat;
@@ -37,14 +36,5 @@ public class Seat {
 
     public void setSeat(int seat) {
         this.seat = seat;
-    }
-
-
-    public long getId_ticket() {
-        return id_ticket;
-    }
-
-    public void setId_ticket(long id_ticket) {
-        this.id_ticket = id_ticket;
     }
 }
