@@ -13,10 +13,7 @@ public class ShowtimeService {
     @Autowired
     private ShowtimeMapper showtimeMapper;
 
-    public List<Showtime> getShowtimesByIdMovieAndDay(long movie, int day){
-        return showtimeMapper.getShowtimesByIdMovieAndDay(movie,day);
-    }
-    public List<Showtime> getShowtimesByDay(int day){
-        return showtimeMapper.getShowtimesByDay(day);
+    public List<Showtime> getShowtimesByIdMovie(long movie, int day){
+        return showtimeMapper.getShowtimesByIdMovie(movie,day);
     }
 }

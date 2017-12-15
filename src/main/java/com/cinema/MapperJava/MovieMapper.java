@@ -8,7 +8,6 @@ import java.util.List;
 
 @Mapper
 public interface MovieMapper {
-    List<Movie> getMoviesByDay(@Param("day") int day);
-    List<Movie> getAllCurrentMovies();
-    Movie getMovieByIdMovie(@Param("id_movie") long id_movie);
+    List<Movie> getMovies(@Param("day") int day);
+    List<Movie> getAllMovies();
 }

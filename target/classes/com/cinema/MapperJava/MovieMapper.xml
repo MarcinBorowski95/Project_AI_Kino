@@ -2,26 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.cinema.MapperJava.MovieMapper">
 
-    <select id="getMoviesByDay" resultMap="movies">
+    <select id="getMovies" resultMap="movies">
         SELECT m.id_movie, m.title, m.title_pl, m.genre, m.director,m.duration, m.date_release, m.date_end ,m.description,m.image_url
         FROM movies m
           INNER JOIN showtimes s ON m.id_movie = s.id_movie
         WHERE s.date_start = CURRENT_DATE+#{day}
         GROUP BY m.id_movie
-    </select>
-
-    <select id="getAllCurrentMovies" resultMap="movies">
-        SELECT m.id_movie, m.title, m.title_pl, m.genre, m.director,m.duration, m.date_release, m.date_end
-        ,m.description,m.image_url
-        FROM movies m
-        WHERE CURRENT_DATE BETWEEN m.date_release AND m.date_end
-    </select>
-
-    <select id="getMovieByIdMovie" resultMap="movies">
-        SELECT m.id_movie, m.title, m.title_pl, m.genre, m.director,m.duration, m.date_release, m.date_end
-        ,m.description,m.image_url
-        FROM movies m
-        WHERE m.id_movie = #{id_movie}
     </select>
 
     <resultMap id="movies" type="com.cinema.Domain.Movie">
@@ -36,6 +22,13 @@
         <result column="description" property="description"/>
         <result column="image_url" property="image_url"/>
     </resultMap>
+
+    <select id="getAllMovies" resultMap="movies">
+        SELECT m.id_movie, m.title, m.title_pl, m.genre, m.director,m.duration, m.date_release, m.date_end
+        ,m.description,m.image_url
+        FROM movies m
+        WHERE CURRENT_DATE BETWEEN m.date_release AND m.date_end
+    </select>
 
 
 </mapper>

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.css" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.css" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/styles.css" afterPath="$PROJECT_DIR$/ui/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,129 +32,104 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="rooms: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="seats: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="showtimes: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="414">
+              <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sala.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sala.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java">
+      <file leaf-file-name="buyTicket.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
+      <file leaf-file-name="buyTicket.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
+      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding>
-                <marker date="1513336696704" expanded="true" signature="266:591" ph="SELECT rooms... " />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml">
+      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <marker date="1513334253137" expanded="true" signature="265:521" ph="SELECT id_mo... movies" />
-                <marker date="1513334253137" expanded="true" signature="265:549" ph="SELECT m.id_... movies" />
-                <marker date="1513334253137" expanded="true" signature="630:850" ph="SELECT m.id_... movies" />
-                <marker date="1513334253137" expanded="true" signature="929:1123" ph="SELECT m.id_... movies" />
-              </folding>
+            <state relative-caret-position="347">
+              <caret line="54" column="53" lean-forward="false" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Room.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java">
+      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/register/register.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="99" column="19" lean-forward="false" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,6 +145,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>to pole musi mi</find>
+      <find>to pole mus</find>
+      <find>rodzaj</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -176,10 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/com/cinema/ProjectCinemaApplication.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.13.RELEASE/spring-beans-4.3.13.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.13.RELEASE/spring-core-4.3.13.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b32f23c-fab7-452b-bfa8-f740c532e77c/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/Persistance/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/User.java" />
@@ -193,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/UserService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
@@ -204,24 +186,34 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper" />
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Showtime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Seat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/TicketType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/MovieMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/MovieService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ui/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/priceList/priceList.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/priceList/priceList.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/movies/movies.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/register/register.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/styles.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
       </list>
     </option>
   </component>
@@ -236,7 +228,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/apache-maven-3.5.2-bin/apache-maven-3.5.2" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="printErrorStackTraces" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -248,28 +240,14 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="project_cinema" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="project_cinema" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/ui/node_modules" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="324" />
-    <option name="y" value="12" />
-    <option name="width" value="1614" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -322,83 +300,6 @@
             <path>
               <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="MapperJava" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="MapperJava" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -406,20 +307,35 @@
               <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sala" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../KinoBoro/Project_AI_Kino" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/npm" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/npm.cmd" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
@@ -436,7 +352,7 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/ui/node_modules/protractor" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -698,7 +614,7 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="C:/Program Files/nodejs/npm" />
       <envs />
     </configuration>
     <list size="6">
@@ -712,9 +628,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="npm.start" />
-        <item index="1" class="java.lang.String" itemvalue="npm.ng" />
-        <item index="2" class="java.lang.String" itemvalue="npm.e2e" />
-        <item index="3" class="java.lang.String" itemvalue="npm.build" />
+        <item index="1" class="java.lang.String" itemvalue="npm.build" />
+        <item index="2" class="java.lang.String" itemvalue="npm.ng" />
+        <item index="3" class="java.lang.String" itemvalue="npm.e2e" />
         <item index="4" class="java.lang.String" itemvalue="Protractor.protractor.conf.js" />
       </list>
     </recent_temporary>
@@ -745,11 +661,9 @@
       <workItem from="1513269166312" duration="1075000" />
       <workItem from="1513270272036" duration="812000" />
       <workItem from="1513272254983" duration="621000" />
-      <workItem from="1513276050247" duration="10000" />
-      <workItem from="1513277053954" duration="69000" />
-      <workItem from="1513277784011" duration="522000" />
-      <workItem from="1513278840527" duration="1833000" />
-      <workItem from="1513331299240" duration="6179000" />
+      <workItem from="1513273671517" duration="624000" />
+      <workItem from="1513276042449" duration="4558000" />
+      <workItem from="1513284842326" duration="7901000" />
     </task>
     <servers />
   </component>
@@ -759,7 +673,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60734000" />
+    <option name="totallyTimeSpent" value="65204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,35 +685,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33369565" sideWeight="0.28944564" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36392406" sideWeight="0.2818448" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25475842" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031983" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20937042" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36392406" sideWeight="0.7181552" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20095949" sideWeight="0.51941746" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33369565" sideWeight="0.71055436" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29136163" sideWeight="0.539801" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4936034" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.48058254" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29136163" sideWeight="0.460199" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5065789" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -808,8 +719,11 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753164" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -825,64 +739,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.9.RELEASE/spring-boot-autoconfigure-1.5.9.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/project_cinema_war_exploded.xml" />
-    <entry file="file://$PROJECT_DIR$/ui/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/.angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b32f23c-fab7-452b-bfa8-f740c532e77c/console.sql" />
-    <entry file="file://$PROJECT_DIR$/package-lock.json" />
-    <entry file="file://$PROJECT_DIR$/ui/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/SwaggerConfig.java" />
-    <entry file="das://table:/ef61f0ab/4b32f23c-fab7-452b-bfa8-f740c532e77c/d411p799b0iqf.public.users" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/AppConfig.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -901,6 +758,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,10 +766,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql" />
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms" />
     <entry file="file://$PROJECT_DIR$/ui/proxy.conf.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -919,27 +779,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.users" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,10 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1513254869951" expanded="true" signature="301:437" ph="SELECT u.id_... users" />
-            <marker date="1513254869951" expanded="true" signature="907:965" ph="SELECT e_mai... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,9 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,9 +805,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
           <caret line="34" column="83" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -978,58 +826,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.showtimes" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#472#473#0" expanded="false" />
-            <element signature="e#518#519#0" expanded="false" />
-            <element signature="e#558#559#0" expanded="false" />
-            <element signature="e#590#591#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#729#730#0" expanded="false" />
-            <element signature="e#760#761#0" expanded="false" />
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#848#849#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#908#909#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-            <element signature="e#1019#1020#0" expanded="false" />
-            <element signature="e#1050#1051#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1138#1139#0" expanded="false" />
-            <element signature="e#1170#1171#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="false" />
-            <element signature="e#1246#1247#0" expanded="false" />
-            <element signature="e#1286#1287#0" expanded="false" />
-            <element signature="e#1323#1324#0" expanded="false" />
-            <element signature="e#1358#1359#0" expanded="false" />
-            <element signature="e#1412#1413#0" expanded="false" />
-            <element signature="e#1460#1461#0" expanded="false" />
-            <element signature="e#1493#1494#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
-            <element signature="e#1570#1571#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1648#1649#0" expanded="false" />
-            <element signature="e#1682#1683#0" expanded="false" />
-            <element signature="e#1736#1737#0" expanded="false" />
-            <element signature="e#1782#1783#0" expanded="false" />
-            <element signature="e#1818#1819#0" expanded="false" />
-            <element signature="e#1850#1851#0" expanded="false" />
-            <element signature="e#1900#1901#0" expanded="false" />
-            <element signature="e#1942#1943#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1037,23 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#247#248#0" expanded="false" />
-            <element signature="e#285#286#0" expanded="false" />
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#391#392#0" expanded="false" />
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#456#457#0" expanded="false" />
-            <element signature="e#482#483#0" expanded="false" />
-            <element signature="e#517#518#0" expanded="false" />
-            <element signature="e#547#548#0" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,28 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#304#305#0" expanded="false" />
-            <element signature="e#338#339#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#439#440#0" expanded="false" />
-            <element signature="e#472#473#0" expanded="false" />
-            <element signature="e#503#504#0" expanded="false" />
-            <element signature="e#549#550#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#651#652#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-            <element signature="e#764#765#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#898#899#0" expanded="false" />
-            <element signature="e#931#932#0" expanded="false" />
-            <element signature="e#981#982#0" expanded="false" />
-            <element signature="e#1025#1026#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,31 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#297#298#0" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-            <element signature="e#387#388#0" expanded="false" />
-            <element signature="e#423#424#0" expanded="false" />
-            <element signature="e#457#458#0" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
-            <element signature="e#555#556#0" expanded="false" />
-            <element signature="e#587#588#0" expanded="false" />
-            <element signature="e#617#618#0" expanded="false" />
-            <element signature="e#661#662#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#761#762#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-            <element signature="e#843#844#0" expanded="false" />
-            <element signature="e#875#876#0" expanded="false" />
-            <element signature="e#905#906#0" expanded="false" />
-            <element signature="e#949#950#0" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1016#1017#0" expanded="false" />
-            <element signature="e#1043#1044#0" expanded="false" />
-            <element signature="e#1081#1082#0" expanded="false" />
-            <element signature="e#1113#1114#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,204 +869,231 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding>
-            <element signature="e#191#192#0" expanded="false" />
-            <element signature="e#235#236#0" expanded="false" />
-            <element signature="e#273#274#0" expanded="false" />
-            <element signature="e#304#305#0" expanded="false" />
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-            <element signature="e#435#436#0" expanded="false" />
-            <element signature="e#463#464#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#539#540#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.movies">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/ProjectCinemaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <marker date="1513332541016" expanded="true" signature="284:364" ph="SELECT id_sh... showtimes" />
-            <marker date="1513332541016" expanded="true" signature="284:390" ph="SELECT id_sh... showtimes" />
-            <marker date="1513332541016" expanded="true" signature="284:438" ph="SELECT id_sh... showtimes" />
-            <marker date="1513332541016" expanded="true" signature="520:647" ph="SELECT id_sh... showtimes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.seats">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/MovieMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/MovieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="34" column="56" lean-forward="false" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding>
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/MovieMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="153">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.movies" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#626#627#0" expanded="false" />
+            <element signature="e#676#677#0" expanded="false" />
+            <element signature="e#929#930#0" expanded="false" />
+            <element signature="e#979#980#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="173">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.showtimes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/ui/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
           <folding>
-            <marker date="1513334253137" expanded="true" signature="265:521" ph="SELECT id_mo... movies" />
-            <marker date="1513334253137" expanded="true" signature="265:549" ph="SELECT m.id_... movies" />
-            <marker date="1513334253137" expanded="true" signature="630:850" ph="SELECT m.id_... movies" />
-            <marker date="1513334253137" expanded="true" signature="929:1123" ph="SELECT m.id_... movies" />
+            <marker date="1513275773729" expanded="true" signature="260:544" ph="SELECT m.id_... movies" />
+            <marker date="1513275773729" expanded="true" signature="1259:1479" ph="SELECT m.id_... movies" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/MovieService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
-            <marker date="1513336696704" expanded="true" signature="266:591" ph="SELECT rooms... " />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java">
+    <entry file="file://$PROJECT_DIR$/ui/src/app/priceList/priceList.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/priceList/priceList.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java">
+    <entry file="file://$PROJECT_DIR$/ui/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="414">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/movies/movies.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="54" column="53" lean-forward="false" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="99" column="19" lean-forward="false" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding>
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
