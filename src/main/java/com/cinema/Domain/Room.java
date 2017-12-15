@@ -31,11 +31,12 @@ public class Room {
         this.rows = rows;
     }
 
-    public int getSeats() {
+
+    public int getSeatsInRow() {
         return seatsInRow;
     }
 
-    public void setSeats(int seats) {
-        this.seatsInRow = seats;
+    public void setSeatsInRow(int seatsInRow) {
+        this.seatsInRow = seatsInRow;
     }
 }
