@@ -15,12 +15,18 @@ public class ShowtimeController {
     @Autowired
     private ShowtimeService showtimeService;
 
-    @RequestMapping(value = "/showtime", method = RequestMethod.GET)
+    @RequestMapping(value = "/getShowtimesByIdMovieAndDay", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Pobieranie seansow")
-    public List<Showtime> getShowtimesByIdMovie(@RequestParam(value = "id_movie", required = true) long movie ,
+    @ApiOperation(value = "Pobieranie seansow po id filmu i numerze dnia")
+    public List<Showtime> getShowtimesByIdMovieAndDay(@RequestParam(value = "id_movie", required = true) long movie ,
                                                 @RequestParam(value = "day", required = true) int day){
-        return showtimeService.getShowtimesByIdMovie(movie,day);
+        return showtimeService.getShowtimesByIdMovieAndDay(movie,day);
+    }
+    @RequestMapping(value = "/getShowtimesByDay", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie seansow po numerze dnia")
+    public List<Showtime> getShowtimesByDay(@RequestParam(value = "day", required = true) int day){
+        return showtimeService.getShowtimesByDay(day);
     }
 
 
