@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
+import { DataService } from '../_services/data.service';
 
 @Component({
   selector: 'app-sala',
@@ -13,14 +14,16 @@ export class SalaComponent implements OnInit {
   rows;
   seats;
   private roomUrl;
-  seans = "1";
+  seans;
 
   constructor(
     private http: Http,
     private router: Router,
+    private data: DataService,
   ) { }
 
   ngOnInit() {
+    this.data.currentMessage.subscribe(seans => this.seans = seans)
     this.getRoom();
   }
 
@@ -39,5 +42,4 @@ export class SalaComponent implements OnInit {
   {
     this.router.navigate(['/buyTicket']);
   }
-
 }

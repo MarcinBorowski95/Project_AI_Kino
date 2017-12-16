@@ -3,6 +3,7 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../_services/data.service';
 
 @Component({
   selector: 'app-repertoire',
@@ -14,17 +15,20 @@ export class RepertoireComponent implements OnInit {
   private movies: any[];
   private hours: any[];
   private day: String = "0";
-  private movieUrl
-  private hourUrl
+  private movieUrl;
+  private hourUrl;
+  seans;
 
   constructor(
     private http: Http,
-    private router: Router
+    private router: Router,
+    private data: DataService
     ) { }
   
   ngOnInit() {
     this.getMovie();
     this.getHours();
+    this.data.currentMessage.subscribe(seans => this.seans = seans)
   }
 
   getMovie(): any {
@@ -51,6 +55,11 @@ export class RepertoireComponent implements OnInit {
 
   buyTicket(hour) {
     console.log(hour);
+    this.newMessage(hour.id_showtime)
     this.router.navigate(["/sala"])
+  }
+
+  newMessage(message) {
+    this.data.changeMessage(message)
   }
 }
