@@ -12,11 +12,11 @@ import 'rxjs/add/operator/map';
 export class MoviesComponent implements OnInit {
 
   private movies: any[];
+  private movieUrl = 'http://localhost:4200/api/allMovies';
 
   constructor(private http: Http) { }
 
   // private instance variable to hold base url
-  private movieUrl = 'http://localhost:4200/api/movies';
 
   ngOnInit() {
     this.getMovie();

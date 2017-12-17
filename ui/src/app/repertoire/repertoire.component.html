@@ -3,6 +3,14 @@
 <div class="h">
   <div class="col-md-10 mx-auto">
     <h3>Repertuar</h3>
+  <div class="btn-group" role="group" aria-label="">
+    <button type="button" class="btn btn-primary" (click)="changeDay(0)">Dziś</button>
+    <button type="button" class="btn btn-primary" (click)="changeDay(1)">+1</button>
+    <button type="button" class="btn btn-primary" (click)="changeDay(2)">+2</button>
+    <button type="button" class="btn btn-primary" (click)="changeDay(3)">+3</button>
+    <button type="button" class="btn btn-primary" (click)="changeDay(4)">+4</button>
+    <button type="button" class="btn btn-primary" (click)="changeDay(5)">+5</button>
+    <button type="button" class="btn btn-primary" (click)="changeDay(6)">+6</button>
   </div>
 </div>
 
@@ -27,9 +35,10 @@
         <h5 class="mb-1">{{ movie.title }}</h5>
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
-          <button *ngFor="let hour of hours" type="button" class="btn btn-primary">Godzina filmu</button>
+          <button *ngFor="let hour of hours" type="button" class="btn btn-primary">{{hour.time}}</button>
         </div>
       </div>
     </a>
   </div>
+</div>
 </div>
