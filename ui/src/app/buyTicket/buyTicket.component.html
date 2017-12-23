@@ -1,4 +1,5 @@
-<br><br>
+<br>
+<br>
 
 <div class="h">
   <div class="col-md-10 mx-auto">
@@ -14,15 +15,12 @@
         {{ spot.ID }}
       </div>
       <div class="col-md-3">
-        <div class="dropdown">
-          <button class="btn btn-ticket dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Rodzaj biletu
-          </button>
-          <div class="dropdown-menu" aria-labelledby="triggerId">
-            <a class="dropdown-item" href="#">Normalny</a>
-            <a class="dropdown-item" href="#">Dziecięcy</a>
-            <a class="dropdown-item" href="#">Senior</a>
+        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+          <button class="btn btn-outline-primary" id="dropdownManual" ngbDropdownToggle>Rodzaj biletu</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownManual">
+            <button class="dropdown-item">Normalny</button>
+            <button class="dropdown-item">Dziecięcy</button>
+            <button class="dropdown-item">Senior</button>
           </div>
         </div>
       </div>
@@ -39,8 +37,9 @@
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3">
-      <br><br>
-      <button type="button" name="" id="" class="btn btn-gradient" (click) = "buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
+      <br>
+      <br>
+      <button type="button" name="" id="" class="btn btn-gradient" (click)="buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
     </div>
   </div>
 
