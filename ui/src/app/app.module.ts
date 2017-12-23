@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { Routing } from './app.routing';
+import { DataService } from './_services/data.service';
 
 
 @NgModule({
@@ -13,9 +15,10 @@ import { Routing } from './app.routing';
   imports: [
     BrowserModule,
     Routing,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

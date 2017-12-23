@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
   <a class="navbar-brand" routerLink="/" style="font-weight:bold">Projekt Kino</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler navbar-toggler-right" type="button" aria-controls="appNavigation" [attr.aria-expanded]="!isCollapsed" aria-label="Toggle navigation" (click)="toggleMenu()">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <div class="collapse navbar-collapse" id="appNavigation" [ngbCollapse]="isCollapsed">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" routerLink="/movies">Teraz na ekranie</a>

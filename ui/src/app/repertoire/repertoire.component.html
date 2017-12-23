@@ -26,7 +26,9 @@
         <h5 class="mb-1">{{ movie.title }}</h5>
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
-          <button *ngFor="let hour of hours" type="button" class="btn btn-primary">{{hour.time}}</button>
+          <div *ngFor="let hour of hours" >
+            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn btn-primary" (click)="buyTicket(hour)">{{hour.time}}</button>
+          </div>
         </div>
       </div>
     </a>
