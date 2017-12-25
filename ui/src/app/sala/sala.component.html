@@ -16,18 +16,20 @@
     </h4>
     <br>
 
-    <div *ngFor="let row of rows" class="row">
-      <div class="container" *ngFor="let seat of seats">
-        <div *ngIf="seat.row==row.number" class="square-1 opacity" id="{{row.number + seat.id_seat.toString()}}" onclick="changeclass(this);">
-          <a href="#">
+
+      <div *ngFor="let row of rows" class="row">
+        <div class="container" style="text-align:center;">
+        <div *ngFor="let seat of seats">
+          <div *ngIf="seat.row==row.number" class="square-1 opacity" id="{{row.number + seat.id_seat.toString()}}" onclick="changeclass(this);">
             <div class="content">
               {{seat.seat}}
             </div>
-          </a>
+          </div>
+        </div>
         </div>
       </div>
 
-    </div>
+
 
     <br>
     <button type="button" class="btn btn-gradient" (click)="buyTicket()">Potwierdź</button>

@@ -37,12 +37,5 @@
         <result column="image_url" property="image_url"/>
     </resultMap>
 
-    <select id="getAllMovies" resultMap="movies">
-        SELECT m.id_movie, m.title, m.title_pl, m.genre, m.director,m.duration, m.date_release, m.date_end
-        ,m.description,m.image_url
-        FROM movies m
-        WHERE CURRENT_DATE BETWEEN m.date_release AND m.date_end
-    </select>
-
 
 </mapper>

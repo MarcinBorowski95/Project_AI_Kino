@@ -11,7 +11,7 @@ import { DataService } from '../_services/data.service';
   styleUrls: ['./repertoire.component.css']
 })
 export class RepertoireComponent implements OnInit {
-  
+
   private movies: any[];
   private hours: any[];
   private day: String = "0";
@@ -24,7 +24,7 @@ export class RepertoireComponent implements OnInit {
     private router: Router,
     private data: DataService
     ) { }
-  
+
   ngOnInit() {
     this.getMovie();
     this.getHours();
