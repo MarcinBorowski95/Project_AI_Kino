@@ -16,22 +16,20 @@
       </div>
       <div class="col-md-3">
         <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-          <button class="btn btn-outline-primary" id="dropdownManual" ngbDropdownToggle>Rodzaj biletu</button>
+          <button class="btn btn-outline-primary" id="dropdownManual" ngbDropdownToggle>{{spot.selectedTicketType}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownManual">
-            <button class="dropdown-item">Normalny</button>
-            <button class="dropdown-item">Dziecięcy</button>
-            <button class="dropdown-item">Senior</button>
+            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(spot, ticketType)">{{ticketType.name}}</button>
           </div>
         </div>
       </div>
       <div class="col-md-4" style="color: white;">
-        Cena biletu
+        {{spot.price}}
       </div>
     </div>
   </div>
   <div class="ticket-final row">
     <div class="cost col-md-4" style="color: white;">
-      Cena końcowa
+      {{ticketsPrice}}
     </div>
   </div>
   <div class="row">
