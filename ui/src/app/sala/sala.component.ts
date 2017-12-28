@@ -16,6 +16,7 @@ export class SalaComponent implements OnInit {
   private roomUrl;
   private seatUrl;
   seans;
+  ticketInfo;
 
   constructor(
     private http: Http,
@@ -24,7 +25,8 @@ export class SalaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.data.currentMessage.subscribe(seans => this.seans = seans)
+    this.data.currentMessage.subscribe(ticketInfo => this.ticketInfo = ticketInfo);
+    this.seans=this.ticketInfo.id_showtime
     this.getRoom();
     this.getSeats();
   }
@@ -50,5 +52,9 @@ export class SalaComponent implements OnInit {
   buyTicket()
   {
     this.router.navigate(['/buyTicket']);
+  }
+
+  newMessage(message) {
+    this.data.changeMessage(message)
   }
 }

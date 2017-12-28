@@ -27,7 +27,7 @@
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
           <div *ngFor="let hour of hours" >
-            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn btn-primary" (click)="buyTicket(hour)">{{hour.time}}</button>
+            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn btn-primary" (click)="buyTicket(movie, hour)">{{hour.time}}</button>
           </div>
         </div>
       </div>
