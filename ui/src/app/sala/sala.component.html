@@ -1,0 +1,61 @@
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Wybór sali</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 mx-auto" style="text-align:center">
+    <br>
+    <h4 class="screen">
+      EKRAN
+    </h4>
+    <br>
+    <div *ngFor="let row of rows" class="row">
+      <div class="container" *ngFor="let seat of seats">
+        <div *ngIf="seat.row==row.number" class="square-1 opacity" id="{{row.number + seat.id_seat.toString()}}" onclick="changeclass(this);">
+          <a href="#">
+            <div class="content">
+              {{seat.seat}}
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <button type="button" class="btn btn-gradient" (click)="buyTicket()">Potwierdź</button>
+
+  </div>
+
+  <div class="col-md-3" style="text-align:center; color:white">
+    <br>
+    <br>
+    <br>
+    <h4>Wybrane przez Ciebie miejsca:</h4>
+    <p id="miejsce">Brak wybranych miejsc</p>
+  </div>
+
+</div>
+
+<script>
+  function changeclass(element) {
+    $(element).toggleClass('click');
+
+    document.getElementById("miejsce").innerHTML = "";
+    var elements = document.getElementsByClassName("click");
+    if (elements.length == 0) {
+      document.getElementById("miejsce").innerHTML = "Brak wybranych miejsc";
+    }
+
+    for (var i = (elements.length - 1); i >= 0; i--) {
+      document.getElementById("miejsce").innerHTML += elements[i].id + "<br>";
+    }
+  }
+
+</script>

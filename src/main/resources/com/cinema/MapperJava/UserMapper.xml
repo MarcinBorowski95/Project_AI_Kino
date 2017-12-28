@@ -20,10 +20,12 @@
 
     <select id="getUsers" resultMap="userEmailResultMap">
         SELECT e_mail FROM users WHERE e_mail = #{e_mail}
+        SELECT e_mail, id_user FROM users WHERE e_mail = #{e_mail}
     </select>
 
     <resultMap id="userEmailResultMap" type="com.cinema.Domain.User">
         <result column="e_mail" property="e_mail"/>
+        <result column="id_user" property="id_user"/>
     </resultMap>
 
 </mapper>
