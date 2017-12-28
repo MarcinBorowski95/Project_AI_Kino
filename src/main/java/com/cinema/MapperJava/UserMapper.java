@@ -8,6 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
-    User findByEmail(@Param("userName") String userName);
+    User findByEmail(@Param("e_mail") String e_mail);
     List<User> getUsers(@Param("e_mail") String e_mail);
+    List<User> getCredentials(@Param("e_mail") String e_mail, @Param("password") String password);
 }

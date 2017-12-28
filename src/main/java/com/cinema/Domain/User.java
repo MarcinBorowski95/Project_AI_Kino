@@ -1,20 +1,26 @@
 package com.cinema.Domain;
 
 import org.apache.ibatis.type.Alias;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.management.relation.Role;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 @Alias("User")
 public class User implements UserDetails{
+    private com.cinema.Domain.Role userRole = new com.cinema.Domain.Role();
+    private List<com.cinema.Domain.Role> Roles = new ArrayList<>();
+
     private long id_user;
     private String name;
     private String surname;
     private String role;
     private String password;
     private String e_mail;
-
 
     public String getName() {
         return name;
@@ -37,60 +43,72 @@ public class User implements UserDetails{
     }
 
     public void setRole(String role) {
-        this.role = role;
+        if(role.equals("C")){
+            userRole.setId(1);
+            userRole.setName("ROLE_USER");
+            this.Roles.add(userRole);
+            this.role = "ROLE_USER";
+        }
+        if(role.equals("P")){
+            userRole.setId(2);
+            userRole.setName("ROLE_EMPLOYEE");
+            this.Roles.add(userRole);
+            this.role = "ROLE_EMPLOYEE";
+        }
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return Roles;
     }
 
+    @Override
     public String getPassword() {
-        return password;
+        return password.trim();
     }
 
     @Override
     public String getUsername() {
-        return e_mail;
+        return e_mail.trim();
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getE_mail() {
-        return e_mail;
+    public long getId() {
+        return id_user;
+    }
+
+    public void setId(long id_user) {
+        this.id_user = id_user;
     }
 
     public void setE_mail(String e_mail) {
         this.e_mail = e_mail;
     }
 
-    public long getId_user() {
-        return id_user;
-    }
-
-    public void setId_user(long id_user) {
-        this.id_user = id_user;
+    public String getE_mail(){
+        return e_mail;
     }
 }

@@ -17,6 +17,7 @@ public class UserService implements UserDetailsService {
 
     @Autowired
     private UserMapper userMapper;
+
     private Logger logger = Logger.getLogger(UserService.class);
 
     @Override
@@ -27,10 +28,11 @@ public class UserService implements UserDetailsService {
             throw new UsernameNotFoundException("Username " + s + " not found");
         }
         else
-            logger.info("User "+user.getName()+" found.");
+            logger.info("User "+user.getUsername()+" found.");
         return user;
 
     }
 
     public List<User> getUsers(String e_mail) {return userMapper.getUsers(e_mail);}
+    public List<User> getCredentials(String e_mail, String password) {return userMapper.getCredentials(e_mail,password);}
 }

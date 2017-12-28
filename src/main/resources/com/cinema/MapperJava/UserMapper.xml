@@ -6,11 +6,11 @@
         SELECT
         u.id_user, u.name, u.surname, u.role, u.password, u.e_mail
         FROM users u
-        WHERE WHERE u.email = #{userName};
+        WHERE u.e_mail = #{e_mail};
     </select>
 
     <resultMap id="userResultMap" type="com.cinema.Domain.User">
-        <id property="id" column="id_user" />
+        <id property="id_user" column="id_user" />
         <result property="name" column="name"/>
         <result property="surname" column="surname"/>
         <result property="role" column="role"/>
@@ -19,13 +19,21 @@
     </resultMap>
 
     <select id="getUsers" resultMap="userEmailResultMap">
-        SELECT e_mail FROM users WHERE e_mail = #{e_mail}
         SELECT e_mail, id_user FROM users WHERE e_mail = #{e_mail}
     </select>
 
     <resultMap id="userEmailResultMap" type="com.cinema.Domain.User">
         <result column="e_mail" property="e_mail"/>
         <result column="id_user" property="id_user"/>
+    </resultMap>
+
+    <select id="getCredentials" resultMap="userCredentialsResultMap">
+      SELECT e_mail, role FROM users WHERE e_mail = #{e_mail} AND password = #{password}
+    </select>
+
+    <resultMap id="userCredentialsResultMap" type="com.cinema.Domain.User">
+        <result column="e_mail" property="e_mail"/>
+        <result column="role" property="role"/>
     </resultMap>
 
 </mapper>
