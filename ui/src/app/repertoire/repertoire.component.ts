@@ -53,9 +53,19 @@ export class RepertoireComponent implements OnInit {
     this.getHours();
   }
 
-  buyTicket(hour) {
+  buyTicket(movie, hour) {
     console.log(hour);
-    this.newMessage(hour.id_showtime)
+    console.log(movie);
+    const ticketInfo = { 
+       id_showtime: hour.id_showtime,
+       id_movie: hour.id_movie,
+       id_room: hour.id_room,
+       time: hour.time,
+       date_start: hour.date_start,
+       title: movie.title,
+       title_pl: movie.title_pl,
+    }
+    this.newMessage(ticketInfo)
     this.router.navigate(["/sala"])
   }
 
