@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
+  view: number = 1;
+
   isCollapsed = true;
 
   constructor() {}
