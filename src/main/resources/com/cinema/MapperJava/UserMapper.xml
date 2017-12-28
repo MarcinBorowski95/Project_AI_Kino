@@ -18,22 +18,13 @@
         <result property="e_mail" column="e_mail"/>
     </resultMap>
 
-    <select id="getUsers" resultMap="userEmailResultMap">
-        SELECT e_mail, id_user FROM users WHERE e_mail = #{e_mail}
+    <select id="getUsers" resultType="String">
+        SELECT e_mail FROM users WHERE e_mail = #{e_mail}
     </select>
 
-    <resultMap id="userEmailResultMap" type="com.cinema.Domain.User">
-        <result column="e_mail" property="e_mail"/>
-        <result column="id_user" property="id_user"/>
-    </resultMap>
-
-    <select id="getCredentials" resultMap="userCredentialsResultMap">
-      SELECT e_mail, role FROM users WHERE e_mail = #{e_mail} AND password = #{password}
-    </select>
-
-    <resultMap id="userCredentialsResultMap" type="com.cinema.Domain.User">
-        <result column="e_mail" property="e_mail"/>
-        <result column="role" property="role"/>
-    </resultMap>
+    <insert id="createUser" parameterType="com.cinema.Domain.User">
+        INSERT INTO users (id_user, name, surname, password, e_mail) VALUES
+            ((SELECT max(id_user)+1 FROM users),#{user.name},#{user.surname},#{user.password},#{user.e_mail})
+    </insert>
 
 </mapper>

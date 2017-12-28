@@ -34,5 +34,5 @@ public class UserService implements UserDetailsService {
     }
 
     public List<User> getUsers(String e_mail) {return userMapper.getUsers(e_mail);}
-    public List<User> getCredentials(String e_mail, String password) {return userMapper.getCredentials(e_mail,password);}
+    public void createUser(User user) {userMapper.createUser(user);}
 }

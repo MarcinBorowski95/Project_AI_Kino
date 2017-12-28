@@ -32,5 +32,6 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().anyRequest().authenticated();
         http.httpBasic();
+        http.csrf().disable();
     }
 }

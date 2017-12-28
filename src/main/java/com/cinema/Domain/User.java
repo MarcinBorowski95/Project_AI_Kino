@@ -62,7 +62,6 @@ public class User implements UserDetails{
         return Roles;
     }
 
-    @Override
     public String getPassword() {
         return password.trim();
     }
