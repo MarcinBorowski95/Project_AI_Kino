@@ -26,7 +26,7 @@ export class SalaComponent implements OnInit {
 
   ngOnInit() {
     this.data.currentMessage.subscribe(ticketInfo => this.ticketInfo = ticketInfo);
-    this.seans=this.ticketInfo.id_showtime
+    this.seans=this.ticketInfo.id_showtime;
     this.getRoom();
     this.getSeats();
   }

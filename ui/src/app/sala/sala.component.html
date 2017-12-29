@@ -11,24 +11,18 @@
   <div class="col-md-3"></div>
   <div class="col-md-6 mx-auto" style="text-align:center">
     <br>
-    <h4 class="screen">
-      EKRAN
-    </h4>
+    <h4 class="screen">EKRAN</h4>
     <br>
 
-
-      <div *ngFor="let row of rows" class="row">
-        <div class="container" style="text-align:center;">
-        <div *ngFor="let seat of seats">
-          <div *ngIf="seat.row==row.number" class="square-1 opacity" id="{{row.number + seat.id_seat.toString()}}" onclick="changeclass(this);">
-            <div class="content">
-              {{seat.seat}}
-            </div>
+    <ng-container *ngFor="let r of rows">
+      <div class="row" style="margin-bottom: 10px">
+        <ng-container *ngFor="let s of seats">
+          <div *ngIf="s.row==r.number" class="center square opacity" id="{{s.row + s.seat}}" onclick="changeclass(this);">
+            <div class="content">{{s.seat}}</div>
           </div>
-        </div>
-        </div>
+        </ng-container>
       </div>
-
+    </ng-container>
 
 
     <br>
