@@ -1,5 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../_services/data.service';
 
 @Component({
   selector: 'app-buyTicket',
@@ -8,11 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyTicketComponent implements OnInit {
 
-  spots: any[] = [
-    { ID: 'A1', selectedTicketType:'Wybierz rodzaj biletu', price: 0 },
-    { ID: 'A2', selectedTicketType:'Wybierz rodzaj biletu', price: 0 },
-    { ID: 'A3', selectedTicketType:'Wybierz rodzaj biletu', price: 0 }
+  seats: any[] = [
+
   ];
+
 
   ticketTypes: any[] = [
     {name: "Normalny", price2D: 24.99 , price3D: 29.99},
@@ -22,9 +22,13 @@ export class BuyTicketComponent implements OnInit {
 
   ticketsPrice = 0;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private data: DataService,
+  ) { }
 
   ngOnInit() {
+    this.data.currentSeatsInfo.subscribe(selectedSeatsInfo => this.seats = selectedSeatsInfo)
   }
 
   buyTicket()

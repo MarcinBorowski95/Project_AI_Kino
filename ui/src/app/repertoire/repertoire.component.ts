@@ -28,7 +28,7 @@ export class RepertoireComponent implements OnInit {
   ngOnInit() {
     this.getMovie();
     this.getHours();
-    this.data.currentMessage.subscribe(seans => this.seans = seans)
+    this.data.currentTicketInfo.subscribe(seans => this.seans = seans)
   }
 
   getMovie(): any {
@@ -65,11 +65,11 @@ export class RepertoireComponent implements OnInit {
        title: movie.title,
        title_pl: movie.title_pl,
     }
-    this.newMessage(ticketInfo)
+    this.sendTicketInfo(ticketInfo)
     this.router.navigate(["/sala"])
   }
 
-  newMessage(message) {
-    this.data.changeMessage(message)
+  sendTicketInfo(ticketInfo) {
+    this.data.changeTicketInfo(ticketInfo)
   }
 }

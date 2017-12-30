@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8f7d8428-f172-4003-8e6f-3bb7ac461663" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/_services/data.service.ts" afterPath="$PROJECT_DIR$/ui/src/app/_services/data.service.ts" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ui/dist/" />
@@ -54,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="753">
-              <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+              <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -328,12 +331,12 @@
       <updated>1514050104145</updated>
       <workItem from="1514050105375" duration="10893000" />
       <workItem from="1514483017079" duration="28260000" />
-      <workItem from="1514632420285" duration="22000" />
+      <workItem from="1514632420285" duration="1215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39175000" />
+    <option name="totallyTimeSpent" value="40368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -515,7 +518,7 @@
     <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
-          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
