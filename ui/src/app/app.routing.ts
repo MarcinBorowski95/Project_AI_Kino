@@ -13,6 +13,9 @@ const routes: Routes = [
     {path: "movies" , loadChildren: 'app/movies/movies.module#MoviesModule'},
     {path: "buyTicket" , loadChildren: 'app/buyTicket/buyTicket.module#BuyTicketModule'},
     {path: "sala" , loadChildren: 'app/sala/sala.module#SalaModule'},
+    {path: "addMovies" , loadChildren: 'app/addMovies/addMovies.module#AddMoviesModule'},
+    {path: "addViewing" , loadChildren: 'app/addViewing/addViewing.module#AddViewingModule'},
+    {path: "userList" , loadChildren: 'app/userList/userList.module#UserListModule'},
     {path: "**" , redirectTo: "/" }
     
   ];
