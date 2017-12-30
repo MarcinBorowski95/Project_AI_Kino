@@ -17,8 +17,8 @@
     <ng-container *ngFor="let r of rows">
       <div class="row" style="margin-bottom: 10px">
         <ng-container *ngFor="let s of seats">
-          <div *ngIf="s.row==r.number" class="center square opacity" [ngClass]="{'click': Clicked( (s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1)) )}"
-               id="{{s.row + s.seat}}" (click)="changeVar((s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1)))">
+          <div *ngIf="s.row==r" class="center square opacity" [ngClass]="{'click': Clicked( (s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1)) )}"
+               id="{{s.row + s.seat}}" (click)="changeVar((s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1))) ; selectSeat(s);">
             <div class="content">{{s.seat}}</div>
           </div>
         </ng-container>

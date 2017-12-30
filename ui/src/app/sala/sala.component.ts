@@ -17,6 +17,7 @@ export class SalaComponent implements OnInit {
   private seatUrl;
   seans;
   ticketInfo;
+  selectedSeatsInfo = [];
   private selectedSeats = [];
 
   constructor(
@@ -27,7 +28,7 @@ export class SalaComponent implements OnInit {
 
   ngOnInit() {
     this.data.currentMessage.subscribe(ticketInfo => this.ticketInfo = ticketInfo);
-    this.seans=this.ticketInfo.id_showtime;
+    this.seans = this.ticketInfo.id_showtime;
     this.getRoom();
     this.getSeats();
   }
@@ -37,7 +38,7 @@ export class SalaComponent implements OnInit {
     return this.http.get(this.roomUrl).subscribe(res => {
       this.room = res.json();
       console.log(this.room);
-      this.rows = [{number: "1"}, {number: "2"}, {number: "3"}];
+      this.rows = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
       console.log(this.rows)
     });
   }
@@ -50,9 +51,16 @@ export class SalaComponent implements OnInit {
     });
   }
 
-  buyTicket()
-  {
+  buyTicket() {
     this.router.navigate(['/buyTicket']);
+  }
+
+  selectSeat(s) {
+    s.selectedTicketType = 'Wybierz rodzaj biletu';
+    s.price = 0;
+    this.selectedSeatsInfo += s;
+    console.log(this.selectedSeatsInfo);
+
   }
 
   newMessage(message) {
@@ -63,13 +71,16 @@ export class SalaComponent implements OnInit {
     return this.selectedSeats[num] == 1;
   }
 
-  changeVar(num){
-    if(this.selectedSeats[num] != 1 && this.selectedSeats[num] != 0)
+  changeVar(num) {
+    if (this.selectedSeats[num] != 1 && this.selectedSeats[num] != 0)
       this.selectedSeats[num] = 0;
 
-    if(this.selectedSeats[num] == 0)
+    if (this.selectedSeats[num] == 0)
       this.selectedSeats[num] = 1;
     else
       this.selectedSeats[num] = 0;
+
+    console.log(this.selectedSeats);
+
   }
 }
