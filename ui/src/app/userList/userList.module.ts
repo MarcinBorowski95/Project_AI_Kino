@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserListComponent } from './userList.component';
@@ -11,6 +12,7 @@ const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    HttpModule
   ],
   declarations: [UserListComponent]
 })

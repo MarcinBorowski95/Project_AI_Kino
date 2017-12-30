@@ -1,3 +1,21 @@
-<p>
-  userList works!
-</p>
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Lista użytkowników</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <div class="list-group">
+    <a *ngFor="let user of users" class="list-group-item flex-column align-items-start borderless">
+      <div class="d-flex w-100">
+        <div>
+          <h3 style="color: black;"> {{ user.ID }}</h3>
+          <p> {{user.Firstname}} {{user.Lastname}} </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
