@@ -1,3 +1,101 @@
-<p>
-  addMovies works!
-</p>
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Dodawanie Filmu</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <br>
+  <form class="form-addMovie" #formRef="ngForm" (ngSubmit)="addMovie(formRef.valid)">
+    <fieldset class="addMovie" ngModelGroup="addMovie">
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="title" class="form-control " name="title" id="title" #titleRef="ngModel" [(ngModel)]="movie.title" placeholder="Tytuł"
+            required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titleRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titleRef.errors?.pattern">
+          Błędny tytuł
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="titlePL" class="form-control " name="titlePL" id="titlePL" #titlePLRef="ngModel" [(ngModel)]="movie.titlePL"
+            placeholder="Polski tytuł" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.pattern">
+          Błędny tytuł
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <select type="genere" class="form-control " name="genere" id="genere" #genereRef="ngModel" [(ngModel)]="movie.genere" required>
+            <option [ngValue]="undefined" disabled selected hidden>Select your option</option>
+            <option *ngFor="let genere of generes" [value]="genere">{{genere}}
+            </option>
+          </select>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && genereRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && genereRef.errors?.pattern">
+          Błędny gatunek
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="director" class="form-control " name="director" id="director" #directorRef="ngModel" [(ngModel)]="movie.director"
+            placeholder="reżyser" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && directorRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && directorRef.errors?.pattern">
+          Błędny reżyser
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="titlePL" class="form-control " name="titlePL" id="titlePL" #titlePLRef="ngModel" [(ngModel)]="movie.titlePL"
+            placeholder="Polski tytuł" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.pattern">
+          Błędny tytuł
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="titlePL" class="form-control " name="titlePL" id="titlePL" #titlePLRef="ngModel" [(ngModel)]="movie.titlePL"
+            placeholder="Polski tytuł" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.pattern">
+          Błędny tytuł
+        </div>
+      </div>
+      <div class="form-group btn-submit" align="center">
+        <button type="submit" class="btn btn-gradient">Dodaj Film</button>
+      </div>
+      
+    </fieldset>
+  </form>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>

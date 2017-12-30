@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMoviesComponent implements OnInit {
 
+  movie: any = {
+  };
+
+  generes = [
+    "horror", "komedia", "thriller", "film akcji", "film romantyczny", "film animowany", 
+  ]
+
   constructor() { }
 
   ngOnInit() {
