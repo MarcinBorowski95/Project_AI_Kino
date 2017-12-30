@@ -17,6 +17,7 @@ export class SalaComponent implements OnInit {
   private seatUrl;
   seans;
   ticketInfo;
+  private selectedSeats = [];
 
   constructor(
     private http: Http,
@@ -56,5 +57,19 @@ export class SalaComponent implements OnInit {
 
   newMessage(message) {
     this.data.changeMessage(message)
+  }
+
+  Clicked(num) {
+    return this.selectedSeats[num] == 1;
+  }
+
+  changeVar(num){
+    if(this.selectedSeats[num] != 1 && this.selectedSeats[num] != 0)
+      this.selectedSeats[num] = 0;
+
+    if(this.selectedSeats[num] == 0)
+      this.selectedSeats[num] = 1;
+    else
+      this.selectedSeats[num] = 0;
   }
 }
