@@ -1,3 +1,81 @@
-<p>
-  addViewing works!
-</p>
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Dodawanie Filmu</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <br>
+  <form class="form-addViewing" #formRef="ngForm" (ngSubmit)="addViewing(formRef.valid)">
+    <fieldset class="addViewing" ngModelGroup="addViewing">
+      <div class="form-group row">
+        <div class="input-group">
+          <select type="room" class="form-control " name="room" id="room" #movieRef="ngModel" [(ngModel)]="viewing.id_movie" required>
+            <option [ngValue]="undefined" disabled selected hidden>Wybierz film</option>
+            <option *ngFor="let movie of movies" [value]="movie.id_movie">{{movie.title}}
+            </option>
+          </select>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && movieRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <select type="room" class="form-control " name="room" id="room" #roomRef="ngModel" [(ngModel)]="viewing.id_room" required>
+            <option [ngValue]="undefined" disabled selected hidden>Wybierz salę</option>
+            <option *ngFor="let room of rooms" [value]="room.id_room">{{room.id_room}}
+            </option>
+          </select>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && roomRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="tag" for="startTime"> Czas seansu </label>
+        <br>
+        <div class="input-group">
+          <input type="time" class="form-control " name="startTime" id="startTime" #startTimeRef="ngModel" [(ngModel)]="movie.startTime"
+            placeholder="Data premiery" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && startTimeRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && startTimeRef.errors?.pattern">
+          Błędna data
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="tag" for="date_start"> Data seansu </label>
+        <br>
+        <div class="input-group">
+          <input type="date" class="form-control " name="date_start" id="date_start" #date_startRef="ngModel" [(ngModel)]="movie.date_start"
+            placeholder="Data premiery" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && date_startRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && date_startRef.errors?.pattern">
+          Błędna data
+        </div>
+      </div>
+
+
+
+      <div class="form-group btn-submit" align="center">
+        <button type="submit" class="btn btn-gradient">Dodaj seans</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
