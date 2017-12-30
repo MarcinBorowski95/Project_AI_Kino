@@ -9,21 +9,21 @@
 
 <div class="container col-md-10 mx-auto">
   <br>
-  <div *ngFor="let spot of spots" class="ticket-list">
+  <div *ngFor="let seat of seats" class="ticket-list">
     <div class="ticket-row row">
       <div class="col-md-3" style="color: white;">
-        {{ spot.ID }}
+        {{ seat.ID }}
       </div>
       <div class="col-md-3">
         <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-          <button class="btn btn-outline-primary" id="dropdownManual" ngbDropdownToggle>{{spot.selectedTicketType}}</button>
+          <button class="btn btn-outline-primary" id="dropdownManual" ngbDropdownToggle>{{seat.selectedTicketType}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownManual">
-            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(spot, ticketType)">{{ticketType.name}}</button>
+            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(seat, ticketType)">{{ticketType.name}}</button>
           </div>
         </div>
       </div>
       <div class="col-md-4" style="color: white;">
-        {{spot.price}}
+        {{seat.price}}
       </div>
     </div>
   </div>

@@ -17,7 +17,8 @@ export class SalaComponent implements OnInit {
   private seatUrl;
   seans;
   ticketInfo;
-  private selectedSeats = [];
+  selectedSeatsInfo = new Array();
+  private selectedSeats: Array<any> = [];
 
   constructor(
     private http: Http,
@@ -26,8 +27,9 @@ export class SalaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.data.currentMessage.subscribe(ticketInfo => this.ticketInfo = ticketInfo);
-    this.seans=this.ticketInfo.id_showtime;
+    this.data.currentTicketInfo.subscribe(ticketInfo => this.ticketInfo = ticketInfo);
+    this.data.currentSeatsInfo.subscribe(selectedSeatsInfo => this.selectedSeatsInfo = selectedSeatsInfo)
+    this.seans = this.ticketInfo.id_showtime;
     this.getRoom();
     this.getSeats();
   }
@@ -36,9 +38,7 @@ export class SalaComponent implements OnInit {
     this.roomUrl = 'http://localhost:4200/api/getRoomByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.roomUrl).subscribe(res => {
       this.room = res.json();
-      console.log(this.room);
-      this.rows = [{number: "1"}, {number: "2"}, {number: "3"}];
-      console.log(this.rows)
+      this.rows = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     });
   }
 
@@ -46,30 +46,40 @@ export class SalaComponent implements OnInit {
     this.seatUrl = 'http://localhost:4200/api/getSeatsByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.seatUrl).subscribe(res => {
       this.seats = res.json();
-      console.log(this.seats);
     });
   }
 
-  buyTicket()
-  {
+  buyTicket() {
+    this.sendSeatInfo(this.selectedSeatsInfo)
     this.router.navigate(['/buyTicket']);
   }
 
-  newMessage(message) {
-    this.data.changeMessage(message)
+  selectSeat(s) {
+    s.selectedTicketType = 'Wybierz rodzaj biletu';
+    s.price = 0;
+    s.ID ="Rząd: " + s.row.toString() + " Miejsce: " + s.seat.toString();
+    this.selectedSeatsInfo.push(s);
+    console.log(this.selectedSeatsInfo);
+
+  }
+
+  sendSeatInfo(seatInfo) {
+    this.data.changeSeatInfo(seatInfo)
   }
 
   Clicked(num) {
     return this.selectedSeats[num] == 1;
   }
 
-  changeVar(num){
-    if(this.selectedSeats[num] != 1 && this.selectedSeats[num] != 0)
+  changeVar(num) {
+    if (this.selectedSeats[num] != 1 && this.selectedSeats[num] != 0)
       this.selectedSeats[num] = 0;
 
-    if(this.selectedSeats[num] == 0)
+    if (this.selectedSeats[num] == 0)
       this.selectedSeats[num] = 1;
     else
       this.selectedSeats[num] = 0;
+
+
   }
 }
