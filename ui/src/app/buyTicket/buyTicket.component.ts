@@ -33,7 +33,12 @@ export class BuyTicketComponent implements OnInit {
 
   buyTicket()
   {
+    this.sendSeatInfo([]);
     this.router.navigate(['/']);
+  }
+
+  sendSeatInfo(seatInfo) {
+    this.data.changeSeatInfo(seatInfo)
   }
 
   changeTicketType(spot, ticketType)
