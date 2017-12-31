@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69499cde-4887-4eba-8908-0d14a6c18c97" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/app.component.html" afterPath="$PROJECT_DIR$/ui/src/app/app.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/home/home.component.css" afterPath="$PROJECT_DIR$/ui/src/app/home/home.component.css" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/home/home.component.html" afterPath="$PROJECT_DIR$/ui/src/app/home/home.component.html" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.css" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.css" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
+      <change beforePath="$PROJECT_DIR$/ui/src/styles.css" afterPath="$PROJECT_DIR$/ui/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ui/dist/" />
@@ -71,8 +74,8 @@
       <file leaf-file-name="sala.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="74" column="36" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="74" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -80,24 +83,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repertoire.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
+      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="150" lean-forward="false" selection-start-line="29" selection-start-column="150" selection-end-line="29" selection-end-column="150" />
+            <state relative-caret-position="509">
+              <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repertoire.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts">
+      <file leaf-file-name="home.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#72#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="482">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,8 +121,10 @@
       <find>selectedseats</find>
       <find>seansinfo</find>
       <find>seatsin</find>
-      <find>seansinf</find>
       <find>hour</find>
+      <find>btn</find>
+      <find>widok</find>
+      <find>seansinf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,10 +143,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" />
-        <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
         <option value="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/styles.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" />
         <option value="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/home/home.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/home/home.component.html" />
       </list>
     </option>
   </component>
@@ -218,7 +227,7 @@
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="repertoire" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,12 +379,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514646058333</updated>
-      <workItem from="1514646067990" duration="27713000" />
+      <workItem from="1514646067990" duration="30317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27713000" />
+    <option name="totallyTimeSpent" value="30317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -590,6 +599,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="58" column="65" lean-forward="false" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="83" lean-forward="true" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="46" column="82" lean-forward="false" selection-start-line="46" selection-start-column="82" selection-end-line="46" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -601,30 +704,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="74" column="36" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="74" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts">
+    <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="150" lean-forward="false" selection-start-line="29" selection-start-column="150" selection-end-line="29" selection-end-column="150" />
+        <state relative-caret-position="509">
+          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
           <folding />
         </state>
       </provider>

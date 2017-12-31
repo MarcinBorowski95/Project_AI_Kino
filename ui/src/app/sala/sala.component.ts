@@ -23,7 +23,6 @@ export class SalaComponent implements OnInit {
   seansInfo;
 
   flag;
-  tempArray = new Array();
   time;
 
   constructor(
@@ -39,6 +38,8 @@ export class SalaComponent implements OnInit {
     this.getRoom();
     this.getSeats();
     this.getSeansInfo();
+
+    this.selectedSeatsInfo = [];
   }
 
   getRoom(): any {
@@ -82,8 +83,6 @@ export class SalaComponent implements OnInit {
   }
 
   selectSeat(s) {
-
-    this.tempArray = [];
 
     s.selectedTicketType = 'Wybierz rodzaj biletu';
     s.price = 0;

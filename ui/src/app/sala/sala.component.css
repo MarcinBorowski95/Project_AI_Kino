@@ -15,6 +15,7 @@
   position: relative;
   width: 5%;
   padding-bottom: 5%;
+  cursor: pointer;
 }
 
 .square:after {
@@ -56,4 +57,5 @@
 .click {
   background-color: #4daf8f;
   opacity: 1.0;
+  cursor: default;
 }
