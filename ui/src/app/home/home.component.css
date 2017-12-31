@@ -43,3 +43,16 @@ ngb-carousel {
 .carousel-indicators{
     z-index: 20;
 }
+
+.img-c{
+  height: 400px;
+  width: auto;
+}
+.img-t{
+  max-height: 380px;
+  width: auto;
+}
+
+.card-title{
+  color: black;
+}

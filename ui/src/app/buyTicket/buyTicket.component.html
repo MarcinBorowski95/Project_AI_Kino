@@ -16,7 +16,7 @@
       </div>
       <div class="col-md-3">
         <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-          <button class="btn btn-outline-primary" id="dropdownManual" ngbDropdownToggle>{{seat.selectedTicketType}}</button>
+          <button class="btn" id="dropdownManual" ngbDropdownToggle>{{seat.selectedTicketType}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownManual">
             <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(seat, ticketType)">{{ticketType.name}}</button>
           </div>

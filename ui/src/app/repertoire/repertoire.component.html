@@ -18,7 +18,7 @@
     <button type="button" class="btn btn-repertoire" (click)="changeDay(6)">+6</button>
   </div>
   <br><br>
-  <h3>Przykładowa lista filmów Statyczna</h3>
+  <h3>Repertuar</h3>
 
   <div class="list-group">
     <a *ngFor="let movie of movies" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -27,7 +27,7 @@
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
           <div *ngFor="let hour of hours" >
-            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn btn-primary" (click)="buyTicket(movie, hour)">{{hour.time}}</button>
+            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn" (click)="buyTicket(movie, hour)">{{subTime(hour.time)}}</button>
           </div>
         </div>
       </div>

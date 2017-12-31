@@ -7,15 +7,23 @@
   </div>
 </div>
 
+<div class="col-md-10 mx-auto">
+  <br>
+  <div class="row">
+    <p style="color: white; text-transform: uppercase; font-weight: bold;">{{seansInfo.title}}</p>
+    <p style="color: lightgray">, {{seansInfo.date_start}}, {{time}}</p>
+  </div>
+</div>
+
 <div class="row">
   <div class="col-md-3"></div>
   <div class="col-md-6 mx-auto" style="text-align:center">
-    <br>
     <h4 class="screen">EKRAN</h4>
     <br>
 
     <ng-container *ngFor="let r of rows">
       <div class="row" style="margin-bottom: 10px">
+        <h5>{{r}}</h5>
         <ng-container *ngFor="let s of seats">
           <div *ngIf="s.row==r" class="center square opacity" [ngClass]="{'click': Clicked( (s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1)) )}"
                id="{{s.row + s.seat}}" (click)="changeVar((s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1))) ; selectSeat(s);">
@@ -25,6 +33,10 @@
       </div>
     </ng-container>
 
+    <ng-container *ngFor="let r of rows">
+      {{r.row}}
+    </ng-container>
+
 
     <br>
     <button type="button" class="btn btn-gradient" (click)="buyTicket()">Potwierdź</button>
@@ -32,11 +44,17 @@
   </div>
 
   <div class="col-md-3" style="text-align:center; color:white">
+
     <br>
     <br>
     <br>
     <h4>Wybrane przez Ciebie miejsca:</h4>
-    <p id="miejsce">Brak wybranych miejsc</p>
+    <ng-container *ngIf="selectedSeatsInfo.length==0">
+      <p id="miejsce">Brak wybranych miejsc</p>
+    </ng-container>
+    <ng-container *ngFor="let sI of selectedSeatsInfo">
+      <p id="m">{{sI.ID}}</p>
+    </ng-container>
   </div>
 
 </div>
