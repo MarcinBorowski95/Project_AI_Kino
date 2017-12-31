@@ -6,7 +6,7 @@
         SELECT
         u.id_user, u.name, u.surname, u.role, u.password, u.e_mail
         FROM users u
-        WHERE u.e_mail = #{e_mail};
+        WHERE u.e_mail = #{username};
     </select>
 
     <resultMap id="userResultMap" type="com.cinema.Domain.User">
@@ -16,11 +16,13 @@
         <result property="role" column="role"/>
         <result property="password" column="password"/>
         <result property="e_mail" column="e_mail"/>
+        <result property="username" column="e_mail"/>
     </resultMap>
 
     <select id="getUsers" resultType="String">
         SELECT e_mail FROM users WHERE e_mail = #{e_mail}
     </select>
+
 
     <insert id="createUser" parameterType="com.cinema.Domain.User">
         INSERT INTO users (id_user, name, surname, password, e_mail) VALUES

@@ -21,6 +21,7 @@ public class User implements UserDetails{
     private String role;
     private String password;
     private String e_mail;
+    private String username;
 
     public String getName() {
         return name;
@@ -68,7 +69,7 @@ public class User implements UserDetails{
 
     @Override
     public String getUsername() {
-        return e_mail.trim();
+        return username.trim();//e_mail.trim();
     }
 
     @Override
@@ -109,5 +110,9 @@ public class User implements UserDetails{
 
     public String getE_mail(){
         return e_mail;
+    }
+
+    public void setUsername(String username) {
+        this.username = username.trim();
     }
 }

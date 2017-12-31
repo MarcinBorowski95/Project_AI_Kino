@@ -29,6 +29,7 @@ public class UserService implements UserDetailsService {
         }
         else
             logger.info("User "+user.getUsername()+" found.");
+            logger.info(user.getPassword());
         return user;
 
     }

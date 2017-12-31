@@ -21,7 +21,7 @@ public class ProjectCinemaApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(ProjectCinemaApplication.class, args);
-		context.getBean(UserMapper.class).findByEmail("DUMMY");
+		//context.getBean(UserMapper.class).findByEmail("DUMMY");
 	}
 
 
