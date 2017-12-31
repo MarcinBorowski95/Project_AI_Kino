@@ -16,6 +16,7 @@ const routes: Routes = [
     {path: "addMovies" , loadChildren: 'app/addMovies/addMovies.module#AddMoviesModule'},
     {path: "addViewing" , loadChildren: 'app/addViewing/addViewing.module#AddViewingModule'},
     {path: "userList" , loadChildren: 'app/userList/userList.module#UserListModule'},
+    {path: "boughtTicket" , loadChildren: 'app/boughtTicket/boughtTicket.module#BoughtTicketModule'},
     {path: "**" , redirectTo: "/" }
     
   ];
