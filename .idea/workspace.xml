@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69499cde-4887-4eba-8908-0d14a6c18c97" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Domain/api/ShowtimeApi.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
     </list>
@@ -58,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sala.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sala.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="56" column="19" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="221">
+              <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -74,10 +71,32 @@
       <file leaf-file-name="sala.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+            <state relative-caret-position="925">
+              <caret line="74" column="36" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="74" selection-end-column="36" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repertoire.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="29" column="150" lean-forward="false" selection-start-line="29" selection-start-column="150" selection-end-line="29" selection-end-column="150" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repertoire.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-181">
+              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +118,10 @@
       <find>seansin</find>
       <find>changeva</find>
       <find>selectedseats</find>
+      <find>seansinfo</find>
+      <find>seatsin</find>
+      <find>seansinf</find>
+      <find>hour</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,6 +142,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" />
         <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html" />
       </list>
     </option>
   </component>
@@ -193,7 +218,7 @@
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="sala" type="462c0819:PsiDirectoryNode" />
+              <item name="repertoire" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -345,12 +370,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514646058333</updated>
-      <workItem from="1514646067990" duration="22954000" />
+      <workItem from="1514646067990" duration="27713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22954000" />
+    <option name="totallyTimeSpent" value="27713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -373,12 +398,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.509434" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24524158" sideWeight="0.5063291" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.49056605" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.49367088" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -565,24 +590,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+        <state relative-caret-position="925">
+          <caret line="74" column="36" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="74" selection-end-column="36" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="56" column="19" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="-181">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#0#72#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="150" lean-forward="false" selection-start-line="29" selection-start-column="150" selection-end-line="29" selection-end-column="150" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -24,6 +24,7 @@ export class SalaComponent implements OnInit {
 
   flag;
   tempArray = new Array();
+  time;
 
   constructor(
     private http: Http,
@@ -69,6 +70,9 @@ export class SalaComponent implements OnInit {
     return this.http.get(this.seansUrl).subscribe(res => {
       this.seansInfo = res.json();
       console.log(this.seansInfo);
+
+      var t = this.seansInfo.time.toString();
+      this.time = t.substring(0, 5);
     })
   }
 

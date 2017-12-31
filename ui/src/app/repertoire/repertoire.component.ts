@@ -18,6 +18,7 @@ export class RepertoireComponent implements OnInit {
   private movieUrl;
   private hourUrl;
   seans;
+  time;
 
   constructor(
     private http: Http,
@@ -47,6 +48,11 @@ export class RepertoireComponent implements OnInit {
     });
   }
 
+  subTime(hour){
+    this.time = hour.substring(0, 5);
+    return this.time;
+  }
+
   changeDay(day) {
     this.day = day
     this.getMovie();
@@ -56,7 +62,7 @@ export class RepertoireComponent implements OnInit {
   buyTicket(movie, hour) {
     console.log(hour);
     console.log(movie);
-    const ticketInfo = { 
+    const ticketInfo = {
        id_showtime: hour.id_showtime,
        id_movie: hour.id_movie,
        id_room: hour.id_room,
