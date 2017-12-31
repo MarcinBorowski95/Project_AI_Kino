@@ -1,6 +1,7 @@
 package com.cinema.Service;
 
 import com.cinema.Domain.Showtime;
+import com.cinema.Domain.api.ShowtimeApi;
 import com.cinema.MapperJava.ShowtimeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,4 +20,6 @@ public class ShowtimeService {
     public List<Showtime> getShowtimesByDay(int day){
         return showtimeMapper.getShowtimesByDay(day);
     }
+
+    public ShowtimeApi getShowtimeDetails(long id_showtime) {return showtimeMapper.getShowtimeDetails(id_showtime);}
 }
