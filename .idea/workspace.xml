@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/MovieMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/MovieMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Service/MovieService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Service/MovieService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/MovieMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/project_cinema.iml" afterPath="$PROJECT_DIR$/project_cinema.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ui/dist/" />
@@ -74,12 +63,9 @@
       <file leaf-file-name="RoomController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-              <folding>
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,12 +73,9 @@
       <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,12 +83,12 @@
       <file leaf-file-name="RoomMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+            <state relative-caret-position="629">
+              <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding>
-                <marker date="1514737788455" expanded="true" signature="266:591" ph="SELECT rooms... " />
-                <marker date="1514737788455" expanded="true" signature="663:891" ph="SELECT rooms... " />
-                <marker date="1514737788455" expanded="true" signature="973:1336" ph="SELECT rooms... " />
+                <marker date="1514815894712" expanded="true" signature="266:591" ph="SELECT rooms... " />
+                <marker date="1514815894712" expanded="true" signature="663:891" ph="SELECT rooms... " />
+                <marker date="1514815894712" expanded="true" signature="973:1336" ph="SELECT rooms... " />
               </folding>
             </state>
           </provider>
@@ -114,28 +97,9 @@
       <file leaf-file-name="RoomMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showtimes" pinned="false" current-in-tab="false">
-        <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.showtimes">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -242,11 +206,9 @@
       <select />
     </treeState>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/ui/node_modules" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="142" />
+    <option name="y" value="-22" />
     <option name="width" value="1614" />
     <option name="height" value="1047" />
   </component>
@@ -265,8 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,38 +234,14 @@
               <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,6 +254,9 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -446,7 +385,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="69499cde-4887-4eba-8908-0d14a6c18c97" name="Default" comment="" />
+      <changelist id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="" />
       <created>1514646058333</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -473,11 +412,12 @@
       <workItem from="1514483249233" duration="113000" />
       <workItem from="1514658147073" duration="5348000" />
       <workItem from="1514733725147" duration="4105000" />
+      <workItem from="1514818409438" duration="81000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75437000" />
+    <option name="totallyTimeSpent" value="75518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -489,8 +429,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1614" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33369565" sideWeight="0.3107676" order="7" side_tool="true" content_ui="tabs" />
@@ -510,18 +449,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20095949" sideWeight="0.51941746" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33699232" sideWeight="0.6892324" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33695653" sideWeight="0.6892324" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.48081023" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0997426" sideWeight="0.48058254" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0836887" sideWeight="0.48058254" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5065789" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -529,6 +465,9 @@
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.48081023" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -609,6 +548,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <marker date="1514815894712" expanded="true" signature="266:591" ph="SELECT rooms... " />
+            <marker date="1514815894712" expanded="true" signature="663:891" ph="SELECT rooms... " />
+            <marker date="1514815894712" expanded="true" signature="973:1336" ph="SELECT rooms... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
@@ -664,18 +623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.users" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,21 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#216#217#0" expanded="false" />
-            <element signature="e#249#250#0" expanded="false" />
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#375#376#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-            <element signature="e#445#446#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#508#509#0" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
-            <element signature="e#573#574#0" expanded="false" />
-            <element signature="e#605#606#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,12 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <marker date="1514655907768" expanded="true" signature="284:438" ph="SELECT id_sh... showtimes" />
-            <marker date="1514655907768" expanded="true" signature="520:647" ph="SELECT id_sh... showtimes" />
-            <marker date="1514655907768" expanded="true" signature="1101:1160" ph="SELECT id_sh... showtimes" />
-            <marker date="1514655907768" expanded="true" signature="1101:1245" ph="SELECT M.tit... showtimes" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,10 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#548#549#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,12 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,9 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,45 +684,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#383#384#0" expanded="false" />
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#563#564#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets_types">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets_types" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Seat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#201#202#0" expanded="false" />
-            <element signature="e#231#232#0" expanded="false" />
-            <element signature="e#734#735#0" expanded="false" />
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets" />
     <entry file="file://$PROJECT_DIR$/ui/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -835,9 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,25 +738,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://src:table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,10 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,11 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <marker date="1514667360116" expanded="true" signature="301:437" ph="SELECT u.id_... users" />
-            <marker date="1514667360116" expanded="true" signature="900:975" ph="SELECT u.id_... users" />
-            <marker date="1514667360116" expanded="true" signature="1388:1446" ph="SELECT e_mai... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,10 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-          <folding>
-            <marker date="1513342769609" expanded="true" signature="277:640" ph="SELECT s2.id... showtimes" />
-            <marker date="1513342769609" expanded="true" signature="715:874" ph="SELECT s2.id... rooms" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -929,72 +788,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1514667922024" expanded="true" signature="265:521" ph="SELECT id_mo... movies" />
-            <marker date="1514667922024" expanded="true" signature="265:549" ph="SELECT m.id_... movies" />
-            <marker date="1514667922024" expanded="true" signature="630:850" ph="SELECT m.id_... movies" />
-            <marker date="1514667922024" expanded="true" signature="929:1123" ph="SELECT m.id_... movies" />
-            <marker date="1514667922024" expanded="true" signature="1200:1413" ph="SELECT m.id_... movies" />
-            <marker date="1514667922024" expanded="true" signature="1487:1642" ph="SELECT m.id_... movies" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.movies">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.movies" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.seats">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.showtimes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms" />
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.seats" />
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.showtimes" />
     <entry file="file://$PROJECT_DIR$/ui/src/app/home/home.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,37 +821,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+        <state relative-caret-position="629">
+          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
-            <marker date="1514737788455" expanded="true" signature="266:591" ph="SELECT rooms... " />
-            <marker date="1514737788455" expanded="true" signature="663:891" ph="SELECT rooms... " />
-            <marker date="1514737788455" expanded="true" signature="973:1336" ph="SELECT rooms... " />
+            <marker date="1514815894712" expanded="true" signature="266:591" ph="SELECT rooms... " />
+            <marker date="1514815894712" expanded="true" signature="663:891" ph="SELECT rooms... " />
+            <marker date="1514815894712" expanded="true" signature="973:1336" ph="SELECT rooms... " />
           </folding>
         </state>
       </provider>
@@ -1048,7 +863,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1116,7 +930,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2</last-edited>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

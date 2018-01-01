@@ -16,7 +16,7 @@ export class AddMoviesComponent implements OnInit {
   ]
 
   private movies: any[];
-  private movieUrl = 'http://localhost:4200/api/getAllCurrentMovies';
+  private movieUrl = 'http://localhost:4200/api/getAllMovies';
 
   constructor(private http: Http) { }
 
@@ -32,19 +32,17 @@ export class AddMoviesComponent implements OnInit {
   }
   addMovie(valid) {
     if (valid) {
-      if (this.movies.forEach(movieDB => {
-        if (movieDB.title == this.movie.title || movieDB.title_pl == this.movie.titlePL) {
-          return true;
-        }
-      })) {
-        alert("taki film istnieje")
-      } else {
-        alert("Poprawnie wypełnione")
-        console.log("Do uzupełnienia");
-        
+      const sameMovieTitle = this.movies
+        .filter((movies) => movies.title == this.movie.title)
+        .map((movie) => movie.title);
+      if (sameMovieTitle == this.movie.title) {
+        alert("Film już istnieje");
+      }
+      else {
+        alert("poprawnie dodany film");
       }
     } else {
-      alert("Błędnie wypełniona")
+      alert("Błędnie wypełniona");
     }
   }
 
