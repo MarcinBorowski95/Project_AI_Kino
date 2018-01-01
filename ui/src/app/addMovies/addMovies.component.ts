@@ -30,6 +30,7 @@ export class AddMoviesComponent implements OnInit {
       console.log(this.movies);
     });
   }
+  
   addMovie(valid) {
     if (valid) {
       const sameMovieTitle = this.movies

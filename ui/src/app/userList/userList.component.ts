@@ -1,3 +1,4 @@
+import { Http } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,16 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
 
-  users = [
-    {ID: 1 , Firstname: "Marcin" , Lastname: "Borowski"},
-    {ID: 2 , Firstname: "Marcin" , Lastname: "Borowski"},
-    {ID: 3 , Firstname: "Marcin" , Lastname: "Borowski"},
-    {ID: 4 , Firstname: "Marcin" , Lastname: "Borowski"},
-  ]
+  users: any[];
+  usersUrl = "http://localhost:4200/api/getAllUsers"
 
-  constructor() { }
+  constructor(private http: Http) { }
 
   ngOnInit() {
+    this.getUsers();
   }
 
+  getUsers(): any {
+    return this.http.get(this.usersUrl).subscribe(res => {
+      this.users = res.json().sort((a,b) => a.id_user < b.id_user ? -1 : 1)
+      console.log(this.users);
+    });
+  }
 }
