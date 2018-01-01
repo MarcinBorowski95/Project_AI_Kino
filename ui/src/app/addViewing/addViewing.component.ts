@@ -8,15 +8,19 @@ import { Http } from '@angular/http';
 })
 export class AddViewingComponent implements OnInit {
 
+  viewing = [];
+
   private movies: any[];
+  private movieUrl = 'http://localhost:4200/api/getAllMovies';
+  
+  private rooms: any[];
+  private roomUrl = 'http://localhost:4200/api/getAllRooms';
 
   constructor(private http: Http) { }
 
-  // private instance variable to hold base url
-  private movieUrl = 'http://localhost:4200/api/getAllCurrentMovies';
-
   ngOnInit() {
     this.getMovie();
+    this.getRoom();
   }
 
   getMovie(): any {
@@ -25,6 +29,13 @@ export class AddViewingComponent implements OnInit {
       console.log(this.movies);
     });
   }
+
+  getRoom(): any {;
+    return this.http.get(this.roomUrl).subscribe(res => {
+      this.rooms = res.json();
+    });
+  }
+
 
   addViewing(valid)
   {

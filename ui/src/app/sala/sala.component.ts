@@ -61,8 +61,6 @@ export class SalaComponent implements OnInit {
           index++;
         }
       }
-      console.log(this.rows);
-      console.log(this.seats);
     });
   }
 
