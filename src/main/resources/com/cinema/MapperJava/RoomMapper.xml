@@ -11,6 +11,22 @@
       GROUP BY rooms.id_room
     </select>
 
+    <select id="getAllRooms" resultMap="rooms">
+        SELECT rooms.id_room AS id_room, rooms.number AS number, COUNT(DISTINCT row) AS rows, count(DISTINCT seat) AS seatsinrow
+        FROM rooms
+        INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+        GROUP BY rooms.id_room
+    </select>
+
+    <select id="getRoomsByDateAndTime" resultMap="rooms">
+        SELECT rooms.id_room AS id_room, rooms.number AS number, COUNT(DISTINCT row) AS rows, count(DISTINCT seat) AS seatsinrow
+        FROM rooms
+          LEFT JOIN showtimes s2 ON rooms.id_room = s2.id_room
+          INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+        WHERE s2.date_start = #{dateParam} AND s2.time = #{timeParam}
+        GROUP BY rooms.id_room
+    </select>
+
     <resultMap id="rooms" type="com.cinema.Domain.Room">
         <result column="id_room" property="id_room"/>
         <result column="number" property="number"/>

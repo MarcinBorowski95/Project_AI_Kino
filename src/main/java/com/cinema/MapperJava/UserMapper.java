@@ -10,4 +10,5 @@ import java.util.List;
 public interface UserMapper {
     User findByEmail(@Param("userName") String userName);
     List<User> getUsers(@Param("e_mail") String e_mail);
+    List<User> getAllUsers();
 }

@@ -11,4 +11,6 @@ public interface MovieMapper {
     List<Movie> getMoviesByDay(@Param("day") int day);
     List<Movie> getAllCurrentMovies();
     Movie getMovieByIdMovie(@Param("id_movie") long id_movie);
+    List<Movie> getAllMovies();
+    Movie getMovieByTitle(@Param("title") String title);
 }

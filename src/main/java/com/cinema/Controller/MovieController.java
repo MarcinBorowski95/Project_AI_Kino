@@ -18,7 +18,7 @@ public class MovieController {
     @RequestMapping( value = "/getAllCurrentMovies", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @ApiOperation(value = "Pobieranie filmow aktualnie granych")
-    List<Movie> getAllMovie(){
+    List<Movie> getAllCurrentMovies(){
         return movieService.getAllCurrentMovies();
     }
 
@@ -33,5 +33,18 @@ public class MovieController {
     @ApiOperation(value = "Pobieranie filmu po id filmu")
     Movie getMovieByIdMovie(@RequestParam(value = "id_movie", required = true) long id_movie){
         return movieService.getMovieByIdMovie(id_movie);
+    }
+    @RequestMapping( value = "/getAllMovies", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie wszystkich filmow")
+    List<Movie> getAllMovies(){
+        return movieService.getAllMovies();
+    }
+
+    @RequestMapping( value = "/getMovieByTitle", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie filmu po tytule")
+    Movie getMovieByIdMovie(@RequestParam(value = "title", required = true) String title){
+        return movieService.getMovieByTitle(title);
     }
 }
