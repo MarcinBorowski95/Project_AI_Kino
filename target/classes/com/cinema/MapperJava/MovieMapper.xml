@@ -37,6 +37,11 @@
         FROM movies m
     </select>
 
+    <insert id="postMovie">
+        INSERT INTO movies (title,title_pl,genre,director,duration,date_release,date_end,description,image_url)
+        VALUES (#{title},#{title_pl},#{genre},#{director},#{duration},#{date_release},#{date_end},#{decrpion},#{image_url});
+    </insert>
+
     <resultMap id="movies" type="com.cinema.Domain.Movie">
         <result column="id_movie" property="id_movie"/>
         <result column="title" property="title"/>

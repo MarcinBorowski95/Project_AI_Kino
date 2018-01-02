@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Date;
+import java.sql.Time;
 import java.util.List;
 
 @RestController
@@ -29,8 +31,8 @@ public class RoomController {
     }
     @RequestMapping(value = "/getRoomsByDateAndTime", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Pobieranie sali po dacie i czasie")
-    public List<Room> getRoomsByDateAndTime(@RequestParam(value = "date", required = true) String date, @RequestParam(value = "time", required = true) String time ){
+    @ApiOperation(value = "Pobieranie wolnych sal po dacie i czasie")
+    public List<Room> getRoomsByDateAndTime(@RequestParam(value = "dateParam", required = true) Date date, @RequestParam(value = "timeParam", required = true) Time time ){
         return roomService.getRoomsByDateAndTime(date,time);
     }
 }

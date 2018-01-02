@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Date;
 import java.util.List;
 
 @RestController
@@ -47,4 +48,15 @@ public class MovieController {
     Movie getMovieByIdMovie(@RequestParam(value = "title", required = true) String title){
         return movieService.getMovieByTitle(title);
     }
+    @RequestMapping( value = "/postMovie", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Dodawanie filmu")
+    public void postMovie(@RequestParam(value = "title")String title,@RequestParam(value = "title_pl") String title_pl,
+                          @RequestParam(value = "genre")String genre,@RequestParam(value = "director") String director,
+                          @RequestParam(value = "duration")int duration,@RequestParam(value = "date_release") Date date_release,
+                          @RequestParam(value = "date_end")Date date_end,@RequestParam(value = "description") String description,
+                          @RequestParam(value = "image_url")String image_url){
+        movieService.postMovie(title,title_pl,genre,director,duration,date_release,date_end,description,image_url);
+    }
+
 }
