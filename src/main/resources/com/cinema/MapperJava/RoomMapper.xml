@@ -23,7 +23,12 @@
         FROM rooms
           LEFT JOIN showtimes s2 ON rooms.id_room = s2.id_room
           INNER JOIN seats s3 ON rooms.id_room = s3.id_room
-        WHERE s2.date_start = #{dateParam} AND s2.time = #{timeParam}
+        WHERE rooms.id_room NOT IN (SELECT rooms.id_room AS id_room
+                                    FROM rooms
+                                      LEFT JOIN showtimes s2 ON rooms.id_room = s2.id_room
+                                      INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+                                    WHERE s2.date_start = #{dateParam} AND s2.time = #{timeParam}
+                                    GROUP BY rooms.id_room)
         GROUP BY rooms.id_room
     </select>
 
