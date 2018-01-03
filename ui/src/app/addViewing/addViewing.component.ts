@@ -51,7 +51,7 @@ export class AddViewingComponent implements OnInit {
     if (valid) {
       let headers = new Headers({ 'Content-Type': 'application/json' });
       let options = new RequestOptions({ headers: headers });
-      this.http.post("http://localhost:4200/api/postMovie", this.viewing, options)
+      this.http.post("http://localhost:4200/api/postShowtime", this.viewing, options)
         .subscribe(
         res => {
           console.log(res);
