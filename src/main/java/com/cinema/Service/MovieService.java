@@ -29,8 +29,8 @@ public class MovieService {
     public Movie getMovieByTitle(String title){
         return movieMapper.getMovieByTitle(title);
     }
-    public void postMovie(String title, String title_pl, String genre, String director, int duration, Date date_release, Date date_end, String description, String image_url){
-        movieMapper.postMovie(title,title_pl,genre,director,duration,date_release,date_end,description,image_url);
+    public void postMovie(Movie movie){
+        movieMapper.postMovie(movie);
     }
 
 
