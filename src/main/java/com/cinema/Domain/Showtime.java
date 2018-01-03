@@ -2,16 +2,14 @@ package com.cinema.Domain;
 
 import org.apache.ibatis.type.Alias;
 
-import java.sql.Date;
-import java.sql.Time;
-
+import java.util.Date;
 
 @Alias("Showtime")
 public class Showtime {
     private long id_showtime;
     private long id_movie;
     private long id_room;
-    private Time time;
+    private String time;
     private Date date_start;
 
     public long getId_showtime() {
@@ -38,11 +36,11 @@ public class Showtime {
         this.id_room = id_room;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 

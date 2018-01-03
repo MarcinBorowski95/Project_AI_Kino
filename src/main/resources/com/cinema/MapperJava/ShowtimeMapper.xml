@@ -14,11 +14,6 @@
         WHERE date_start = CURRENT_DATE+#{day}
     </select>
 
-    <insert id="postShowtime">
-        INSERT INTO showtimes (id_movie, id_room, time, date_start)
-        VALUES (#{s.id_movie},#{s.id_room},#{s.time},#{s.date_start});
-    </insert>
-
     <resultMap id="showtimes" type="com.cinema.Domain.Showtime">
         <result column="id_showtime" property="id_showtime"/>
         <result column="id_movie" property="id_movie"/>
