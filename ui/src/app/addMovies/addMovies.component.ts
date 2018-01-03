@@ -41,7 +41,7 @@ export class AddMoviesComponent implements OnInit {
         alert("Film już istnieje");
       }
       else {
-        this.http.post("http://localhost:4200/api/CreateMovie", this.movie)
+        this.http.post("http://localhost:4200/api/postMovie", this.movie)
           .catch((err: Response) => {
             console.log(err);
             return Observable.throw(err.json());
