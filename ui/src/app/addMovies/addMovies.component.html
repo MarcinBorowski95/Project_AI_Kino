@@ -78,7 +78,7 @@
         <label class="tag" for="dateRealese"> Data premiery </label>
         <br>
         <div class="input-group">
-          <input type="date" class="form-control " name="dateRealese" id="dateRealese" #dateRealeseRef="ngModel" [(ngModel)]="movie.date_realese"
+          <input type="date" class="form-control " name="dateRealese" id="dateRealese" #dateRealeseRef="ngModel" [(ngModel)]="movie.date_release"
             placeholder="Data premiery" required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && dateRealeseRef.errors?.required">

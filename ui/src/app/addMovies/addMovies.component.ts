@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, RequestOptions, Headers } from '@angular/http';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -41,11 +41,17 @@ export class AddMoviesComponent implements OnInit {
         alert("Film już istnieje");
       }
       else {
-        this.http.post("http://localhost:4200/api/postMovie", this.movie)
-          .catch((err: Response) => {
-            console.log(err);
-            return Observable.throw(err.json());
-          });
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+        this.http.post("http://localhost:4200/api/postMovie", this.movie , options)
+          .subscribe(
+          res => {
+            console.log(res);
+          },
+          err => {
+            console.log("Error occured");
+          }
+          );;
       }
     } else {
       alert("Błędnie wypełniona");
