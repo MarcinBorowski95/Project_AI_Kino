@@ -39,7 +39,7 @@
 
     <insert id="postMovie">
         INSERT INTO movies (title,title_pl,genre,director,duration,date_release,date_end,description,image_url)
-        VALUES (#{title},#{title_pl},#{genre},#{director},#{duration},#{date_release},#{date_end},#{decrpion},#{image_url});
+        VALUES (#{m.title},#{m.title_pl},#{m.genre},#{m.director},#{m.duration},#{m.date_release},#{m.date_end},#{m.description},#{m.image_url});
     </insert>
 
     <resultMap id="movies" type="com.cinema.Domain.Movie">

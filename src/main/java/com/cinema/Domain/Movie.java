@@ -2,7 +2,8 @@ package com.cinema.Domain;
 
 import org.apache.ibatis.type.Alias;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 @Alias("Movie")
 public class Movie {
