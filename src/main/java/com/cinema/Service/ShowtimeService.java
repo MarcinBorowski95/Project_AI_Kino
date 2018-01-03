@@ -19,4 +19,7 @@ public class ShowtimeService {
     public List<Showtime> getShowtimesByDay(int day){
         return showtimeMapper.getShowtimesByDay(day);
     }
+    public void postShowtime(Showtime showtime){
+        showtimeMapper.postShowtime(showtime);
+    }
 }
