@@ -25,7 +25,7 @@
       </div>
       <div class="form-group row">
         <div class="input-group">
-          <input type="titlePL" class="form-control " name="titlePL" id="titlePL" #titlePLRef="ngModel" [(ngModel)]="movie.titlePL"
+          <input type="titlePL" class="form-control " name="titlePL" id="titlePL" #titlePLRef="ngModel" [(ngModel)]="movie.title_pl"
             placeholder="Polski tytuł" required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.required">
@@ -37,7 +37,7 @@
       </div>
       <div class="form-group row">
         <div class="input-group">
-          <select type="genere" class="form-control " name="genere" id="genere" #genereRef="ngModel" [(ngModel)]="movie.genere" required>
+          <select type="genere" class="form-control " name="genere" id="genere" #genereRef="ngModel" [(ngModel)]="movie.genre" required>
             <option [ngValue]="undefined" disabled selected hidden>Wybierz gatunek filmu</option>
             <option *ngFor="let genere of generes" [value]="genere">{{genere}}
             </option>
@@ -78,7 +78,7 @@
         <label class="tag" for="dateRealese"> Data premiery </label>
         <br>
         <div class="input-group">
-          <input type="date" class="form-control " name="dateRealese" id="dateRealese" #dateRealeseRef="ngModel" [(ngModel)]="movie.dateRealese"
+          <input type="date" class="form-control " name="dateRealese" id="dateRealese" #dateRealeseRef="ngModel" [(ngModel)]="movie.date_realese"
             placeholder="Data premiery" required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && dateRealeseRef.errors?.required">
@@ -92,7 +92,7 @@
         <label class="tag" for="dateEnd"> Data końcowa </label>
         <br>
         <div class="input-group">
-          <input type="date" class="form-control " name="dateEnd" id="dateEnd" #dateEndRef="ngModel" [(ngModel)]="movie.dateEnd" placeholder="Data zakończenia"
+          <input type="date" class="form-control " name="dateEnd" id="dateEnd" #dateEndRef="ngModel" [(ngModel)]="movie.date_end" placeholder="Data zakończenia"
             required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && dateEndRef.errors?.required">
@@ -113,7 +113,7 @@
       </div>
       <div class="form-group row">
         <div class="input-group">
-          <input type="text" class="form-control " name="imgURL" id="imgURL" #imgURLRef="ngModel" [(ngModel)]="movie.imgURL" placeholder="Link do obrazu filmu"
+          <input type="text" class="form-control " name="imgURL" id="imgURL" #imgURLRef="ngModel" [(ngModel)]="movie.imgage_url" placeholder="Link do obrazu filmu"
             required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && imgURLRef.errors?.required">

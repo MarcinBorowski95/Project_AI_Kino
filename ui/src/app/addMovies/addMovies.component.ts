@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-addMovies',
@@ -30,7 +31,7 @@ export class AddMoviesComponent implements OnInit {
       console.log(this.movies);
     });
   }
-  
+
   addMovie(valid) {
     if (valid) {
       const sameMovieTitle = this.movies
@@ -40,7 +41,11 @@ export class AddMoviesComponent implements OnInit {
         alert("Film już istnieje");
       }
       else {
-        alert("poprawnie dodany film");
+        this.http.post("http://localhost:4200/api/CreateMovie", this.movie)
+          .catch((err: Response) => {
+            console.log(err);
+            return Observable.throw(err.json());
+          });
       }
     } else {
       alert("Błędnie wypełniona");

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-addViewing',
@@ -38,8 +39,8 @@ export class AddViewingComponent implements OnInit {
   }
 
   getRoomByDate(): any {
-    this.viewing.startTime = this.viewing.startTime && this.viewing.startTime.length === 5 ? this.viewing.startTime + ":00" : this.viewing.startTime;
-    var roomByDate = 'http://localhost:4200/api/getRoomsByDateAndTime?dateParam=' + this.viewing.date_start + '&timeParam=' + this.viewing.startTime;
+    this.viewing.time = this.viewing.time && this.viewing.time.length === 5 ? this.viewing.time + ":00" : this.viewing.time;
+    var roomByDate = 'http://localhost:4200/api/getRoomsByDateAndTime?dateParam=' + this.viewing.date_start + '&timeParam=' + this.viewing.time;
     return this.http.get(roomByDate).subscribe(res => {
       var roomID = res.json().map(x => x.id_room);
       var index = this.rooms.map(x => x.id_room).indexOf(roomID[0])
@@ -52,7 +53,11 @@ export class AddViewingComponent implements OnInit {
 
   addViewing(valid) {
     if (valid) {
-      alert("Poprawne")
+      this.http.post("http://localhost:4200/api/CreateViewing", this.viewing)
+        .catch((err: Response) => {
+          console.log(err);
+          return Observable.throw(err.json());
+        });
     } else {
       alert("Błędne")
     }

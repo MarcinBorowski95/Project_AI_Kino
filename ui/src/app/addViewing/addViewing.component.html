@@ -27,7 +27,7 @@
         <label class="tag" for="startTime"> Czas seansu </label>
         <br>
         <div class="input-group">
-          <input type="time" step="1" class="form-control " name="startTime" id="startTime" #startTimeRef="ngModel" [(ngModel)]="viewing.startTime"
+          <input type="time" step="1" class="form-control " name="startTime" id="startTime" #startTimeRef="ngModel" [(ngModel)]="viewing.time"
             placeholder="Data premiery" required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && startTimeRef.errors?.required">
