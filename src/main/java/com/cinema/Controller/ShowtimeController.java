@@ -29,6 +29,7 @@ public class ShowtimeController {
     public List<Showtime> getShowtimesByDay(@RequestParam(value = "day") int day){
         return showtimeService.getShowtimesByDay(day);
     }
+<<<<<<< HEAD
 
     @RequestMapping(value = "/getShowtimeDetails", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
@@ -36,5 +37,7 @@ public class ShowtimeController {
     public ShowtimeApi getShowtimeDetails(@RequestParam(value = "id_showtime") long id_showtime){
         return showtimeService.getShowtimeDetails(id_showtime);
     }
+=======
+>>>>>>> parent of bbc56b9... Dodawanie seasnow
 
 }

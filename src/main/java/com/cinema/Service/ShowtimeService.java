@@ -20,6 +20,9 @@ public class ShowtimeService {
     public List<Showtime> getShowtimesByDay(int day){
         return showtimeMapper.getShowtimesByDay(day);
     }
+<<<<<<< HEAD
 
     public ShowtimeApi getShowtimeDetails(long id_showtime) {return showtimeMapper.getShowtimeDetails(id_showtime);}
+=======
+>>>>>>> parent of bbc56b9... Dodawanie seasnow
 }

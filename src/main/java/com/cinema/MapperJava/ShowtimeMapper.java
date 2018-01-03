@@ -11,5 +11,8 @@ import java.util.List;
 public interface ShowtimeMapper {
     List<Showtime> getShowtimesByIdMovieAndDay(@Param("id_movie") long movie ,@Param("day") int day);
     List<Showtime> getShowtimesByDay(@Param("day") int day);
+<<<<<<< HEAD
     ShowtimeApi getShowtimeDetails(@Param("id_showtime") long id_showtime);
+=======
+>>>>>>> parent of bbc56b9... Dodawanie seasnow
 }
