@@ -20,6 +20,7 @@ public class ShowtimeService {
     public List<Showtime> getShowtimesByDay(int day){
         return showtimeMapper.getShowtimesByDay(day);
     }
-
-    public ShowtimeApi getShowtimeDetails(long id_showtime) {return showtimeMapper.getShowtimeDetails(id_showtime);}
+    public void postShowtime(Showtime showtime){
+        showtimeMapper.postShowtime(showtime);
+    }
 }
