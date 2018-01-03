@@ -42,11 +42,7 @@ export class AddViewingComponent implements OnInit {
     this.viewing.time = this.viewing.time && this.viewing.time.length === 5 ? this.viewing.time + ":00" : this.viewing.time;
     var roomByDate = 'http://localhost:4200/api/getRoomsByDateAndTime?dateParam=' + this.viewing.date_start + '&timeParam=' + this.viewing.time;
     return this.http.get(roomByDate).subscribe(res => {
-      var roomID = res.json().map(x => x.id_room);
-      var index = this.rooms.map(x => x.id_room).indexOf(roomID[0])
-      if (index != -1) {
-        this.rooms.splice(index, 1);
-      }
+      this.rooms = res.json();
     });
   }
 
