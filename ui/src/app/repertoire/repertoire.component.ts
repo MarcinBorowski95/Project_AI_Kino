@@ -11,24 +11,25 @@ import { DataService } from '../_services/data.service';
   styleUrls: ['./repertoire.component.css']
 })
 export class RepertoireComponent implements OnInit {
-  
+
   private movies: any[];
   private hours: any[];
   private day: String = "0";
   private movieUrl;
   private hourUrl;
   seans;
+  time;
 
   constructor(
     private http: Http,
     private router: Router,
     private data: DataService
     ) { }
-  
+
   ngOnInit() {
     this.getMovie();
     this.getHours();
-    this.data.currentMessage.subscribe(seans => this.seans = seans)
+    this.data.currentTicketInfo.subscribe(seans => this.seans = seans)
   }
 
   getMovie(): any {
@@ -47,19 +48,34 @@ export class RepertoireComponent implements OnInit {
     });
   }
 
+  subTime(hour){
+    this.time = hour.substring(0, 5);
+    return this.time;
+  }
+
   changeDay(day) {
     this.day = day
     this.getMovie();
     this.getHours();
   }
 
-  buyTicket(hour) {
+  buyTicket(movie, hour) {
     console.log(hour);
-    this.newMessage(hour.id_showtime)
+    console.log(movie);
+    const ticketInfo = {
+       id_showtime: hour.id_showtime,
+       id_movie: hour.id_movie,
+       id_room: hour.id_room,
+       time: hour.time,
+       date_start: hour.date_start,
+       title: movie.title,
+       title_pl: movie.title_pl,
+    }
+    this.sendTicketInfo(ticketInfo)
     this.router.navigate(["/sala"])
   }
 
-  newMessage(message) {
-    this.data.changeMessage(message)
+  sendTicketInfo(ticketInfo) {
+    this.data.changeTicketInfo(ticketInfo)
   }
 }

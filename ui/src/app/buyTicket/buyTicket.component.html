@@ -1,4 +1,5 @@
-<br><br>
+<br>
+<br>
 
 <div class="h">
   <div class="col-md-10 mx-auto">
@@ -8,39 +9,35 @@
 
 <div class="container col-md-10 mx-auto">
   <br>
-  <div *ngFor="let spot of spots" class="ticket-list">
+  <div *ngFor="let seat of seats" class="ticket-list">
     <div class="ticket-row row">
       <div class="col-md-3" style="color: white;">
-        {{ spot.ID }}
+        {{ seat.ID }}
       </div>
       <div class="col-md-3">
-        <div class="dropdown">
-          <button class="btn btn-ticket dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Rodzaj biletu
-          </button>
-          <div class="dropdown-menu" aria-labelledby="triggerId">
-            <a class="dropdown-item" href="#">Normalny</a>
-            <a class="dropdown-item" href="#">Dziecięcy</a>
-            <a class="dropdown-item" href="#">Senior</a>
+        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+          <button class="btn" id="dropdownManual" ngbDropdownToggle>{{seat.selectedTicketType}}</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownManual">
+            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(seat, ticketType)">{{ticketType.type}}</button>
           </div>
         </div>
       </div>
       <div class="col-md-4" style="color: white;">
-        Cena biletu
+        {{seat.price}}
       </div>
     </div>
   </div>
   <div class="ticket-final row">
     <div class="cost col-md-4" style="color: white;">
-      Cena końcowa
+      {{ticketsPrice}}
     </div>
   </div>
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3">
-      <br><br>
-      <button type="button" name="" id="" class="btn btn-gradient" (click) = "buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
+      <br>
+      <br>
+      <button type="button" name="" id="" class="btn btn-gradient" (click)="buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
     </div>
   </div>
 

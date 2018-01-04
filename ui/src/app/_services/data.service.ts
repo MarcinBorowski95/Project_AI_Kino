@@ -3,10 +3,20 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class DataService {
-  private messageSource = new BehaviorSubject<string>("");
-  currentMessage = this.messageSource.asObservable();
+  private sharedTicketInfo = new BehaviorSubject<any>("");
+  currentTicketInfo = this.sharedTicketInfo.asObservable();
+
+  private sharedSeatsInfo = new BehaviorSubject<any>([]);
+  currentSeatsInfo = this.sharedSeatsInfo.asObservable();
+
+
   constructor() { }
-  changeMessage(message) {
-    this.messageSource.next(message)
+
+  changeTicketInfo(ticketInfo) {
+    this.sharedTicketInfo.next(ticketInfo)
+  }
+  
+  changeSeatInfo(seatInfo) {
+    this.sharedSeatsInfo.next(seatInfo)
   }
 }

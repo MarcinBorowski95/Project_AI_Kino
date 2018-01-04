@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cinema.MapperJava.TicketTypeMapper">
+
+    <select id="getAllTicketsTypes" resultMap="ticketTypes">
+        SELECT id_type, type, price
+        FROM tickets_types
+    </select>
+
+    <resultMap id="ticketTypes" type="com.cinema.Domain.TicketType">
+        <result column="id_type" property="id_type"/>
+        <result column="type" property="type"/>
+        <result column="price" property="price"/>
+    </resultMap>
+
+</mapper>

@@ -19,8 +19,26 @@
         <result property="username" column="e_mail"/>
     </resultMap>
 
+<<<<<<< HEAD
     <select id="getUsers" resultType="String">
         SELECT e_mail FROM users WHERE e_mail = #{e_mail}
+=======
+    <select id="getAllUsers" resultMap="allUsers">
+        SELECT  u.id_user, u.name, u.surname, u.role, u.e_mail
+        FROM users u
+    </select>
+
+    <resultMap id="allUsers" type="com.cinema.Domain.User">
+        <id property="id_user" column="id_user" />
+        <result property="name" column="name"/>
+        <result property="surname" column="surname"/>
+        <result property="role" column="role"/>
+        <result property="e_mail" column="e_mail"/>
+    </resultMap>
+
+    <select id="getUsers" resultMap="userEmailResultMap">
+        SELECT e_mail, id_user FROM users WHERE e_mail = #{e_mail}
+>>>>>>> Marcin
     </select>
 
 

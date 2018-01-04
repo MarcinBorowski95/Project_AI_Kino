@@ -42,4 +42,12 @@ public class UserController {
         user.setRole("C");
         userService.createUser(user);
     }
+
+    @RequestMapping( value = "/getAllUsers", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie wszystkich userów")
+    List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
 }

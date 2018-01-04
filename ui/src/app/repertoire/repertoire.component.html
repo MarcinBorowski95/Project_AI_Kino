@@ -7,19 +7,18 @@
 </div>
 
 <div class="container col-md-10 mx-auto">
-
   <br>
   <div class="btn-group" role="group" aria-label="">
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(0)">PN</button>
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(1)">WT</button>
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(2)">ŚR</button>
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(3)">CZ</button>
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(4)">PT</button>
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(5)">SB</button>
-    <button type="button" class="btn btn-repertoire" (click)="changeDay(6)">ND</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(0)">Dziś</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(1)">+1</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(2)">+2</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(3)">+3</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(4)">+4</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(5)">+5</button>
+    <button type="button" class="btn btn-repertoire" (click)="changeDay(6)">+6</button>
   </div>
   <br><br>
-  <h3>Przykładowa lista filmów Statyczna</h3>
+  <h3>Repertuar</h3>
 
   <div class="list-group">
     <a *ngFor="let movie of movies" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -28,7 +27,7 @@
 
         <div class="btn-group btn-group-sm" role="group" aria-label="">
           <div *ngFor="let hour of hours" >
-            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn btn-primary" (click)="buyTicket(hour)">{{hour.time}}</button>
+            <button *ngIf="hour.id_movie===movie.id_movie" type="button" class="btn" (click)="buyTicket(movie, hour)">{{subTime(hour.time)}}</button>
           </div>
         </div>
       </div>

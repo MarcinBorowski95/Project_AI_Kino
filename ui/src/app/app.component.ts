@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  view: number = 2;
+
+  isCollapsed = true;
+
+  constructor() {}
+
+  toggleMenu() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
