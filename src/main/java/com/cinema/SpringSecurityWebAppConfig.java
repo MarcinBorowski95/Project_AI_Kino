@@ -17,25 +17,17 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 
 @Configuration
-@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
+//@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+//@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 @EnableWebSecurity
 public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
 
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private DataSource datasource;
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userService);
-//        System.out.println(datasource);
-//        auth.
-//                jdbcAuthentication().dataSource(datasource)
-//                .usersByUsernameQuery("select e_mail,password from users where e_mail=?")
-//                .authoritiesByUsernameQuery("select role from users where e_mail=?");
         auth.inMemoryAuthentication().withUser("admin1@gmail.com").password("Admino2").roles("ADMIN");
 
     }
@@ -48,10 +40,9 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
                 .antMatchers("/").permitAll()
                 .and().csrf().disable()
                 .formLogin()
-                .defaultSuccessUrl("http://localhost:4200")
+                .defaultSuccessUrl("/api/user")
                 .failureUrl("/swagger-ui.html")
-                .usernameParameter("username")
-                .passwordParameter("password");
+                .usernameParameter("username").passwordParameter("password");
     }
 
 }

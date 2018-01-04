@@ -4,7 +4,7 @@ import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
-import {FormBuilder, FormGroup} from "@angular/forms";
+import { AuthenticationService } from './authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -21,7 +21,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
               private http: Http,
-              private router: Router) {}
+              private router: Router,
+              private authenticationService: AuthenticationService) {}
 
   ngOnInit() {
   }
@@ -30,18 +31,14 @@ export class LoginComponent implements OnInit {
   {
     if (valid)
     {
-      let headers = new Headers();
-      headers.append('Content-Type', 'application/x-www-form-urlencoded');
-      let options = new RequestOptions({ headers: headers });
-
-      var result;
-      var body = 'username='+this.email+'&password='+this.password;
-      result = this.http.post(this.url+'/login', body, options)
-        .map(res => {
-          res.toString();
-          console.log(res);
+      this.authenticationService.login(this.email, this.password)
+        .subscribe(result => {
+          if (result === true) {
+            alert("sukces")
+          } else {
+            alert("Błąd logowania");
+          }
         });
-      result.subscribe();
     }
     else
     {

@@ -22,16 +22,14 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        User user = userMapper.findByEmail(s);
-        if (user == null) {
-            logger.info("User "+s+" not exists.");
-            throw new UsernameNotFoundException("Username " + s + " not found");
-        }
-        else
-            logger.info("User "+user.getUsername()+" found.");
+            User user = userMapper.findByEmail(s);
+            if (user == null) {
+                logger.info("User " + s + " not exists.");
+                throw new UsernameNotFoundException("Username " + s + " not found");
+            } else
+                logger.info("User " + user.getUsername() + " found.");
             logger.info(user.getPassword());
-        return user;
-
+            return user;
     }
 
     public List<User> getUsers(String e_mail) {return userMapper.getUsers(e_mail);}
