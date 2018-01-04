@@ -20,7 +20,6 @@ export class SalaComponent implements OnInit {
   ticketInfo;
   selectedSeatsInfo = new Array();
   private selectedSeats: Array<any> = [];
-  seansInfo;
 
   flag;
   time;
@@ -37,9 +36,12 @@ export class SalaComponent implements OnInit {
     this.seans = this.ticketInfo.id_showtime;
     this.getRoom();
     this.getSeats();
-    this.getSeansInfo();
 
     this.selectedSeatsInfo = [];
+
+    
+    var t = this.ticketInfo.time.toString();
+    this.time = t.substring(0, 5);
   }
 
   getRoom(): any {
@@ -62,17 +64,6 @@ export class SalaComponent implements OnInit {
         }
       }
     });
-  }
-
-  getSeansInfo() : any {
-    this.seansUrl = 'http://localhost:4200/api/getShowtimeDetails?id_showtime=' + this.seans;
-    return this.http.get(this.seansUrl).subscribe(res => {
-      this.seansInfo = res.json();
-      console.log(this.seansInfo);
-
-      var t = this.seansInfo.time.toString();
-      this.time = t.substring(0, 5);
-    })
   }
 
   buyTicket() {
