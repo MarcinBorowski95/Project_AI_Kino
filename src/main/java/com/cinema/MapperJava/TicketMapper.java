@@ -6,6 +6,6 @@ package com.cinema.MapperJava;
 
 @Mapper
 public interface TicketMapper {
-    void postTicket(@Param("t")Ticket ticket);
+    void postTicket(@Param("t") Ticket ticket);
     Ticket getTicketById(@Param("id") long id_ticket);
 }
