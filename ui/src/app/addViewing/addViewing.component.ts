@@ -27,6 +27,7 @@ export class AddViewingComponent implements OnInit {
   ngOnInit() {
     this.getMovie();
     this.getRoom();
+    this.setMinDates();
   }
 
   getMovie(): any {
@@ -70,5 +71,22 @@ export class AddViewingComponent implements OnInit {
     } else {
       alert("Błędne")
     }
+  }
+
+  setMinDates()
+  {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+      var ddString = '0' + dd
+    }
+    if (mm < 10) {
+      var mmString = '0' + mm
+    }
+
+    var todayString = yyyy + '-' + mmString + '-' + ddString;
+    document.getElementById("date_start").setAttribute("min", todayString);
   }
 }

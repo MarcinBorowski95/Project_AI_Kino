@@ -27,6 +27,7 @@ export class AddMoviesComponent implements OnInit {
 
   ngOnInit() {
     this.getMovie();
+    this.setMinDates();
   }
 
   getMovie(): any {
@@ -47,7 +48,7 @@ export class AddMoviesComponent implements OnInit {
       else {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        this.http.post("http://localhost:4200/api/postMovie", this.movie , options)
+        this.http.post("http://localhost:4200/api/postMovie", this.movie, options)
           .subscribe(
           res => {
             console.log(res);
@@ -64,5 +65,22 @@ export class AddMoviesComponent implements OnInit {
       alert("Błędnie wypełniona");
     }
   }
+  
+  setMinDates()
+  {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+      var ddString = '0' + dd
+    }
+    if (mm < 10) {
+      var mmString = '0' + mm
+    }
 
+    var todayString = yyyy + '-' + mmString + '-' + ddString;
+    document.getElementById("dateRealese").setAttribute("min", todayString);
+    document.getElementById("dateEnd").setAttribute("min", todayString);
+  }
 }
