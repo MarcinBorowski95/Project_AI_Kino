@@ -13,4 +13,6 @@ public interface RoomMapper {
     Room getRoomByIdShowtime(@Param("id_showtime") long id_showtime);
     List<Room> getAllRooms();
     List<Room> getRoomsByDateAndTime(@Param("dateParam") Date date, @Param("timeParam") Time time);
+    void postRoom(@Param("r") Room room);
+    void postSeat(@Param("i") long id_room,@Param("r") int row, @Param("s") int seat);
 }

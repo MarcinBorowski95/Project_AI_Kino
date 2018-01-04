@@ -1,6 +1,6 @@
 package com.cinema.Domain;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Ticket {
     private long id_ticket;
@@ -54,7 +54,7 @@ public class Ticket {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(java.sql.Date date) {
         this.date = date;
     }
 }

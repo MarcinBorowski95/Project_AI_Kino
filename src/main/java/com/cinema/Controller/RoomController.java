@@ -6,6 +6,7 @@ import com.cinema.Service.RoomService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
@@ -34,5 +35,11 @@ public class RoomController {
     @ApiOperation(value = "Pobieranie wolnych sal po dacie i czasie")
     public List<Room> getRoomsByDateAndTime(@RequestParam(value = "dateParam", required = true) Date date, @RequestParam(value = "timeParam", required = true) Time time ){
         return roomService.getRoomsByDateAndTime(date,time);
+    }
+    @RequestMapping( value = "/postRoom", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Dodawanie sali")
+    public void postMovie(@RequestBody Room room) {
+        roomService.postRoom(room);
     }
 }
