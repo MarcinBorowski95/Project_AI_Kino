@@ -1,0 +1,50 @@
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Dodawanie sali</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <form class="form-addRoom" #formRef="ngForm" (ngSubmit)="addRoom(formRef.valid)">
+    <fieldset class="addRoom" ngModelGroup="addRoom">
+
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="number" class="form-control " name="number" id="number" #numberRef="ngModel" [(ngModel)]="room.number" placeholder="Numer sali"
+            required min="0" max="500">
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && numberRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="number" class="form-control " name="seatsInRow" id="seatsInRow" #seatsInRowRef="ngModel" [(ngModel)]="room.seatsInRow"
+            placeholder="Ilość miejsc w rzędzie (max 20)" required min="0" max="20">
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && seatsInRowRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="number" class="form-control " name="rows" id="rows" #rowsRef="ngModel" [(ngModel)]="room.rows" placeholder="Ilość rzędów (max 10)"
+            required min="0" max="10">
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && rowsRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+
+      <div class="form-group btn-submit" align="center">
+        <button type="submit" class="btn btn-gradient">Dodaj salę</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>

@@ -17,6 +17,7 @@ const routes: Routes = [
     {path: "addViewing" , loadChildren: 'app/addViewing/addViewing.module#AddViewingModule'},
     {path: "userList" , loadChildren: 'app/userList/userList.module#UserListModule'},
     {path: "boughtTicket" , loadChildren: 'app/boughtTicket/boughtTicket.module#BoughtTicketModule'},
+    {path: "addRoom" , loadChildren: 'app/addRoom/addRoom.module#AddRoomModule'},
     {path: "**" , redirectTo: "/" }
     
   ];
