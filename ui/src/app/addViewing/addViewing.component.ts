@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-addViewing',
@@ -18,7 +19,10 @@ export class AddViewingComponent implements OnInit {
   private roomByDate;
   private roomUrl = 'http://localhost:4200/api/getAllRooms';
 
-  constructor(private http: Http) { }
+  constructor(
+    private http: Http,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.getMovie();
@@ -55,6 +59,9 @@ export class AddViewingComponent implements OnInit {
         .subscribe(
         res => {
           console.log(res);
+          if (res.ok) {
+            this.router.navigate(['/']);
+          }
         },
         err => {
           console.log("Error occured");

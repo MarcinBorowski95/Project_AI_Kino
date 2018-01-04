@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-addMovies',
@@ -19,7 +20,10 @@ export class AddMoviesComponent implements OnInit {
   private movies: any[];
   private movieUrl = 'http://localhost:4200/api/getAllMovies';
 
-  constructor(private http: Http) { }
+  constructor(
+    private http: Http,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.getMovie();
@@ -47,6 +51,9 @@ export class AddMoviesComponent implements OnInit {
           .subscribe(
           res => {
             console.log(res);
+            if (res.ok) {
+              this.router.navigate(['/']);
+            }
           },
           err => {
             console.log("Error occured");
