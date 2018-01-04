@@ -2,11 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_core_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_schema_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_spi_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_6_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__io_swagger_swagger_models_1_5_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_6_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/libraries/maven_wrapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/main/main.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/Controller/GreetingController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/Controller/UserController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/application.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/com/cinema/MvcConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/com/cinema/ProjectCinemaApplication.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/com/cinema/SpringSecurityWebAppConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/com/cinema/StaticResourceConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/com/cinema/SwaggerConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/jpgFiles/Boro.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/templates/Register.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/templates/greeting.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/templates/layout.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/templates/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/target/classes/templates/repertuar.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/TicketController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/TicketMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Service/TicketService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/TicketMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java" afterPath="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,49 +149,111 @@
         <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rooms: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="tickets: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d411p799b0iqf@ec2-23-23-150-141.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d411p799b0iqf: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java">
+      <file leaf-file-name="TicketController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/TicketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ticket.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/TicketService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowtimeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rooms" pinned="false" current-in-tab="false">
-        <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seats" pinned="false" current-in-tab="false">
-        <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.seats">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
+      <file leaf-file-name="TicketMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/TicketMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
-                <element signature="e#1823#1824#0" expanded="true" />
-                <element signature="e#1865#1866#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowtimeMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeatController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,9 +281,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/com/cinema/ProjectCinemaApplication.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.13.RELEASE/spring-beans-4.3.13.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.13.RELEASE/spring-core-4.3.13.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b32f23c-fab7-452b-bfa8-f740c532e77c/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/Persistance/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.fxml" />
@@ -156,14 +300,10 @@
         <option value="$PROJECT_DIR$/ui/package.json" />
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/FilmMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/TicketType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/SeatMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/SeatService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Seat.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/SeatMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/UserService.java" />
@@ -179,11 +319,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Showtime.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/SeatMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/SeatMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/TicketMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/TicketMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Service/TicketService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Controller/TicketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java" />
       </list>
     </option>
   </component>
@@ -273,7 +421,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,8 +517,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -718,6 +866,9 @@
       <workItem from="1515012260753" duration="1555000" />
       <workItem from="1515016142914" duration="3335000" />
       <workItem from="1515019859613" duration="383000" />
+      <workItem from="1514995988155" duration="6644000" />
+      <workItem from="1515022420013" duration="288000" />
+      <workItem from="1515054745495" duration="1688000" />
     </task>
     <servers />
   </component>
@@ -727,7 +878,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100927000" />
+    <option name="totallyTimeSpent" value="93461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,7 +914,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33695653" sideWeight="0.6892324" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26492536" sideWeight="0.48058254" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.48081023" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27025586" sideWeight="0.48058254" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5065789" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -777,7 +929,6 @@
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.48081023" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -833,23 +984,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/SwaggerConfig.java" />
-    <entry file="das://table:/ef61f0ab/4b32f23c-fab7-452b-bfa8-f740c532e77c/d411p799b0iqf.public.users" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/AppConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/io/ClassLoaderWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -871,24 +1005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/TicketType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/SeatMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -900,13 +1020,6 @@
       </provider>
     </entry>
     <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets_types">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -937,16 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -972,22 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <marker date="1514667360116" expanded="true" signature="301:437" ph="SELECT u.id_... users" />
-            <marker date="1514667360116" expanded="true" signature="900:975" ph="SELECT u.id_... users" />
-            <marker date="1514667360116" expanded="true" signature="1388:1446" ph="SELECT e_mai... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/SeatMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-          <folding>
-            <marker date="1513342769609" expanded="true" signature="277:640" ph="SELECT s2.id... showtimes" />
-            <marker date="1513342769609" expanded="true" signature="715:874" ph="SELECT s2.id... rooms" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,10 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#1073#1074#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,10 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#899#900#0" expanded="false" />
-            <element signature="e#943#944#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,42 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="76" column="11" lean-forward="true" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-          <folding>
-            <marker date="1515002299446" expanded="true" signature="284:364" ph="SELECT id_sh... showtimes" />
-            <marker date="1515002299446" expanded="true" signature="284:390" ph="SELECT id_sh... showtimes" />
-            <marker date="1515002299446" expanded="true" signature="284:438" ph="SELECT id_sh... showtimes" />
-            <marker date="1515002299446" expanded="true" signature="520:647" ph="SELECT id_sh... showtimes" />
-            <marker date="1515002299446" expanded="true" signature="702:831" ph="INSERT INTO showtimes... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#710#711#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,18 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Showtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#879#880#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.rooms">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1111,22 +1141,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/ShowtimeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="31" column="118" lean-forward="false" selection-start-line="31" selection-start-column="118" selection-end-line="31" selection-end-column="118" />
-          <folding>
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,15 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <marker date="1514999157030" expanded="true" signature="265:521" ph="SELECT id_mo... movies" />
-            <marker date="1514999157030" expanded="true" signature="265:549" ph="SELECT m.id_... movies" />
-            <marker date="1514999157030" expanded="true" signature="630:850" ph="SELECT m.id_... movies" />
-            <marker date="1514999157030" expanded="true" signature="929:1123" ph="SELECT m.id_... movies" />
-            <marker date="1514999157030" expanded="true" signature="1200:1413" ph="SELECT m.id_... movies" />
-            <marker date="1514999157030" expanded="true" signature="1487:1642" ph="SELECT m.id_... movies" />
-            <marker date="1514999157030" expanded="true" signature="1694:1942" ph="INSERT INTO movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,14 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1181,48 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <marker date="1515019011215" expanded="true" signature="266:591" ph="SELECT rooms... " />
-            <marker date="1515019011215" expanded="true" signature="663:891" ph="SELECT rooms... " />
-            <marker date="1515019011215" expanded="true" signature="973:1718" ph="SELECT rooms... " />
-            <marker date="1515019011215" expanded="true" signature="1837:1892" ph="INSERT INTO rooms... " />
-            <marker date="1515019011215" expanded="true" signature="1944:2014" ph="INSERT INTO seats... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <element signature="e#1823#1824#0" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,11 +1199,200 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="698" column="40" lean-forward="false" selection-start-line="698" selection-start-column="40" selection-end-line="698" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/RoomService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/RoomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1515019011215" expanded="true" signature="266:591" ph="SELECT rooms... " />
+            <marker date="1515019011215" expanded="true" signature="663:891" ph="SELECT rooms... " />
+            <marker date="1515019011215" expanded="true" signature="973:1718" ph="SELECT rooms... " />
+            <marker date="1515019011215" expanded="true" signature="1837:1892" ph="INSERT INTO rooms... " />
+            <marker date="1515019011215" expanded="true" signature="1944:2014" ph="INSERT INTO seats... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/SeatMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <marker date="1513342769609" expanded="true" signature="277:640" ph="SELECT s2.id... showtimes" />
+            <marker date="1513342769609" expanded="true" signature="715:874" ph="SELECT s2.id... rooms" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/SeatMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/RoomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/SeatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/ShowtimeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <marker date="1515002299446" expanded="true" signature="284:438" ph="SELECT id_sh... showtimes" />
+            <marker date="1515002299446" expanded="true" signature="520:647" ph="SELECT id_sh... showtimes" />
+            <marker date="1515002299446" expanded="true" signature="702:831" ph="INSERT INTO showtimes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.tickets">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7130529c-650a-4101-9a6b-eb679a4782d0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Showtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/ShowtimeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/cinema/MapperJava/TicketMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <marker date="1515056137104" expanded="true" signature="266:376" ph="SELECT id_ti... " />
+            <marker date="1515056137104" expanded="true" signature="429:578" ph="INSERT INTO tickets... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/MapperJava/TicketMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/ShowtimeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Service/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/TicketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Domain/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
