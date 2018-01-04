@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="" />
+    <list default="true" id="e0ddd7d8-1371-4c35-819b-76f9824009bc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ui/src/app/addViewing/addViewing.component.html" afterPath="$PROJECT_DIR$/ui/src/app/addViewing/addViewing.component.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +58,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/Controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -67,24 +69,6 @@
                 <element signature="e#2241#2242#0" expanded="true" />
                 <element signature="e#2286#2287#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rooms" pinned="false" current-in-tab="true">
-        <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.rooms">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seats" pinned="false" current-in-tab="false">
-        <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.seats">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -632,7 +616,7 @@
       <workItem from="1514928826301" duration="701000" />
       <workItem from="1514995988155" duration="6644000" />
       <workItem from="1515008724715" duration="158000" />
-      <workItem from="1515067962621" duration="769000" />
+      <workItem from="1515067962621" duration="1042000" />
     </task>
     <servers />
   </component>
@@ -642,7 +626,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92258000" />
+    <option name="totallyTimeSpent" value="92531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -982,14 +966,21 @@
       </provider>
     </entry>
     <entry file="das://table:/8f115ba6/7130529c-650a-4101-9a6b-eb679a4782d0/d411p799b0iqf.public.showtimes" />
-    <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.seats">
+    <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.showtimes">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.showtimes">
+    <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.rooms">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.seats">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1006,13 +997,6 @@
             <element signature="e#2241#2242#0" expanded="true" />
             <element signature="e#2286#2287#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/e9524534/cbc8137c-6228-4701-8c24-cf5e91d94e2b/d411p799b0iqf.public.rooms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

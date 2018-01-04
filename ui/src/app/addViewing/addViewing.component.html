@@ -56,7 +56,7 @@
           <select type="room" class="form-control " name="room" id="room" #roomRef="ngModel" [(ngModel)]="viewing.id_room" required
             [disabled]="date_startRef.errors?.required || startTimeRef.errors?.required" (mouseenter)="getRoomByDate()">
             <option [ngValue]="undefined" disabled selected hidden>Wybierz salę</option>
-            <option *ngFor="let room of rooms" [value]="room.id_room">{{room.id_room}}
+            <option *ngFor="let room of rooms" [value]="room.id_room">{{room.number}}
             </option>
           </select>
         </div>

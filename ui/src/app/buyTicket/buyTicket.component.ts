@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../_services/data.service';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-buyTicket',
@@ -25,10 +26,12 @@ export class BuyTicketComponent implements OnInit {
   constructor(
     private router: Router,
     private data: DataService,
+    private http: Http
   ) { }
 
   ngOnInit() {
-    this.data.currentSeatsInfo.subscribe(selectedSeatsInfo => this.seats = selectedSeatsInfo)
+    this.data.currentSeatsInfo.subscribe(selectedSeatsInfo => this.seats = selectedSeatsInfo);
+    this.getTicketType();
   }
 
   buyTicket()
@@ -41,14 +44,20 @@ export class BuyTicketComponent implements OnInit {
     this.data.changeSeatInfo(seatInfo)
   }
 
+  getTicketType(): any {
+    return this.http.get("http://localhost:4200/api/getAllTicketsTypes").subscribe(res => {
+      this.ticketTypes = res.json();
+    });
+  }
+
   changeTicketType(spot, ticketType)
   {
     if(spot.price != 0)
     {
       this.ticketsPrice -= spot.price;
     }
-    spot.selectedTicketType = ticketType.name;
-    spot.price = ticketType.price2D;
+    spot.selectedTicketType = ticketType.type;
+    spot.price = ticketType.price;
     this.ticketsPrice += spot.price;
   }
 }
