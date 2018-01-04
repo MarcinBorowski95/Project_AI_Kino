@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cinema.MapperJava.RoomMapper">
+
+    <select id="getRoomByIdShowtime" resultMap="rooms">
+      SELECT rooms.id_room AS id_room, rooms.number AS number, COUNT(DISTINCT row) AS rows, count(DISTINCT seat) AS seatsinrow
+      FROM rooms
+       INNER JOIN showtimes s2 ON rooms.id_room = s2.id_room
+       INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+      WHERE id_showtime = #{id_showtime}
+      GROUP BY rooms.id_room
+    </select>
+
+    <select id="getAllRooms" resultMap="rooms">
+        SELECT rooms.id_room AS id_room, rooms.number AS number, COUNT(DISTINCT row) AS rows, count(DISTINCT seat) AS seatsinrow
+        FROM rooms
+        INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+        GROUP BY rooms.id_room
+    </select>
+
+    <select id="getRoomsByDateAndTime" resultMap="rooms">
+        SELECT rooms.id_room AS id_room, rooms.number AS number, COUNT(DISTINCT row) AS rows, count(DISTINCT seat) AS seatsinrow
+        FROM rooms
+          LEFT JOIN showtimes s2 ON rooms.id_room = s2.id_room
+          INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+        WHERE rooms.id_room NOT IN (SELECT rooms.id_room AS id_room
+                                    FROM rooms
+                                      LEFT JOIN showtimes s2 ON rooms.id_room = s2.id_room
+                                      INNER JOIN seats s3 ON rooms.id_room = s3.id_room
+                                    WHERE s2.date_start = #{dateParam} AND s2.time = #{timeParam}
+                                    GROUP BY rooms.id_room)
+        GROUP BY rooms.id_room
+    </select>
+
+    <insert id="postRoom" useGeneratedKeys="true" keyProperty="r.id_room" keyColumn="id_room">
+        INSERT INTO rooms (number)
+        VALUES (#{r.number});
+    </insert>
+
+    <insert id="postSeat">
+        INSERT INTO seats (id_room, row, seat)
+        VALUES (#{i},#{r},#{s});
+    </insert>
+
+
+    <resultMap id="rooms" type="com.cinema.Domain.Room">
+        <result column="id_room" property="id_room"/>
+        <result column="number" property="number"/>
+        <result column="rows" property="rows"/>
+        <result column="seatsinrow" property="seatsInRow"/>
+    </resultMap>
+
+
+</mapper>

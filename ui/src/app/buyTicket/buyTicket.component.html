@@ -1,0 +1,45 @@
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Zakup biletu</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <br>
+  <div *ngFor="let seat of seats" class="ticket-list">
+    <div class="ticket-row row">
+      <div class="col-md-3" style="color: white;">
+        {{ seat.ID }}
+      </div>
+      <div class="col-md-3">
+        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+          <button class="btn" id="dropdownManual" ngbDropdownToggle>{{seat.selectedTicketType}}</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownManual">
+            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(seat, ticketType)">{{ticketType.name}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" style="color: white;">
+        {{seat.price}}
+      </div>
+    </div>
+  </div>
+  <div class="ticket-final row">
+    <div class="cost col-md-4" style="color: white;">
+      {{ticketsPrice}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <br>
+      <br>
+      <button type="button" name="" id="" class="btn btn-gradient" (click)="buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,61 @@
+.screen {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.opacity:hover {
+  opacity: 1.0;
+}
+
+.square {
+  background-color: #1E1E1E;
+  position: relative;
+  width: 5%;
+  padding-bottom: 5%;
+  cursor: pointer;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  /*padding-bottom: 5%;*/
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  margin: 0 auto;
+  width: 5%;
+}
+
+.square-1 {
+  float: left;
+  position: relative;
+  width: 5%;
+  padding-bottom: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  background-color: #1E1E1E;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  padding: 10% 5%;
+  color: white;
+}
+
+.click {
+  background-color: #4daf8f;
+  opacity: 1.0;
+  cursor: default;
+}

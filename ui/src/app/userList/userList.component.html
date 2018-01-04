@@ -1,0 +1,25 @@
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Lista użytkowników</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <div class="list-group">
+    <a *ngFor="let user of users" class="list-group-item flex-column align-items-start borderless">
+      <div class="d-flex w-100">
+        <div>
+          <h1 style="color: black;"> {{user.id_user}}. {{user.name}} {{user.surname}} </h1>
+          <h4 style="color: black;"> {{user.e_mail}}</h4>
+          <h4 style="color: black;">Konto wygasło: {{user.accountNonExpired}}</h4>
+          <h4 style="color: black;">Konto zablokowane: {{user.accountNonLocked}}</h4>
+          <h4 style="color: black;">Konto włączone: {{user.enabled}}</h4>
+          <h4 style="color: black;">Rola użytkownika: {{user.role}}</h4>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

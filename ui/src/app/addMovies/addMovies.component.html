@@ -1,0 +1,138 @@
+<br>
+<br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Dodawanie Filmu</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <br>
+  <form class="form-addMovie" #formRef="ngForm" (ngSubmit)="addMovie(formRef.valid)">
+    <fieldset class="addMovie" ngModelGroup="addMovie">
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="title" class="form-control " name="title" id="title" #titleRef="ngModel" [(ngModel)]="movie.title" placeholder="Tytuł"
+            required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titleRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titleRef.errors?.pattern">
+          Błędny tytuł
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="titlePL" class="form-control " name="titlePL" id="titlePL" #titlePLRef="ngModel" [(ngModel)]="movie.title_pl"
+            placeholder="Polski tytuł" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && titlePLRef.errors?.pattern">
+          Błędny tytuł
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <select type="genere" class="form-control " name="genere" id="genere" #genereRef="ngModel" [(ngModel)]="movie.genre" required>
+            <option [ngValue]="undefined" disabled selected hidden>Wybierz gatunek filmu</option>
+            <option *ngFor="let genere of generes" [value]="genere">{{genere}}
+            </option>
+          </select>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && genereRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && genereRef.errors?.pattern">
+          Błędny gatunek
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="director" class="form-control " name="director" id="director" #directorRef="ngModel" [(ngModel)]="movie.director"
+            placeholder="Reżyser" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && directorRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && directorRef.errors?.pattern">
+          Błędny reżyser
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="number" class="form-control " name="duration" id="duration" #durationRef="ngModel" [(ngModel)]="movie.duration"
+            placeholder="Długość filmu (minuty)" required min="0" max="500">
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && durationRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && durationRef.errors?.pattern">
+          Błędna długość filmu
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="tag" for="dateRealese"> Data premiery </label>
+        <br>
+        <div class="input-group">
+          <input type="date" class="form-control " name="dateRealese" id="dateRealese" #dateRealeseRef="ngModel" [(ngModel)]="movie.date_release"
+            placeholder="Data premiery" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && dateRealeseRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && dateRealeseRef.errors?.pattern">
+          Błędna data
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="tag" for="dateEnd"> Data końcowa </label>
+        <br>
+        <div class="input-group">
+          <input type="date" class="form-control " name="dateEnd" id="dateEnd" #dateEndRef="ngModel" [(ngModel)]="movie.date_end" placeholder="Data zakończenia"
+            required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && dateEndRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && dateEndRef.errors?.pattern">
+          Błędna data
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="text" class="form-control " name="description" id="description" #descriptionRef="ngModel" [(ngModel)]="movie.description"
+            placeholder="Opis" required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && descriptionRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="input-group">
+          <input type="text" class="form-control " name="imgURL" id="imgURL" #imgURLRef="ngModel" [(ngModel)]="movie.imgage_url" placeholder="Link do obrazu filmu"
+            required>
+        </div>
+        <div class="error form-control" *ngIf="formRef.submitted && imgURLRef.errors?.required">
+          To pole jest obowiązkowe
+        </div>
+      </div>
+
+
+
+      <div class="form-group btn-submit" align="center">
+        <button type="submit" class="btn btn-gradient">Dodaj Film</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
