@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { Routing } from './app.routing';
 import { DataService } from './_services/data.service';
 
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { DataService } from './_services/data.service';
     BrowserModule,
     Routing,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    NgxQRCodeModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

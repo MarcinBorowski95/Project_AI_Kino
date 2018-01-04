@@ -25,9 +25,14 @@
       <div class="row" style="margin-bottom: 10px">
         <h5>{{r}}</h5>
         <ng-container *ngFor="let s of seats">
-          <div *ngIf="s.row==r" class="center square opacity" [ngClass]="{'click': Clicked( (s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1)) )}"
+          <div *ngIf="s.row==r && s.id_ticket==0" class="center square opacity" [ngClass]="{'click': Clicked( (s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1)) )}"
                id="{{s.row + s.seat}}" (click)="changeVar((s.seat*s.row) + ((s.row-1)*4) -((s.row-1)*(s.seat-1))) ; selectSeat(s);">
             <div class="content">{{s.seat}}</div>
+          </div>
+          <div *ngIf="s.row==r && s.id_ticket!=0" class="center square" style="cursor: default; background-color:darkslategray; opacity: 0.7;">
+            <div class="content">
+              <span class="fa fa-user"></span>
+            </div>
           </div>
         </ng-container>
       </div>
@@ -36,7 +41,6 @@
     <ng-container *ngFor="let r of rows">
       {{r.row}}
     </ng-container>
-
 
     <br>
     <button type="button" class="btn btn-gradient" (click)="buyTicket()">Potwierdź</button>
@@ -59,19 +63,3 @@
 
 </div>
 
-<script>
-  function changeclass(element) {
-    $(element).toggleClass('click');
-
-    document.getElementById("miejsce").innerHTML = "";
-    var elements = document.getElementsByClassName("click");
-    if (elements.length == 0) {
-      document.getElementById("miejsce").innerHTML = "Brak wybranych miejsc";
-    }
-
-    for (var i = (elements.length - 1); i >= 0; i--) {
-      document.getElementById("miejsce").innerHTML += elements[i].id + "<br>";
-    }
-  }
-
-</script>

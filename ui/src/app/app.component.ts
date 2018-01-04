@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  view: number = 2;
+  view: number = 0;
 
   isCollapsed = true;
 
