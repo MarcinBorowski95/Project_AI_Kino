@@ -31,14 +31,14 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
                     .withUser("user").password("password").roles("USER");
         }
 
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//        http.csrf().disable()
-//                .httpBasic()
-//                .and()
-//                .authorizeRequests()
-//                .antMatchers("/index.html", "/appRoute.js", "/app/**","/",
-//                        "/user").permitAll()
-//                .anyRequest().authenticated().and().logout();
-//    }
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable()
+                .httpBasic()
+                .and()
+                .authorizeRequests()
+                .antMatchers("/index.html", "/appRoute.js", "/app/**","/",
+                        "/user").permitAll()
+                .anyRequest().authenticated().and().logout();
+    }
 }

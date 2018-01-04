@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BuyTicketComponent } from './buyTicket.component';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 const routes = [
   { path: '', component: BuyTicketComponent }
@@ -14,7 +15,8 @@ const routes = [
     CommonModule,
     RouterModule.forChild(routes),
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpModule
   ],
   declarations: [BuyTicketComponent]
 })

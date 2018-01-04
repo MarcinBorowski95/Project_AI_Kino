@@ -24,6 +24,14 @@ public class UserController {
     @ResponseStatus(HttpStatus.OK)
     @ApiOperation(value = "Pobieranie email-i userów")
     List<User> getUsers(@RequestParam(value = "e_mail", required = false) String e_mail){
-        return userService.getUsers(e_mail);}
+        return userService.getUsers(e_mail);
+    }
+
+    @RequestMapping( value = "/getAllUsers", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie wszystkich userów")
+    List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
 
 }
