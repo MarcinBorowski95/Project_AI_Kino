@@ -73,7 +73,7 @@ export class BuyTicketComponent implements OnInit {
 
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    this.http.post("http://localhost:4200/api/postTickets",this.ticketsToAdd , options).subscribe(
+    this.http.post("./api/postTickets",this.ticketsToAdd , options).subscribe(
       res => {
         console.log(res);
         if (res.ok) {
@@ -92,7 +92,7 @@ export class BuyTicketComponent implements OnInit {
   }
 
   getTicketType(): any {
-    return this.http.get("http://localhost:4200/api/getAllTicketsTypes").subscribe(res => {
+    return this.http.get("./api/getAllTicketsTypes").subscribe(res => {
       this.ticketTypes = res.json();
     });
   }

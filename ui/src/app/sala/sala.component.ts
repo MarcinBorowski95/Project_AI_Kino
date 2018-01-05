@@ -46,14 +46,14 @@ export class SalaComponent implements OnInit {
   }
 
   getRoom(): any {
-    this.roomUrl = 'http://localhost:4200/api/getRoomByIdShowtime?id_showtime=' + this.seans;
+    this.roomUrl = './api/getRoomByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.roomUrl).subscribe(res => {
       this.room = res.json();
     });
   }
 
   getSeats(): any {
-    this.seatUrl = 'http://localhost:4200/api/getSeatsByIdShowtime?id_showtime=' + this.seans;
+    this.seatUrl = './api/getSeatsByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.seatUrl).subscribe(res => {
       this.seats = res.json();
       let index = 0;

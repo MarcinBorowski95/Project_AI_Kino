@@ -31,7 +31,7 @@ export class CheckTicketComponent implements OnInit {
   getTickets() : any{
     this.flaga=0;
     console.log(this.id_ticket)
-    this.ticketURL = 'http://localhost:4200/api/getTicketById?id_ticket=' + this.id_ticket;
+    this.ticketURL = './api/getTicketById?id_ticket=' + this.id_ticket;
     return this.http.get(this.ticketURL).subscribe(res => {
         //this.tickets[0] = res.json();
         try {

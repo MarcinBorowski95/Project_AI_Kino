@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
         let headers = new Headers({'Content-Type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        this.http.get("http://localhost:4200/api/email?e_mail=" + this.fb.getAuthResponse().userID).subscribe(res => {
+        this.http.get("./api/email?e_mail=" + this.fb.getAuthResponse().userID).subscribe(res => {
           if (res.json()[0].trim() === this.fbuser.e_mail.trim()) {
             this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
               .subscribe(result => {
@@ -70,7 +70,7 @@ export class LoginComponent implements OnInit {
               });
           }
           else {
-            this.http.post("http://localhost:4200/api/userCreate", this.fbuser, options).subscribe(
+            this.http.post("./api/userCreate", this.fbuser, options).subscribe(
               res => {
                 if (res.ok) {
                   this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)

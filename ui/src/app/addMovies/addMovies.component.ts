@@ -18,7 +18,7 @@ export class AddMoviesComponent implements OnInit {
   ]
 
   private movies: any[];
-  private movieUrl = 'http://localhost:4200/api/getAllMovies';
+  private movieUrl = './api/getAllMovies';
 
   constructor(
     private http: Http,
@@ -47,7 +47,7 @@ export class AddMoviesComponent implements OnInit {
       else {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        this.http.post("http://localhost:4200/api/postMovie", this.movie , options)
+        this.http.post("./api/postMovie", this.movie , options)
           .subscribe(
           res => {
             console.log(res);

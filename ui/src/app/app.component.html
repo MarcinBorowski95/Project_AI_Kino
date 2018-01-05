@@ -102,14 +102,14 @@
             <a class="nav-link" routerLink="/checkTicket">Sprawdź bilet</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="margin-right: 2%;">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/register">
-              <i class="fa fa-user-plus"></i> Rejestracja</a>
+            <a class="">
+              <i class="fa fa-user-o"></i> {{userName}} {{userSurname}}  </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/login">
-              <i class="fa fa-user"></i> Logowanie</a>
+            <a class="" style="margin-left: 14%; cursor:pointer;" (click)="logout()">
+              <i class="fa fa-hand-stop-o"> </i> Wyloguj się</a>
           </li>
         </ul>
       </div>
@@ -147,7 +147,16 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/userList">Lista użytkowników</a>
           </li>
-
+        </ul>
+        <ul class="navbar-nav ml-auto" style="margin-right: 2%;">
+          <li class="nav-item">
+            <a class="">
+              <i class="fa fa-user-o"></i> {{userName}} {{userSurname}}  </a>
+          </li>
+          <li class="nav-item">
+            <a class="" style="margin-left: 14%; cursor:pointer;" (click)="logout()">
+              <i class="fa fa-hand-stop-o"> </i> Wyloguj się</a>
+          </li>
         </ul>
       </div>
     </nav>

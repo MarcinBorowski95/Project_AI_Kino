@@ -7,7 +7,7 @@ import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class AuthenticationService {
-  private authUrl = 'http://localhost:4200/api/login';
+  private authUrl = './api/login';
   private headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
 
   constructor(private http: Http) {
@@ -17,7 +17,7 @@ export class AuthenticationService {
     return this.http.post(this.authUrl, 'username='+username+'&password='+password, {headers: this.headers})
       .map((response: Response) => {
         //let token = response.json() && response.json().token;
-        if (response.url == "http://localhost:4200/api/user") {
+        if (response.url == "./api/user") {
           // store username and jwt token in local storage to keep user logged in between page refreshes
           //localStorage.setItem('currentUser', JSON.stringify({ username: username, token: token }));
 
