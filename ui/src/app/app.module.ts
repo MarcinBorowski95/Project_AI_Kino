@@ -6,6 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { Routing } from './app.routing';
 import { DataService } from './_services/data.service';
+import { AuthenticationService } from './login/authentication.service';
+import {HttpModule} from "@angular/http";
 
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 
@@ -19,9 +21,10 @@ import { NgxQRCodeModule } from 'ngx-qrcode2';
     Routing,
     FormsModule,
     NgbModule.forRoot(),
-    NgxQRCodeModule
+    NgxQRCodeModule,
+    HttpModule
   ],
-  providers: [DataService],
+  providers: [DataService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

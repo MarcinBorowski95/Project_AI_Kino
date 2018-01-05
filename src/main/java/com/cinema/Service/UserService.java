@@ -17,19 +17,19 @@ public class UserService implements UserDetailsService {
 
     @Autowired
     private UserMapper userMapper;
+
     private Logger logger = Logger.getLogger(UserService.class);
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        User user = userMapper.findByEmail(s);
-        if (user == null) {
-            logger.info("User "+s+" not exists.");
-            throw new UsernameNotFoundException("Username " + s + " not found");
-        }
-        else
-            logger.info("User "+user.getName()+" found.");
-        return user;
-
+            User user = userMapper.findByEmail(s);
+            if (user == null) {
+                logger.info("User " + s + " not exists.");
+                throw new UsernameNotFoundException("Username " + s + " not found");
+            } else
+                logger.info("User " + user.getUsername() + " found.");
+            logger.info(user.getPassword());
+            return user;
     }
 
     public List<User> getUsers(String e_mail) {return userMapper.getUsers(e_mail);}
@@ -37,4 +37,7 @@ public class UserService implements UserDetailsService {
     public List<User> getAllUsers(){
         return userMapper.getAllUsers();
     }
+
+    public void createUser(User user) {userMapper.createUser(user);}
+
 }
