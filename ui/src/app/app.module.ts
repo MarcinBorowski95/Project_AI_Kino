@@ -22,7 +22,9 @@ import { NgxQRCodeModule } from 'ngx-qrcode2';
     FormsModule,
     NgbModule.forRoot(),
     NgxQRCodeModule,
-    HttpModule
+    HttpModule,
+    HttpModule,
+    NgbModule.forRoot(),
   ],
   providers: [DataService, AuthenticationService],
   bootstrap: [AppComponent]

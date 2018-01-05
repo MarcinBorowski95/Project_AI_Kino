@@ -19,8 +19,9 @@ const routes: Routes = [
     {path: "boughtTicket" , loadChildren: 'app/boughtTicket/boughtTicket.module#BoughtTicketModule'},
     {path: "addRoom" , loadChildren: 'app/addRoom/addRoom.module#AddRoomModule'},
     {path: "checkTicket" , loadChildren: 'app/checkTicket/checkTicket.module#CheckTicketModule'},
+    {path: "connect/facebook", loadChildren: 'app/login/login.module#LoginModule'},
     {path: "**" , redirectTo: "/" }
-    
+
   ];
 
 export const Routing = RouterModule.forRoot(routes);

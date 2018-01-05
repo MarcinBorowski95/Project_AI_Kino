@@ -12,8 +12,6 @@ public interface UserMapper {
     User findByEmail(@Param("username") String username);
     List<User> getUsers(@Param("e_mail") String e_mail);
 
-    List<User> getAllUsers();
-
     void createUser(@Param("user") User user);
-
+    List<User> getAllUsers();
 }

@@ -32,10 +32,13 @@
         <result property="e_mail" column="e_mail"/>
     </resultMap>
 
-    <select id="getUsers" resultType="String">
-        SELECT e_mail FROM users WHERE e_mail = #{e_mail}
+    <select id="getUsers" resultMap="UserEmail">
+        SELECT e_mail FROM users WHERE e_mail=#{e_mail}
     </select>
 
+    <resultMap id="UserEmail" type="java.lang.String">
+        <result property="e_mail" column="e_mail"/>
+    </resultMap>
 
     <insert id="createUser" parameterType="com.cinema.Domain.User">
         INSERT INTO users (id_user, name, surname, password, e_mail) VALUES
