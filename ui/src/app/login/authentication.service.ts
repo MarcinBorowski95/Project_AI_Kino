@@ -17,6 +17,7 @@ export class AuthenticationService {
     return this.http.post(this.authUrl, 'username='+username+'&password='+password, {headers: this.headers})
       .map((response: Response) => {
         //let token = response.json() && response.json().token;
+        console.log(response);
         if (response.url == "./api/user") {
           // store username and jwt token in local storage to keep user logged in between page refreshes
           //localStorage.setItem('currentUser', JSON.stringify({ username: username, token: token }));

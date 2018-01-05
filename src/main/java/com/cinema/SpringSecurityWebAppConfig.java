@@ -89,8 +89,8 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
                 .antMatchers("/swagger-ui.html","/connect/facebook").permitAll()
                 .and().csrf().disable()
                 .formLogin()
-                .defaultSuccessUrl("/api/user")
-                .failureUrl("http://localhost:4200")
+                //.defaultSuccessUrl("/api/user")
+                .failureUrl("/")
                 .usernameParameter("username").passwordParameter("password").and()
                 .logout().logoutUrl("/logout");
     }

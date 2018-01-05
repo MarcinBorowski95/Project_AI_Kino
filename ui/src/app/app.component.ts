@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
   title = 'app';
 
   private user;
-  private userURL = 'http://localhost:4200/api/user';
+  private userURL = './api/user';
 
   view: number = 0;
   userName;
@@ -46,6 +46,6 @@ export class AppComponent implements OnInit{
 
   logout(){
     console.log("jestem");
-    window.location.href = 'http://localhost:4200/api/logout'
+    window.location.href = './api/logout'
   }
 }
