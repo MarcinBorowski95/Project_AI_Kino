@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
 
   email;
   password;
+  fbuser;
 
   constructor(
               private http: Http,
@@ -48,15 +49,78 @@ export class LoginComponent implements OnInit {
   }
 
   loginWithFacebook() {
-    // this.fb.login()
-    //   .then((response: LoginResponse) => console.log(response))
-    //   .catch((error: any) => console.error(error));
-    // header('Access-Control-Allow-Origin: *');
-    // header('Access-Control-Allow-Methods: DELETE, HEAD, GET, OPTIONS, POST, PUT');
-    // header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
-    // header('Access-Control-Max-Age: 1728000');
-    let headers = new Headers({ 'Access-Control-Allow-Origin': ' *'});
-    let options = new RequestOptions({ headers: headers });
-    this.http.post("http://localhost:4200/api", "", options).subscribe(res => console.log(res));
+    this.fb.login()
+      .then((response: LoginResponse) => {
+      if(this.fb.getAuthResponse().userID == this.http.get("http://localhost:4200/api/email?e_mail=" +
+          this.fb.getAuthResponse().userID).subscribe.toString()){
+        alert("1");
+            this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
+              .subscribe(result => {
+                if (result === true) {
+                  alert("Logowanie udane!")
+                  this.router.navigate(["/"])
+                } else {
+                  alert("Logowanie nieudane!");
+                }
+              });
+      }
+      else {
+        alert(this.http.get("http://localhost:4200/api/email?e_mail=" +
+          this.fb.getAuthResponse().userID).subscribe);
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+        if(this.fb.getAuthResponse().userID == this.http.get("http://localhost:4200/api/email?e_mail=" +
+            this.fb.getAuthResponse().userID).subscribe.toString()){
+          console.log(this.fbuser);
+          this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
+            .subscribe(result => {
+              if (result === true) {
+                alert("Logowanie udane!")
+                this.router.navigate(["/"])
+              } else {
+                alert("Logowanie nieudane!");
+              }
+            });
+        }
+        else {
+          this.fbuser = {
+            accountNonExpired: true, accountNonLocked: true,
+            credentialsNonExpired: true, e_mail: this.fb.getAuthResponse().userID, enabled: true,
+            id: 0, name: this.fb.getAuthResponse().userID, surname: this.fb.getAuthResponse().userID,
+            role: "C", password: this.fb.getAuthResponse().userID, username: this.fb.getAuthResponse().userID
+          };
+
+          this.http.post("http://localhost:4200/api/userCreate", this.fbuser, options).subscribe(
+            res => {
+              if (res.ok) {
+                this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
+                  .subscribe(result => {
+                    if (result === true) {
+                      alert("Logowanie udane!")
+                      this.router.navigate(["/"])
+                    } else {
+                      alert("Logowanie nieudane!");
+                    }
+                  });
+                this.router.navigate(['/']);
+              }
+            },
+            err => {
+              console.log("Error occured");
+            }
+          );
+        }
+      }
+    });
+
+
+
+    // let headers = new Headers({ 'Access-Control-Allow-Credentials' : 'true',
+    // 'Access-Control-Allow-Methods' : 'OPTIONS',
+    // 'Access-Control-Allow-Origin' : 'https://web.facebook.com',
+    //   'Access-Control-Expose-Headers' : 'X-FB-Debug, X-Loader-Length',
+    //   'X-FB-Debug' : 'MHag//9C1u+1e2eUnZbYuciMUKrjtKc38URYZppygZOsQJF49+v72YRm3aC32WkOOs0YJueCikmTtSV8iHpekQ=='});
+    // let options = new RequestOptions({ headers: headers });
+    // this.http.post("http://localhost:8080/connect/facebook", "aa",options).subscribe()
   }
 }

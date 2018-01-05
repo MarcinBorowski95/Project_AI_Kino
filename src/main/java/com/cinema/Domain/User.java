@@ -25,6 +25,7 @@ public class User implements UserDetails{
 
     public String getName() {
         return name;
+
     }
 
     public void setName(String name) {
