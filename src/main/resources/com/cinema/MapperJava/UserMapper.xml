@@ -19,10 +19,6 @@
         <result property="username" column="e_mail"/>
     </resultMap>
 
-<<<<<<< HEAD
-    <select id="getUsers" resultType="String">
-        SELECT e_mail FROM users WHERE e_mail = #{e_mail}
-=======
     <select id="getAllUsers" resultMap="allUsers">
         SELECT  u.id_user, u.name, u.surname, u.role, u.e_mail
         FROM users u
@@ -36,11 +32,13 @@
         <result property="e_mail" column="e_mail"/>
     </resultMap>
 
-    <select id="getUsers" resultMap="userEmailResultMap">
-        SELECT e_mail, id_user FROM users WHERE e_mail = #{e_mail}
->>>>>>> Marcin
+    <select id="getUsers" resultMap="UserEmail">
+        SELECT e_mail FROM users WHERE e_mail=#{e_mail}
     </select>
 
+    <resultMap id="UserEmail" type="java.lang.String">
+        <result property="e_mail" column="e_mail"/>
+    </resultMap>
 
     <insert id="createUser" parameterType="com.cinema.Domain.User">
         INSERT INTO users (id_user, name, surname, password, e_mail) VALUES

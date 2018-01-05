@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,9 @@ public class UserService implements UserDetailsService {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     private Logger logger = Logger.getLogger(UserService.class);
 
@@ -28,12 +32,14 @@ public class UserService implements UserDetailsService {
                 throw new UsernameNotFoundException("Username " + s + " not found");
             } else
                 logger.info("User " + user.getUsername() + " found.");
-            logger.info(user.getPassword());
             return user;
     }
 
     public List<User> getUsers(String e_mail) {return userMapper.getUsers(e_mail);}
-    public void createUser(User user) {userMapper.createUser(user);}
+    public void createUser(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userMapper.createUser(user);
+    }
     public List<User> getAllUsers(){
         return userMapper.getAllUsers();
     }

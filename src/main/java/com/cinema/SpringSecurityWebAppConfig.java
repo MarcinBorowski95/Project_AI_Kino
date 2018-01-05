@@ -5,16 +5,32 @@ import com.cinema.Service.UserService;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.social.connect.Connection;
+import org.springframework.social.connect.ConnectionFactoryLocator;
+import org.springframework.social.connect.UsersConnectionRepository;
+import org.springframework.social.connect.mem.InMemoryUsersConnectionRepository;
+import org.springframework.social.connect.web.ProviderSignInController;
+import org.springframework.social.connect.web.SignInAdapter;
+import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+
+import java.util.Arrays;
 
 @Configuration
 //@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
@@ -25,10 +41,24 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
     @Autowired
     private UserService userService;
 
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public DaoAuthenticationProvider authProvider() {
+        DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
+        authProvider.setUserDetailsService(userService);
+        authProvider.setPasswordEncoder(passwordEncoder());
+        return authProvider;
+    }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.authenticationProvider(authProvider());
         auth.userDetailsService(userService);
-        auth.inMemoryAuthentication().withUser("admin1@gmail.com").password("Admino2").roles("ADMIN");
+        auth.inMemoryAuthentication().withUser("admin1@gmail.com").password("Admino1").roles("ADMIN");
 
     }
 
@@ -37,11 +67,11 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
         http
                 .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues()).and()
                 .authorizeRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/swagger-ui.html","/connect/facebook").permitAll()
                 .and().csrf().disable()
                 .formLogin()
                 .defaultSuccessUrl("/api/user")
-                .failureUrl("/swagger-ui.html")
+                .failureUrl("http://localhost:4200")
                 .usernameParameter("username").passwordParameter("password");
     }
 

@@ -5,6 +5,7 @@ import 'rxjs/add/operator/catch';
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import { AuthenticationService } from './authentication.service';
+import {InitParams, FacebookService, LoginResponse} from "ngx-facebook";
 
 @Component({
   selector: 'app-login',
@@ -13,16 +14,15 @@ import { AuthenticationService } from './authentication.service';
 })
 export class LoginComponent implements OnInit {
 
-  loginUser: any = {};
   email;
   password;
-
-  private url: string = "http://localhost:8080";
 
   constructor(
               private http: Http,
               private router: Router,
-              private authenticationService: AuthenticationService) {}
+              private authenticationService: AuthenticationService,
+              private fb: FacebookService) {
+  }
 
   ngOnInit() {
   }
@@ -34,9 +34,10 @@ export class LoginComponent implements OnInit {
       this.authenticationService.login(this.email, this.password)
         .subscribe(result => {
           if (result === true) {
-            alert("sukces")
+            alert("Logowanie udane!")
+            this.router.navigate(["/"])
           } else {
-            alert("Błąd logowania");
+            alert("Logowanie nieudane!");
           }
         });
     }
@@ -44,5 +45,18 @@ export class LoginComponent implements OnInit {
     {
       alert("Błędnie uzupełniony formularz")
     }
+  }
+
+  loginWithFacebook() {
+    // this.fb.login()
+    //   .then((response: LoginResponse) => console.log(response))
+    //   .catch((error: any) => console.error(error));
+    // header('Access-Control-Allow-Origin: *');
+    // header('Access-Control-Allow-Methods: DELETE, HEAD, GET, OPTIONS, POST, PUT');
+    // header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
+    // header('Access-Control-Max-Age: 1728000');
+    let headers = new Headers({ 'Access-Control-Allow-Origin': ' *'});
+    let options = new RequestOptions({ headers: headers });
+    this.http.post("http://localhost:4200/api", "", options).subscribe(res => console.log(res));
   }
 }

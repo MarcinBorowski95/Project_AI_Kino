@@ -58,8 +58,18 @@
   </form>
 </div>
 
+<form action="http://localhost:8080/connect/facebook" method="POST" (ngSubmit)="loginWithFacebook()">
+  <input type="hidden" name="scope" value="user_posts" />
+  <div class="formInfo">
+    <p>You aren't connected to Facebook yet. Click the button to connect this application with your Facebook account.</p>
+  </div>
+  <p><button type="submit">Connect to Facebook</button></p>
+</form>
+
 <script>
   $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
+
+<script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>

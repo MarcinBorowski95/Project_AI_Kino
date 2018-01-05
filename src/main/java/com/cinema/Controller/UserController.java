@@ -4,9 +4,14 @@ import com.cinema.Domain.User;
 import com.cinema.Service.UserService;
 
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.social.connect.ConnectionRepository;
+import org.springframework.social.facebook.api.Facebook;
+import org.springframework.social.facebook.api.PagedList;
+import org.springframework.social.facebook.api.Post;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

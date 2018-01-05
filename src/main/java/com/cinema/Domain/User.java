@@ -46,15 +46,15 @@ public class User implements UserDetails{
     public void setRole(String role) {
         if(role.equals("C")){
             userRole.setId(1);
-            userRole.setName("ROLE_USER");
+            userRole.setName("1");
             this.Roles.add(userRole);
-            this.role = "ROLE_USER";
+            this.role = "1";
         }
         if(role.equals("P")){
             userRole.setId(2);
-            userRole.setName("ROLE_EMPLOYEE");
+            userRole.setName("2");
             this.Roles.add(userRole);
-            this.role = "ROLE_EMPLOYEE";
+            this.role = "3";
         }
     }
 

@@ -8,6 +8,7 @@ import { Routing } from './app.routing';
 import { DataService } from './_services/data.service';
 import { AuthenticationService } from './login/authentication.service';
 import {HttpModule} from "@angular/http";
+import {FacebookModule} from "ngx-facebook";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {HttpModule} from "@angular/http";
     Routing,
     FormsModule,
     HttpModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FacebookModule.forRoot()
   ],
   providers: [DataService, AuthenticationService],
   bootstrap: [AppComponent]

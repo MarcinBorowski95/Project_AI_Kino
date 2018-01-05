@@ -18,8 +18,9 @@ const routes: Routes = [
     {path: "userList" , loadChildren: 'app/userList/userList.module#UserListModule'},
     {path: "boughtTicket" , loadChildren: 'app/boughtTicket/boughtTicket.module#BoughtTicketModule'},
     {path: "addRoom" , loadChildren: 'app/addRoom/addRoom.module#AddRoomModule'},
+    {path: "connect/facebook", loadChildren: 'app/login/login.module#LoginModule'},
     {path: "**" , redirectTo: "/" }
-    
+
   ];
 
 export const Routing = RouterModule.forRoot(routes);
