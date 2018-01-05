@@ -9,6 +9,16 @@
 
 <div class="container col-md-10 mx-auto">
   <br>
+  <div class="row">
+    <p style="color: white; text-transform: uppercase; font-weight: bold;">{{ticketInfo.title}}</p>
+    <p style="color: lightgray">, {{ticketInfo.date_start}}, {{time}}</p>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3" style="text-transform: uppercase;"><p>Wybrane miejsca</p></div>
+    <div class="col-md-3" style="text-transform: uppercase;"><p>Rodzaj biletu</p></div>
+    <div class="col-md-3" style="text-transform: uppercase;"><p>Cena biletu</p></div>
+  </div>
   <div *ngFor="let seat of seats" class="ticket-list">
     <div class="ticket-row row">
       <div class="col-md-3" style="color: white;">
@@ -29,7 +39,8 @@
   </div>
   <div class="ticket-final row">
     <div class="cost col-md-4" style="color: white;">
-      {{ticketsPrice}}
+      <br>
+      <p>Suma: {{ticketsPrice}}</p>
     </div>
   </div>
   <div class="row">
@@ -38,6 +49,12 @@
       <br>
       <br>
       <button type="button" name="" id="" class="btn btn-gradient" (click)="buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
+      <div *ngIf="flaga==1">
+        <br>
+        <p>Bilet został zakupiony. Nr Twojego biletu to {{id}}. Twój kod QR:</p>
+        <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value">
+        </ngx-qrcode>
+      </div>
     </div>
   </div>
 

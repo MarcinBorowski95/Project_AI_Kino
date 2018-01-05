@@ -8,7 +8,8 @@ import { Routing } from './app.routing';
 import { DataService } from './_services/data.service';
 import { AuthenticationService } from './login/authentication.service';
 import {HttpModule} from "@angular/http";
-import {FacebookModule} from "ngx-facebook";
+
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 
 @NgModule({
@@ -19,9 +20,11 @@ import {FacebookModule} from "ngx-facebook";
     BrowserModule,
     Routing,
     FormsModule,
+    NgbModule.forRoot(),
+    NgxQRCodeModule,
+    HttpModule,
     HttpModule,
     NgbModule.forRoot(),
-    FacebookModule.forRoot()
   ],
   providers: [DataService, AuthenticationService],
   bootstrap: [AppComponent]

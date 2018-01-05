@@ -38,6 +38,7 @@ import java.util.Arrays;
 @EnableWebSecurity
 public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
 
+
     @Autowired
     private UserService userService;
 
@@ -87,12 +88,14 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
         http
                 .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues()).and()
                 .authorizeRequests()
+                .antMatchers("/swagger-ui.html", "/").permitAll()
                 .antMatchers("/swagger-ui.html","/connect/facebook").permitAll()
                 .and().csrf().disable()
                 .formLogin()
                 .defaultSuccessUrl("/api/user")
                 .failureUrl("http://localhost:4200")
-                .usernameParameter("username").passwordParameter("password");
+                .usernameParameter("username").passwordParameter("password").and()
+                .logout().logoutUrl("/logout");
     }
 
 }

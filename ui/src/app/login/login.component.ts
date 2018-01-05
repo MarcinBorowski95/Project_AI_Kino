@@ -5,7 +5,6 @@ import 'rxjs/add/operator/catch';
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import { AuthenticationService } from './authentication.service';
-import {InitParams, FacebookService, LoginResponse} from "ngx-facebook";
 
 @Component({
   selector: 'app-login',
@@ -21,8 +20,7 @@ export class LoginComponent implements OnInit {
   constructor(
               private http: Http,
               private router: Router,
-              private authenticationService: AuthenticationService,
-              private fb: FacebookService) {
+              private authenticationService: AuthenticationService) {
   }
 
   ngOnInit() {
@@ -36,7 +34,8 @@ export class LoginComponent implements OnInit {
         .subscribe(result => {
           if (result === true) {
             alert("Logowanie udane!")
-            this.router.navigate(["/"])
+            this.router.navigate(["/"]);
+            window.location.reload();
           } else {
             alert("Logowanie nieudane!");
           }

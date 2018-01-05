@@ -40,6 +40,13 @@ public class UserController {
         return userService.getUsers(e_mail);
     }
 
+    @RequestMapping( value = "/getAllUsers", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Pobieranie wszystkich userów")
+    List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
     @RequestMapping (value = "/userCreate" ,method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     @ApiOperation(value = "Dodawanie usera do bazy")
@@ -48,11 +55,5 @@ public class UserController {
         userService.createUser(user);
     }
 
-    @RequestMapping( value = "/getAllUsers", method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Pobieranie wszystkich userów")
-    List<User> getAllUsers(){
-        return userService.getAllUsers();
-    }
 
 }

@@ -6,6 +6,8 @@ import { BuyTicketComponent } from './buyTicket.component';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+
 const routes = [
   { path: '', component: BuyTicketComponent }
 ];
@@ -16,7 +18,8 @@ const routes = [
     RouterModule.forChild(routes),
     FormsModule,
     NgbModule,
-    HttpModule
+    HttpModule,
+    NgxQRCodeModule
   ],
   declarations: [BuyTicketComponent]
 })

@@ -23,6 +23,7 @@ export class SalaComponent implements OnInit {
 
   flag;
   time;
+  seatsNumber=0;
 
   constructor(
     private http: Http,
@@ -39,7 +40,7 @@ export class SalaComponent implements OnInit {
 
     this.selectedSeatsInfo = [];
 
-    
+
     var t = this.ticketInfo.time.toString();
     this.time = t.substring(0, 5);
   }
@@ -67,8 +68,12 @@ export class SalaComponent implements OnInit {
   }
 
   buyTicket() {
-    this.sendSeatInfo(this.selectedSeatsInfo)
-    this.router.navigate(['/buyTicket']);
+    if(this.seatsNumber>0){
+      this.sendSeatInfo(this.selectedSeatsInfo);
+      this.sendTicketInfo(this.ticketInfo);
+      this.sendTicketNum(this.seatsNumber);
+      this.router.navigate(['/buyTicket']);
+    }
   }
 
   selectSeat(s) {
@@ -89,13 +94,20 @@ export class SalaComponent implements OnInit {
       console.log(this.selectedSeatsInfo);
     }
 
-
     // this.tempArray  = Object.assign([], this.selectedSeatsInfo);
     // console.log(this.tempArray)
   }
 
   sendSeatInfo(seatInfo) {
     this.data.changeSeatInfo(seatInfo)
+  }
+
+  sendTicketInfo(ticketInfo) {
+    this.data.changeTicketInfo(ticketInfo)
+  }
+
+  sendTicketNum(seatsNumber){
+    this.data.changeTicketNum(seatsNumber);
   }
 
   Clicked(num) {
@@ -111,11 +123,13 @@ export class SalaComponent implements OnInit {
 
     if (this.selectedSeats[num] == 0){
       this.selectedSeats[num] = 1;
+      this.seatsNumber++;
     }
 
     else{
       this.selectedSeats[num] = 0;
       this.flag=1;
+      this.seatsNumber--;
     }
 
   }
