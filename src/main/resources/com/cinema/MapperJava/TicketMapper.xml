@@ -9,8 +9,8 @@
     </select>
 
     <insert id="postTicket">
-        INSERT INTO tickets (id_showtime, id_seat, id_user, id_type, date)
-        VALUES (#{t.id_showtime},#{t.id_seat},#{t.id_user},#{t.id_type},#{t.date});
+        INSERT INTO tickets (id_ticket,id_showtime, id_seat, id_user, id_type, date)
+        VALUES (#{t.id_ticket},#{t.id_showtime},#{t.id_seat},#{t.id_user},#{t.id_type},#{t.date});
     </insert>
 
     <resultMap id="tickets" type="com.cinema.Domain.Ticket">

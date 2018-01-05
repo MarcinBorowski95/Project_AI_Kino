@@ -25,8 +25,9 @@
     <br>
     <p>ID biletu: {{tickets[0].id_ticket}}</p>
     <p>Data: {{tickets[0].date}}</p>
-    <p>Miejsce: {{tickets[0].id_seat}}</p>
-    <p>Seans: {{tickets[0].id_showtime}}</p>
+    <p>ID miejsca: {{tickets[0].id_seat}}</p>
+    <p>ID seansu: {{tickets[0].id_showtime}}</p>
+    <p>Kod QR: <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value"></ngx-qrcode></p>
     <div class="row">
       <div class="col-md-2">
         <p>Zatwierdzasz?</p>

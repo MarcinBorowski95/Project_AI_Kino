@@ -16,6 +16,8 @@ export class CheckTicketComponent implements OnInit {
   private ticketURL;
   private id_ticket=1;
   flaga=0;
+  elementType : 'url' | 'canvas' | 'img' = 'url';
+  value : string;
 
   constructor(
     private router: Router,
@@ -34,6 +36,7 @@ export class CheckTicketComponent implements OnInit {
         //this.tickets[0] = res.json();
         try {
           this.tickets[0] = res.json();
+          this.value = this.tickets[0].id_ticket.toString();
           this.flaga=1;
         }catch (Exception){
           alert("Wprowadzony zły numer biletu!")

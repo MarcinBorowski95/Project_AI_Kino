@@ -51,7 +51,7 @@
       <button type="button" name="" id="" class="btn btn-gradient" (click)="buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
       <div *ngIf="flaga==1">
         <br>
-        <p>Bilet został zakupiony. Nr. Twojego biletu to {{id_ticket}}. Twój kod QR:</p>
+        <p>Bilet został zakupiony. Nr Twojego biletu to {{id}}. Twój kod QR:</p>
         <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value">
         </ngx-qrcode>
       </div>

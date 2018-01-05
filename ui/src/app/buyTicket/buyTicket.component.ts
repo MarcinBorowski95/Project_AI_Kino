@@ -20,6 +20,8 @@ export class BuyTicketComponent implements OnInit {
   seatsIds : any[] = [];
 
   flaga;
+  id;
+  time;
 
   ticketTypes: any[] = [
     {name: "Normalny", price2D: 24.99 , price3D: 29.99},
@@ -46,9 +48,16 @@ export class BuyTicketComponent implements OnInit {
     for(let i=0 ; i<this.seats.length;i++){
       this.seatsIds[i] = this.seats[i].id_seat;
     }
+
+    this.id=Math.floor(Math.random() * (999999 - 100000)) + 100000;
+    this.value = this.id.toString();
+
+    var t = this.ticketInfo.time.toString();
+    this.time = t.substring(0, 5);
   }
 
   buyTicket() {
+    console.log("id: " + this.id);
 
     this.flaga=0;
     this.sendSeatInfo([]);
@@ -58,7 +67,7 @@ export class BuyTicketComponent implements OnInit {
 
     for(let i = 0; i < this.numOfSeats ; i++){
        this.ticketsToAdd[i] = { date : this.ticketInfo.date_start, id_seat : this.seatsIds[i]
-         , id_showtime : this.ticketInfo.id_showtime, id_ticket : 0, id_type : 1, id_user : 1 }
+         , id_showtime : this.ticketInfo.id_showtime, id_ticket : this.id, id_type : 1, id_user : 1 }
     }
 
 

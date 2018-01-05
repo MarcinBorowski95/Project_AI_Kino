@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CheckTicketComponent } from './checkTicket.component';
 import { RouterModule } from '@angular/router';
 import {FormsModule} from "@angular/forms";
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 const routes = [
   { path: '', component: CheckTicketComponent }
@@ -14,7 +15,8 @@ const routes = [
     CommonModule,
     RouterModule.forChild(routes),
     HttpModule,
-    FormsModule
+    FormsModule,
+    NgxQRCodeModule
   ],
   declarations: [CheckTicketComponent]
 })
