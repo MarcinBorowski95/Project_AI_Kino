@@ -74,7 +74,8 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
                 .formLogin()
                 .defaultSuccessUrl("/api/user")
                 .failureUrl("http://localhost:4200")
-                .usernameParameter("username").passwordParameter("password");
+                .usernameParameter("username").passwordParameter("password").and()
+                .logout().logoutUrl("/logout");
     }
 
 }
