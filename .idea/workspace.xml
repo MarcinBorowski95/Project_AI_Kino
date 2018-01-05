@@ -3,19 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b2d28335-af81-44e6-82a7-02b6d57fc0e4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ui/package-lock.json" afterPath="$PROJECT_DIR$/ui/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/ui/package.json" afterPath="$PROJECT_DIR$/ui/package.json" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/_services/data.service.ts" afterPath="$PROJECT_DIR$/ui/src/app/_services/data.service.ts" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/app.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/app.component.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ui/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" />
       <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.module.ts" afterPath="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.module.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/movies/movies.component.html" afterPath="$PROJECT_DIR$/ui/src/app/movies/movies.component.html" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.html" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/styles.css" afterPath="$PROJECT_DIR$/ui/src/styles.css" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.css" afterPath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.css" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.html" afterPath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.html" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.ts" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.module.ts" afterPath="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.module.ts" />
+      <change beforePath="$PROJECT_DIR$/ui/src/app/priceList/priceList.component.css" afterPath="$PROJECT_DIR$/ui/src/app/priceList/priceList.component.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,13 +56,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="buyTicket.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts">
+      <file leaf-file-name="checkTicket.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="34" column="60" lean-forward="false" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkTicket.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,9 +83,21 @@
       <file leaf-file-name="buyTicket.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="53" column="68" lean-forward="false" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+            <state relative-caret-position="140">
+              <caret line="30" column="136" lean-forward="false" selection-start-line="30" selection-start-column="130" selection-end-line="30" selection-end-column="136" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyTicket.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,6 +109,9 @@
       <find>buyt</find>
       <find>ticketinf</find>
       <find>&lt;p</find>
+      <find>movie</find>
+      <find>loginus</find>
+      <find>login(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,11 +133,16 @@
         <option value="$PROJECT_DIR$/ui/src/app/sala/sala.component.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/_services/data.service.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/ui/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.module.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/priceList/priceList.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.css" />
+        <option value="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.module.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.html" />
+        <option value="$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.ts" />
       </list>
     </option>
   </component>
@@ -128,7 +154,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="width" value="1358" />
     <option name="height" value="729" />
@@ -181,6 +207,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="buyTicket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_AI_Kino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_AI_Kino" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="movies" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,10 +380,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19467000" />
+    <option name="totallyTimeSpent" value="28174000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -390,74 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/SpringSecurityWebAppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/movies/movies.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#ng-container#0;n#div#0;n#ng-container#0;n#div#1;n#div#2;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/_services/data.service.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -475,36 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/9ca25c1c/4b841da0-9652-4298-acc1-0351c9a55290/d411p799b0iqf.public.tickets">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="125" column="8" lean-forward="true" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,16 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -586,10 +524,360 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="321">
+          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1397">
+          <caret line="125" column="8" lean-forward="false" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/priceList/priceList.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cinema/SpringSecurityWebAppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#ng-container#0;n#div#0;n#ng-container#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/_services/data.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ca25c1c/4b841da0-9652-4298-acc1-0351c9a55290/d411p799b0iqf.public.tickets_types">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ca25c1c/4b841da0-9652-4298-acc1-0351c9a55290/d411p799b0iqf.public.tickets">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/sala/sala.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="108" column="29" lean-forward="false" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/_services/data.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/addMovies/addMovies.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1397">
+          <caret line="125" column="8" lean-forward="false" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="81" lean-forward="false" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/priceList/priceList.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/priceList/priceList.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/boughtTicket/boughtTicket.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/movies/movies.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/repertoire/repertoire.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/addMovies/addMovies.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/addMovies/addMovies.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="15" column="121" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/login/login.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="30" column="136" lean-forward="false" selection-start-line="30" selection-start-column="130" selection-end-line="30" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/buyTicket/buyTicket.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" column="60" lean-forward="false" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/checkTicket/checkTicket.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -49,6 +49,7 @@ export class BuyTicketComponent implements OnInit {
   }
 
   buyTicket() {
+
     this.flaga=0;
     this.sendSeatInfo([]);
     //this.router.navigate(['/']);
