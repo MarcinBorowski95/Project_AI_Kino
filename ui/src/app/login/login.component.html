@@ -54,9 +54,20 @@
       <div class="form-group btn-submit" align="center">
         <button type="submit" class="btn btn-gradient">Zaloguj się</button>
       </div>
+      <div style="text-align: center;">
+      <form method="POST" (ngSubmit)="loginWithFacebook()">
+        <input type="hidden" name="scope" value="user_posts" />
+        <div class="formInfo">
+        </div>
+        <button type="submit" class="btn btn-gradient" style="align:center;" >Zaloguj przez Facebooka</button>
+      </form>
+      </div>
     </fieldset>
   </form>
 </div>
+
+
+
 
 <script>
   $(document).ready(function () {

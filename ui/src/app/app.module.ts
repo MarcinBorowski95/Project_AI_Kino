@@ -10,6 +10,7 @@ import { AuthenticationService } from './login/authentication.service';
 import {HttpModule} from "@angular/http";
 
 import { NgxQRCodeModule } from 'ngx-qrcode2';
+import {FacebookModule} from "ngx-facebook";
 
 
 @NgModule({
@@ -23,8 +24,7 @@ import { NgxQRCodeModule } from 'ngx-qrcode2';
     NgbModule.forRoot(),
     NgxQRCodeModule,
     HttpModule,
-    HttpModule,
-    NgbModule.forRoot(),
+    FacebookModule.forRoot()
   ],
   providers: [DataService, AuthenticationService],
   bootstrap: [AppComponent]

@@ -5,6 +5,7 @@ import 'rxjs/add/operator/catch';
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import { AuthenticationService } from './authentication.service';
+import {FacebookService, LoginResponse} from "ngx-facebook";
 
 @Component({
   selector: 'app-login',
@@ -17,19 +18,17 @@ export class LoginComponent implements OnInit {
   password;
   fbuser;
 
-  constructor(
-              private http: Http,
+  constructor(private http: Http,
               private router: Router,
-              private authenticationService: AuthenticationService) {
+              private authenticationService: AuthenticationService,
+              private fb: FacebookService) {
   }
 
   ngOnInit() {
   }
 
-  login(valid)
-  {
-    if (valid)
-    {
+  login(valid) {
+    if (valid) {
       this.authenticationService.login(this.email, this.password)
         .subscribe(result => {
           if (result === true) {
@@ -41,8 +40,7 @@ export class LoginComponent implements OnInit {
           }
         });
     }
-    else
-    {
+    else {
       alert("Błędnie uzupełniony formularz")
     }
   }
@@ -50,9 +48,17 @@ export class LoginComponent implements OnInit {
   loginWithFacebook() {
     this.fb.login()
       .then((response: LoginResponse) => {
-      if(this.fb.getAuthResponse().userID == this.http.get("http://localhost:4200/api/email?e_mail=" +
-          this.fb.getAuthResponse().userID).subscribe.toString()){
-        alert("1");
+
+        this.fbuser = {accountNonExpired : true, accountNonLocked: true,
+          credentialsNonExpired: true, e_mail : this.fb.getAuthResponse().userID , enabled : true,
+          id : 0, name : this.fb.getAuthResponse().userID, surname : this.fb.getAuthResponse().userID,
+          role : "C" , password : this.fb.getAuthResponse().userID, username : this.fb.getAuthResponse().userID };
+
+        let headers = new Headers({'Content-Type': 'application/json'});
+        let options = new RequestOptions({headers: headers});
+
+        this.http.get("http://localhost:4200/api/email?e_mail=" + this.fb.getAuthResponse().userID).subscribe(res => {
+          if (res.json()[0].trim() === this.fbuser.e_mail.trim()) {
             this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
               .subscribe(result => {
                 if (result === true) {
@@ -62,54 +68,25 @@ export class LoginComponent implements OnInit {
                   alert("Logowanie nieudane!");
                 }
               });
-      }
-      else {
-        alert(this.http.get("http://localhost:4200/api/email?e_mail=" +
-          this.fb.getAuthResponse().userID).subscribe);
-        let headers = new Headers({ 'Content-Type': 'application/json' });
-        let options = new RequestOptions({ headers: headers });
-        if(this.fb.getAuthResponse().userID == this.http.get("http://localhost:4200/api/email?e_mail=" +
-            this.fb.getAuthResponse().userID).subscribe.toString()){
-          console.log(this.fbuser);
-          this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
-            .subscribe(result => {
-              if (result === true) {
-                alert("Logowanie udane!")
-                this.router.navigate(["/"])
-              } else {
-                alert("Logowanie nieudane!");
-              }
-            });
-        }
-        else {
-          this.fbuser = {
-            accountNonExpired: true, accountNonLocked: true,
-            credentialsNonExpired: true, e_mail: this.fb.getAuthResponse().userID, enabled: true,
-            id: 0, name: this.fb.getAuthResponse().userID, surname: this.fb.getAuthResponse().userID,
-            role: "C", password: this.fb.getAuthResponse().userID, username: this.fb.getAuthResponse().userID
-          };
-
-          this.http.post("http://localhost:4200/api/userCreate", this.fbuser, options).subscribe(
-            res => {
-              if (res.ok) {
-                this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
-                  .subscribe(result => {
-                    if (result === true) {
-                      alert("Logowanie udane!")
-                      this.router.navigate(["/"])
-                    } else {
-                      alert("Logowanie nieudane!");
-                    }
-                  });
-                this.router.navigate(['/']);
-              }
-            },
-            err => {
-              console.log("Error occured");
-            }
-          );
-        }
-      }
-    });
+          }
+          else {
+            this.http.post("http://localhost:4200/api/userCreate", this.fbuser, options).subscribe(
+              res => {
+                if (res.ok) {
+                  this.authenticationService.login(this.fb.getAuthResponse().userID, this.fb.getAuthResponse().userID)
+                    .subscribe(result => {
+                      if (result === true) {
+                        alert("Logowanie udane!")
+                        this.router.navigate(["/"])
+                      } else {
+                        alert("Logowanie nieudane!");
+                      }
+                    });
+                }
+              });
+          }
+          this.router.navigate(['/']);
+        });
+      });
   }
 }

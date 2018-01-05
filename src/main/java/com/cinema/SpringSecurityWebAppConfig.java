@@ -33,8 +33,6 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import java.util.Arrays;
 
 @Configuration
-//@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-//@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 @EnableWebSecurity
 public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
 
@@ -88,7 +86,6 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
         http
                 .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues()).and()
                 .authorizeRequests()
-                .antMatchers("/swagger-ui.html", "/").permitAll()
                 .antMatchers("/swagger-ui.html","/connect/facebook").permitAll()
                 .and().csrf().disable()
                 .formLogin()
