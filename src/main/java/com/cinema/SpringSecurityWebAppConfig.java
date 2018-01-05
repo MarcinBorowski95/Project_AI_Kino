@@ -37,7 +37,7 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
         http
                 .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues()).and()
                 .authorizeRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/swagger-ui.html", "/").permitAll()
                 .and().csrf().disable()
                 .formLogin()
                 .defaultSuccessUrl("/api/user")

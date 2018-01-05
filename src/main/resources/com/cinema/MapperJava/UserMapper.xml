@@ -32,8 +32,6 @@
         <result property="e_mail" column="e_mail"/>
     </resultMap>
 
-    <select id="getUsers" resultMap="userEmailResultMap">
-        SELECT e_mail, id_user FROM users WHERE e_mail = #{e_mail}
     <select id="getUsers" resultType="String">
         SELECT e_mail FROM users WHERE e_mail = #{e_mail}
     </select>
