@@ -112,15 +112,5 @@ export class LoginComponent implements OnInit {
         }
       }
     });
-
-
-
-    // let headers = new Headers({ 'Access-Control-Allow-Credentials' : 'true',
-    // 'Access-Control-Allow-Methods' : 'OPTIONS',
-    // 'Access-Control-Allow-Origin' : 'https://web.facebook.com',
-    //   'Access-Control-Expose-Headers' : 'X-FB-Debug, X-Loader-Length',
-    //   'X-FB-Debug' : 'MHag//9C1u+1e2eUnZbYuciMUKrjtKc38URYZppygZOsQJF49+v72YRm3aC32WkOOs0YJueCikmTtSV8iHpekQ=='});
-    // let options = new RequestOptions({ headers: headers });
-    // this.http.post("http://localhost:8080/connect/facebook", "aa",options).subscribe()
   }
 }

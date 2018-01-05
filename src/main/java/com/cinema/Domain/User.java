@@ -51,9 +51,15 @@ public class User implements UserDetails{
             this.Roles.add(userRole);
             this.role = "1";
         }
-        if(role.equals("P")){
+        if(role.equals("E")){
             userRole.setId(2);
             userRole.setName("2");
+            this.Roles.add(userRole);
+            this.role = "2";
+        }
+        if(role.equals("A")){
+            userRole.setId(3);
+            userRole.setName("3");
             this.Roles.add(userRole);
             this.role = "3";
         }
