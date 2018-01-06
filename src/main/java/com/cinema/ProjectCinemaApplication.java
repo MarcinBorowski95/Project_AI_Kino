@@ -1,8 +1,11 @@
 package com.cinema;
 
+import com.cinema.MapperJava.UserMapper;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -18,8 +21,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class ProjectCinemaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjectCinemaApplication.class, args);
+		ApplicationContext context = SpringApplication.run(ProjectCinemaApplication.class, args);
 	}
+
 
 	@Bean
 	public Docket api() {
@@ -32,18 +36,9 @@ public class ProjectCinemaApplication {
 
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				.title("Project Cinema")
-				.description("najs")
+				.title("Project Cinema API reference")
+				.description("API projektu Cinema")
 				.version("1.0")
 				.build();
 	}
-
-//	@Bean
-//	@Primary
-//	@ConfigurationProperties(prefix = "spring.datasource")
-//	public DataSource dataSource(){
-//		return DataSourceBuilder.create().build();
-//	}
-
-
 }

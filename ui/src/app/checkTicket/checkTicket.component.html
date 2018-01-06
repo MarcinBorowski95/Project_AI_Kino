@@ -1,0 +1,41 @@
+<br><br>
+
+<div class="h">
+  <div class="col-md-10 mx-auto">
+    <h3>Sprawdź bilet</h3>
+  </div>
+</div>
+
+<div class="container col-md-10 mx-auto">
+  <p>Wpisz numer biletu, który chcesz sprawdzić</p>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-3 mx auto">
+        <label style="color:white;" for="nr">Nr:</label>
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" id="nr" [(ngModel)]="id_ticket">
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn" (click)="getTickets()">Wyszukaj</button>
+
+  <div *ngIf="flaga==1">
+    <br>
+    <p>ID biletu: {{tickets[0].id_ticket}}</p>
+    <p>Data: {{tickets[0].date}}</p>
+    <p>ID miejsca: {{tickets[0].id_seat}}</p>
+    <p>ID seansu: {{tickets[0].id_showtime}}</p>
+    <p>Kod QR: <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value"></ngx-qrcode></p>
+    <div class="row">
+      <div class="col-md-2">
+        <p>Zatwierdzasz?</p>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn" (click)="confirm()">Zatwierdź</button>
+      </div>
+    </div>
+  </div>
+
+</div>

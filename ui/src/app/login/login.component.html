@@ -18,8 +18,8 @@
               <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
             </span>
           </div>
-          <input type="email" data-toggle="tooltip" title="Podaj swój adres e-mail." class="form-control " name="email" id="email"
-            aria-describedby="emailHelpId" #emailRef="ngModel" [(ngModel)]="loginUser.email" placeholder="E-mail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+          <input type="text" data-toggle="tooltip" title="Podaj swój adres e-mail." class="form-control " name="username" id="email"
+            aria-describedby="emailHelpId" #emailRef="ngModel" [(ngModel)]="email" placeholder="E-mail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
             data-error="Błędnie podany e-mail" required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && emailRef.errors?.required">
@@ -38,7 +38,7 @@
             </span>
           </div>
           <input type="password" data-toggle="tooltip" title="Podaj swoje hasło." class="form-control " name="password" id="password"
-            aria-describedby="passwordHelpId" #passwordRef="ngModel" [(ngModel)]="loginUser.password" minlength="6"
+            aria-describedby="passwordHelpId" #passwordRef="ngModel" [(ngModel)]="password" minlength="6"
             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Hasło" required>
         </div>
         <div class="error form-control" *ngIf="formRef.submitted && passwordRef.errors?.required">
@@ -54,12 +54,25 @@
       <div class="form-group btn-submit" align="center">
         <button type="submit" class="btn btn-gradient">Zaloguj się</button>
       </div>
+      <div style="text-align: center;">
+      <form method="POST" (ngSubmit)="loginWithFacebook()">
+        <input type="hidden" name="scope" value="user_posts" />
+        <div class="formInfo">
+        </div>
+        <button type="submit" class="btn btn-gradient" style="align:center;" >Zaloguj przez Facebooka</button>
+      </form>
+      </div>
     </fieldset>
   </form>
 </div>
+
+
+
 
 <script>
   $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
+
+<script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>

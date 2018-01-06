@@ -25,7 +25,7 @@ export class AddRoomComponent implements OnInit {
       let options = new RequestOptions({ headers: headers });
       console.log(this.room);
 
-      this.http.post("http://localhost:4200/api/postRoom", this.room, options)
+      this.http.post("./api/postRoom", this.room, options)
         .subscribe(
         res => {
           console.log(res);

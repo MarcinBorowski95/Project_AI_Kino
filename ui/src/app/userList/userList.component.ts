@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class UserListComponent implements OnInit {
 
   users: any[];
-  usersUrl = "http://localhost:4200/api/getAllUsers"
+  usersUrl = "./api/getAllUsers";
 
   constructor(private http: Http) { }
 

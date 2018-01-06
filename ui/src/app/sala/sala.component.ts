@@ -23,6 +23,7 @@ export class SalaComponent implements OnInit {
 
   flag;
   time;
+  seatsNumber=0;
 
   constructor(
     private http: Http,
@@ -39,20 +40,20 @@ export class SalaComponent implements OnInit {
 
     this.selectedSeatsInfo = [];
 
-    
+
     var t = this.ticketInfo.time.toString();
     this.time = t.substring(0, 5);
   }
 
   getRoom(): any {
-    this.roomUrl = 'http://localhost:4200/api/getRoomByIdShowtime?id_showtime=' + this.seans;
+    this.roomUrl = './api/getRoomByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.roomUrl).subscribe(res => {
       this.room = res.json();
     });
   }
 
   getSeats(): any {
-    this.seatUrl = 'http://localhost:4200/api/getSeatsByIdShowtime?id_showtime=' + this.seans;
+    this.seatUrl = './api/getSeatsByIdShowtime?id_showtime=' + this.seans;
     return this.http.get(this.seatUrl).subscribe(res => {
       this.seats = res.json();
       let index = 0;
@@ -67,8 +68,12 @@ export class SalaComponent implements OnInit {
   }
 
   buyTicket() {
-    this.sendSeatInfo(this.selectedSeatsInfo)
-    this.router.navigate(['/buyTicket']);
+    if(this.seatsNumber>0){
+      this.sendSeatInfo(this.selectedSeatsInfo);
+      this.sendTicketInfo(this.ticketInfo);
+      this.sendTicketNum(this.seatsNumber);
+      this.router.navigate(['/buyTicket']);
+    }
   }
 
   selectSeat(s) {
@@ -89,13 +94,20 @@ export class SalaComponent implements OnInit {
       console.log(this.selectedSeatsInfo);
     }
 
-
     // this.tempArray  = Object.assign([], this.selectedSeatsInfo);
     // console.log(this.tempArray)
   }
 
   sendSeatInfo(seatInfo) {
     this.data.changeSeatInfo(seatInfo)
+  }
+
+  sendTicketInfo(ticketInfo) {
+    this.data.changeTicketInfo(ticketInfo)
+  }
+
+  sendTicketNum(seatsNumber){
+    this.data.changeTicketNum(seatsNumber);
   }
 
   Clicked(num) {
@@ -111,11 +123,13 @@ export class SalaComponent implements OnInit {
 
     if (this.selectedSeats[num] == 0){
       this.selectedSeats[num] = 1;
+      this.seatsNumber++;
     }
 
     else{
       this.selectedSeats[num] = 0;
       this.flag=1;
+      this.seatsNumber--;
     }
 
   }

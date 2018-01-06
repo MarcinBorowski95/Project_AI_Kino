@@ -33,7 +33,7 @@ export class RepertoireComponent implements OnInit {
   }
 
   getMovie(): any {
-    this.movieUrl = 'http://localhost:4200/api/getMoviesByDay?day=' + this.day;
+    this.movieUrl = './api/getMoviesByDay?day=' + this.day;
     return this.http.get(this.movieUrl).subscribe(res => {
       this.movies = res.json();
       console.log(this.movies);
@@ -41,7 +41,7 @@ export class RepertoireComponent implements OnInit {
   }
 
   getHours(): any {
-    this.hourUrl = 'http://localhost:4200/api/getShowtimesByDay?day=' + this.day;
+    this.hourUrl = './api/getShowtimesByDay?day=' + this.day;
     return this.http.get(this.hourUrl).subscribe(res => {
       this.hours = res.json();
       console.log(this.hours);

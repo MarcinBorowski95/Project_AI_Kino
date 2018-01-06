@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.social.connect.Connection;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,24 +19,31 @@ public class UserService implements UserDetailsService {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     private Logger logger = Logger.getLogger(UserService.class);
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        User user = userMapper.findByEmail(s);
-        if (user == null) {
-            logger.info("User "+s+" not exists.");
-            throw new UsernameNotFoundException("Username " + s + " not found");
-        }
-        else
-            logger.info("User "+user.getName()+" found.");
-        return user;
-
+            User user = userMapper.findByEmail(s);
+            if (user == null) {
+                logger.info("User " + s + " not exists.");
+                throw new UsernameNotFoundException("Username " + s + " not found");
+            } else
+                logger.info("User " + user.getUsername() + " found.");
+            return user;
     }
 
     public List<User> getUsers(String e_mail) {return userMapper.getUsers(e_mail);}
 
+    public void createUser(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userMapper.createUser(user);
+    }
     public List<User> getAllUsers(){
         return userMapper.getAllUsers();
     }
+
 }
