@@ -10,8 +10,8 @@
 <div class="container col-md-10 mx-auto">
   <br>
   <div class="row">
-    <p style="color: white; text-transform: uppercase; font-weight: bold;">{{ticketInfo.title}}</p>
-    <p style="color: lightgray">, {{ticketInfo.date_start}}, {{time}}</p>
+    <p style="color: white; text-transform: uppercase; font-weight: bold;">{{ ticketInfo.title }}</p>
+    <p style="color: lightgray">, {{ ticketInfo.date_start }}, {{ time }}</p>
   </div>
   <br>
   <div class="row">
@@ -26,21 +26,21 @@
       </div>
       <div class="col-md-3">
         <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-          <button class="btn" id="dropdownManual" ngbDropdownToggle>{{seat.selectedTicketType}}</button>
+          <button class="btn" id="dropdownManual" ngbDropdownToggle>{{ seat.selectedTicketType }}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownManual">
-            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(seat, ticketType)">{{ticketType.type}}</button>
+            <button class="dropdown-item" *ngFor="let ticketType of ticketTypes" (click)="changeTicketType(seat, ticketType)">{{ ticketType.type }}</button>
           </div>
         </div>
       </div>
       <div class="col-md-4" style="color: white;">
-        {{seat.price}}
+       {{ seat.price }}}
       </div>
     </div>
   </div>
   <div class="ticket-final row">
     <div class="cost col-md-4" style="color: white;">
       <br>
-      <p>Suma: {{ticketsPrice}}</p>
+      <p>Suma: {{ ticketsPrice }}</p>
     </div>
   </div>
   <div class="row">
@@ -49,12 +49,14 @@
       <br>
       <br>
       <button type="button" name="" id="" class="btn btn-gradient" (click)="buyTicket()" btn-lg btn-block>Zatwierdź zakup </button>
-      <div *ngIf="flaga==1">
-        <br>
-        <p>Bilet został zakupiony. Nr Twojego biletu to {{id}}. Twój kod QR:</p>
-        <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value">
-        </ngx-qrcode>
-      </div>
+      <ng-container *ngFor="let t of ticketsToAdd">
+        <div *ngIf="flaga==1">
+          <br>
+          <p>Bilet został zakupiony. Nr Twojego biletu to {{ t.id_ticket }}. Twój kod QR:</p>
+          <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "t.id_ticket.toFixed()">
+          </ngx-qrcode>
+        </div>
+      </ng-container>
     </div>
   </div>
 

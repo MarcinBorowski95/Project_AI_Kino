@@ -12,12 +12,12 @@
     <a *ngFor="let user of users" class="list-group-item flex-column align-items-start borderless">
       <div class="d-flex w-100">
         <div>
-          <h1 style="color: black;"> {{user.id_user}}. {{user.name}} {{user.surname}} </h1>
-          <h4 style="color: black;"> {{user.e_mail}}</h4>
-          <h4 style="color: black;">Konto wygasło: {{user.accountNonExpired}}</h4>
-          <h4 style="color: black;">Konto zablokowane: {{user.accountNonLocked}}</h4>
-          <h4 style="color: black;">Konto włączone: {{user.enabled}}</h4>
-          <h4 style="color: black;">Rola użytkownika: {{user.role}}</h4>
+          <h1 style="color: black;"> {{ user.id_user }}. {{ user.name }} {{ user.surname }} </h1>
+          <h4 style="color: black;"> {{ user.e_mail }}</h4>
+          <h4 style="color: black;">Konto nie wygasło: {{ user.accountNonExpired }}</h4>
+          <h4 style="color: black;">Konto nie zablokowane: {{ user.accountNonLocked }}</h4>
+          <h4 style="color: black;">Konto włączone: {{ user.enabled }}</h4>
+          <h4 style="color: black;">Rola użytkownika: {{ user.role }}</h4>
         </div>
       </div>
     </a>

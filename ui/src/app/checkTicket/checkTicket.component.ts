@@ -12,12 +12,12 @@ import { DataService } from '../_services/data.service';
 })
 export class CheckTicketComponent implements OnInit {
 
-  private tickets : any[] = [];
+  private tickets: any[] = [];
   private ticketURL;
-  private id_ticket=1;
-  flaga=0;
-  elementType : 'url' | 'canvas' | 'img' = 'url';
-  value : string;
+  id_ticket= 1 ;
+  flaga= 0;
+  elementType: 'url' | 'canvas' | 'img' = 'url';
+  value: string;
 
   constructor(
     private router: Router,
@@ -31,9 +31,9 @@ export class CheckTicketComponent implements OnInit {
   getTickets() : any{
     this.flaga=0;
     console.log(this.id_ticket)
-    this.ticketURL = './api/getTicketById?id_ticket=' + this.id_ticket;
+    this.ticketURL = 'https://immense-inlet-78725.herokuapp.com/getTicketById?id_ticket=' + this.id_ticket;
     return this.http.get(this.ticketURL).subscribe(res => {
-        //this.tickets[0] = res.json();
+        // this.tickets[0] = res.json();
         try {
           this.tickets[0] = res.json();
           this.value = this.tickets[0].id_ticket.toString();

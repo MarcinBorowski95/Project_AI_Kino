@@ -30,12 +30,12 @@ export class RegisterComponent implements OnInit {
       console.log(this.userToInsert);
       let headers = new Headers({ 'Content-Type': 'application/json' });
       let options = new RequestOptions({ headers: headers });
-      this.http.get("./api/email?e_mail=" + this.registerUser.email).subscribe(res => {
+      this.http.get("https://immense-inlet-78725.herokuapp.com/email?e_mail=" + this.registerUser.email).subscribe(res => {
         if(res.json()[0] === this.registerUser.email){
           alert("Podany email już istnieje!")
         }
         else {
-          this.http.post("./api/userCreate", this.userToInsert, options).subscribe(
+          this.http.post("https://immense-inlet-78725.herokuapp.com/userCreate", this.userToInsert, options).subscribe(
             res => {
               if (res.ok) {
                 alert("Rejestracja udana!")

@@ -12,10 +12,10 @@ export class AddViewingComponent implements OnInit {
 
   viewing: any = {};
 
-  private movies: any[];
+  movies: any[];
   private movieUrl = './api/getAllMovies';
 
-  private rooms: any[];
+  rooms: any[];
   private roomByDate;
   private roomUrl = './api/getAllRooms';
 
@@ -43,8 +43,8 @@ export class AddViewingComponent implements OnInit {
   }
 
   getRoomByDate(): any {
-    this.viewing.time = this.viewing.time && this.viewing.time.length === 5 ? this.viewing.time + ":00" : this.viewing.time;
-    var roomByDate = './api/getRoomsByDateAndTime?dateParam=' + this.viewing.date_start + '&timeParam=' + this.viewing.time;
+    this.viewing.time = this.viewing.time && this.viewing.time.length === 5 ? this.viewing.time + ':00' : this.viewing.time;
+    const roomByDate = 'https://immense-inlet-78725.herokuapp.com/getRoomsByDateAndTime?dateParam=' + this.viewing.date_start + '&timeParam=' + this.viewing.time;
     return this.http.get(roomByDate).subscribe(res => {
       this.rooms = res.json();
     });
@@ -53,22 +53,23 @@ export class AddViewingComponent implements OnInit {
 
   addViewing(valid) {
     if (valid) {
-      let headers = new Headers({ 'Content-Type': 'application/json' });
-      let options = new RequestOptions({ headers: headers });
-      this.http.post("./api/postShowtime", this.viewing, options)
+      const headers = new Headers({ 'Content-Type': 'application/json' });
+      const options = new RequestOptions({ headers: headers });
+      this.http.post('https://immense-inlet-78725.herokuapp.com/postShowtime', this.viewing, options)
         .subscribe(
         res => {
           console.log(res);
           if (res.ok) {
+            alert('Seans dodany pomyślnie');
             this.router.navigate(['/']);
           }
         },
         err => {
-          console.log("Error occured");
+          console.log('Error occured');
         }
         );
     } else {
-      alert("Błędne")
+      alert('Błędne');
     }
   }
 }

@@ -1,10 +1,11 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 .container
 {
   position: relative;
   margin: 10px auto;
 }
+
 body {
   background-color: #4b3843;
 }
@@ -41,8 +42,7 @@ h1, h2, h3, h4, h5{
 }
 
 .btn:hover {
-  background-position: right center;
-  background-color: #40896b;
+  background: #40896b right center;
 }
 
 .btn:active{

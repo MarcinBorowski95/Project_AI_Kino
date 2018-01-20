@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AddRoomComponent implements OnInit {
 
-  private room: any = {};
+  room: any = {};
 
   constructor(
     private http: Http,
@@ -25,11 +25,12 @@ export class AddRoomComponent implements OnInit {
       let options = new RequestOptions({ headers: headers });
       console.log(this.room);
 
-      this.http.post("./api/postRoom", this.room, options)
+      this.http.post("https://immense-inlet-78725.herokuapp.com/postRoom", this.room, options)
         .subscribe(
         res => {
           console.log(res);
           if (res.ok) {
+            alert('Sala dodana pomyślnie');
             this.router.navigate(['/']);
           }
         },

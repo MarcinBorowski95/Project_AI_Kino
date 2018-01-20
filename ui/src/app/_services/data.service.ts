@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class DataService {
-  private sharedTicketInfo = new BehaviorSubject<any>("");
+  private sharedTicketInfo = new BehaviorSubject<any>('');
   currentTicketInfo = this.sharedTicketInfo.asObservable();
 
   private sharedSeatsInfo = new BehaviorSubject<any>([]);

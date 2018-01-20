@@ -1,5 +1,4 @@
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
-import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -12,9 +11,9 @@ import { DataService } from '../_services/data.service';
 })
 export class RepertoireComponent implements OnInit {
 
-  private movies: any[];
+  movies: any[];
   private hours: any[];
-  private day: String = "0";
+  private day: String = '0';
   private movieUrl;
   private hourUrl;
   seans;
@@ -29,11 +28,11 @@ export class RepertoireComponent implements OnInit {
   ngOnInit() {
     this.getMovie();
     this.getHours();
-    this.data.currentTicketInfo.subscribe(seans => this.seans = seans)
+    this.data.currentTicketInfo.subscribe(seans => this.seans = seans);
   }
 
   getMovie(): any {
-    this.movieUrl = './api/getMoviesByDay?day=' + this.day;
+    this.movieUrl = 'https://immense-inlet-78725.herokuapp.com/getMoviesByDay?day=' + this.day;
     return this.http.get(this.movieUrl).subscribe(res => {
       this.movies = res.json();
       console.log(this.movies);
@@ -41,20 +40,20 @@ export class RepertoireComponent implements OnInit {
   }
 
   getHours(): any {
-    this.hourUrl = './api/getShowtimesByDay?day=' + this.day;
+    this.hourUrl = 'https://immense-inlet-78725.herokuapp.com/getShowtimesByDay?day=' + this.day;
     return this.http.get(this.hourUrl).subscribe(res => {
       this.hours = res.json();
       console.log(this.hours);
     });
   }
 
-  subTime(hour){
+  subTime(hour) {
     this.time = hour.substring(0, 5);
     return this.time;
   }
 
   changeDay(day) {
-    this.day = day
+    this.day = day;
     this.getMovie();
     this.getHours();
   }
@@ -70,12 +69,12 @@ export class RepertoireComponent implements OnInit {
        date_start: hour.date_start,
        title: movie.title,
        title_pl: movie.title_pl,
-    }
-    this.sendTicketInfo(ticketInfo)
-    this.router.navigate(["/sala"])
+    };
+    this.sendTicketInfo(ticketInfo);
+    this.router.navigate(['/sala']);
   }
 
   sendTicketInfo(ticketInfo) {
-    this.data.changeTicketInfo(ticketInfo)
+    this.data.changeTicketInfo(ticketInfo);
   }
 }

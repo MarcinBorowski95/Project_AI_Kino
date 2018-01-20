@@ -14,11 +14,11 @@ export class AddMoviesComponent implements OnInit {
   };
 
   generes = [
-    "horror", "komedia", "thriller", "film akcji", "film romantyczny", "film animowany",
-  ]
+    'horror', 'komedia', 'thriller', 'film akcji', 'film romantyczny', 'film animowany',
+  ];
 
   private movies: any[];
-  private movieUrl = './api/getAllMovies';
+  private movieUrl = 'https://immense-inlet-78725.herokuapp.com/getAllMovies';
 
   constructor(
     private http: Http,
@@ -42,26 +42,27 @@ export class AddMoviesComponent implements OnInit {
         .filter((movies) => movies.title == this.movie.title)
         .map((movie) => movie.title);
       if (sameMovieTitle == this.movie.title) {
-        alert("Film już istnieje");
+        alert('Film już istnieje');
       }
       else {
-        let headers = new Headers({ 'Content-Type': 'application/json' });
-        let options = new RequestOptions({ headers: headers });
-        this.http.post("./api/postMovie", this.movie , options)
+        const headers = new Headers({ 'Content-Type': 'application/json' });
+        const options = new RequestOptions({ headers: headers });
+        this.http.post('https://immense-inlet-78725.herokuapp.com/postMovie', this.movie , options)
           .subscribe(
           res => {
             console.log(res);
             if (res.ok) {
+              alert('Film dodany pomyślnie');
               this.router.navigate(['/']);
             }
           },
           err => {
-            console.log("Error occured");
+            console.log('Error occured');
           }
-          );;
+          );
       }
     } else {
-      alert("Błędnie wypełniona");
+      alert('Błędnie wypełniona');
     }
   }
 

@@ -39,7 +39,7 @@
         <div class="input-group">
           <select type="genere" class="form-control " name="genere" id="genere" #genereRef="ngModel" [(ngModel)]="movie.genre" required>
             <option [ngValue]="undefined" disabled selected hidden>Wybierz gatunek filmu</option>
-            <option *ngFor="let genere of generes" [value]="genere">{{genere}}
+            <option *ngFor="let genere of generes" [value]="genere">{{ genere }}
             </option>
           </select>
         </div>

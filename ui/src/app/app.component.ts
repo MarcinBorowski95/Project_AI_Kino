@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {Http, HttpModule, RequestOptions , Headers, Response} from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { Router } from '@angular/router';
 
@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit{
   title = 'app';
 
-  private user;
-  private userURL = './api/user';
+  user;
+  private userURL;
 
   view: number = 0;
   userName;
@@ -22,9 +22,9 @@ export class AppComponent implements OnInit{
 
   constructor(
     private http: Http,
-    private router: Router,) {}
+    private router: Router) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.getUser();
   }
 
@@ -33,19 +33,29 @@ export class AppComponent implements OnInit{
   }
 
   getUser(): any {
+    this.userURL = 'https://polar-thicket-56641.herokuapp.com/api/user';
     return this.http.get(this.userURL).subscribe(res => {
-      this.user = res.json();
-      this.view=this.user.principal.role;
-      this.userName=this.user.principal.name;
-      this.userSurname=this.user.principal.surname;
-      console.log(this.userName);
-      console.log(this.userSurname);
-      console.log(this.user.principal.role);
+      console.log(res);
+      try {
+        this.user = res.json();
+        this.view = this.user.principal.role;
+        this.userName = this.user.principal.name;
+        this.userSurname = this.user.principal.surname;
+        console.log(this.userName);
+        console.log(this.userSurname);
+        console.log(this.user.principal.role);
+      } catch (e) {
+        console.log('użytkonik niezalogowany');
+      }
     });
   }
 
-  logout(){
-    console.log("jestem");
-    window.location.href = './api/logout'
+  logout() {
+    console.log('wylogowano');
+    this.http.get('https://polar-thicket-56641.herokuapp.com/api/logout').subscribe(res => {
+      console.log(res);
+      this.router.navigate(['/']);
+      location.reload();
+    });
   }
 }

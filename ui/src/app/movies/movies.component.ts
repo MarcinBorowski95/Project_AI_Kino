@@ -11,12 +11,12 @@ import 'rxjs/add/operator/map';
 })
 export class MoviesComponent implements OnInit {
 
-  private movies: any[];
+  movies: any[];
 
   constructor(private http: Http) { }
 
   // private instance variable to hold base url
-  private movieUrl = './api/getAllCurrentMovies';
+  private movieUrl = 'https://immense-inlet-78725.herokuapp.com/getAllCurrentMovies';
 
   ngOnInit() {
     this.getMovie();
@@ -25,6 +25,7 @@ export class MoviesComponent implements OnInit {
   getMovie(): any {
     return this.http.get(this.movieUrl).subscribe(res => {
       this.movies = res.json();
+      console.log(res);
       console.log(this.movies);
     });
   }

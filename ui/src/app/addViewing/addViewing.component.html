@@ -14,7 +14,7 @@
         <div class="input-group">
           <select type="text" class="form-control " name="movie" id="movie" #movieRef="ngModel" [(ngModel)]="viewing.id_movie" required>
             <option [ngValue]="undefined" disabled selected hidden>Wybierz film</option>
-            <option *ngFor="let movie of movies" [value]="movie.id_movie">{{movie.title}}
+            <option *ngFor="let movie of movies" [value]="movie.id_movie">{{ movie.title }}
             </option>
           </select>
         </div>
@@ -56,7 +56,7 @@
           <select type="room" class="form-control " name="room" id="room" #roomRef="ngModel" [(ngModel)]="viewing.id_room" required
             [disabled]="date_startRef.errors?.required || startTimeRef.errors?.required" (mouseenter)="getRoomByDate()">
             <option [ngValue]="undefined" disabled selected hidden>Wybierz salę</option>
-            <option *ngFor="let room of rooms" [value]="room.id_room">{{room.number}}
+            <option *ngFor="let room of rooms" [value]="room.id_room">{{ room.number }}
             </option>
           </select>
         </div>

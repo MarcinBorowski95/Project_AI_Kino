@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://glacial-woodland-21648.herokuapp.com",
+    "target": "https://immense-inlet-78725.herokuapp.com",
     "secure": false,
     "pathRewrite": {
       "^/api": ""

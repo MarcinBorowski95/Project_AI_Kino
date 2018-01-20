@@ -25,10 +25,13 @@ import org.springframework.social.connect.UsersConnectionRepository;
 import org.springframework.social.connect.mem.InMemoryUsersConnectionRepository;
 import org.springframework.social.connect.web.ProviderSignInController;
 import org.springframework.social.connect.web.SignInAdapter;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import java.util.Arrays;
 
@@ -39,15 +42,6 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
 
     @Autowired
     private UserService userService;
-
-    @Autowired
-    private ConnectionFactoryLocator connectionFactoryLocator;
-
-    @Autowired
-    private UsersConnectionRepository usersConnectionRepository;
-
-    @Autowired
-    private FacebookConnectionSignup facebookConnectionSignup;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -62,23 +56,9 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
         return authProvider;
     }
 
-    @Bean
-    public ProviderSignInController providerSignInController() {
-        ((InMemoryUsersConnectionRepository) usersConnectionRepository)
-                .setConnectionSignUp(facebookConnectionSignup);
-
-        return new ProviderSignInController(
-                connectionFactoryLocator,
-                usersConnectionRepository,
-                new FacebookSignInAdapter());
-    }
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authProvider());
-        auth.userDetailsService(userService);
-        auth.inMemoryAuthentication().withUser("admin1@gmail.com").password("Admino1").roles("ADMIN");
-
     }
 
     @Override
@@ -86,11 +66,16 @@ public class SpringSecurityWebAppConfig extends WebSecurityConfigurerAdapter  {
         http
                 .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues()).and()
                 .authorizeRequests()
-                .antMatchers("/swagger-ui.html","/connect/facebook").permitAll()
+                .antMatchers("/swagger-ui.html","/connect/facebook","/user", "/..", "/login",
+                        "/").permitAll()
+                .and()
+                .authorizeRequests()
+                .antMatchers("/getAllUsers")
+                .hasAuthority("3")
                 .and().csrf().disable()
                 .formLogin()
-                //.defaultSuccessUrl("/api/user")
-                .failureUrl("/")
+                .defaultSuccessUrl("/user")
+                .failureUrl("/error")
                 .usernameParameter("username").passwordParameter("password").and()
                 .logout().logoutUrl("/logout");
     }

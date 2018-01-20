@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "/", method = RequestMethod.POST)
+@RequestMapping(value = "/fb", method = RequestMethod.POST)
 public class FacebookController {
 
     private Facebook facebook;
@@ -24,7 +24,7 @@ public class FacebookController {
     @GetMapping
     public String helloFacebook(Model model) {
         if (connectionRepository.findPrimaryConnection(Facebook.class) == null) {
-            return "redirect:/api/connect/facebook";
+            return "redirect:/connect/facebook";
         }
 
         model.addAttribute("facebookProfile", facebook.userOperations().getUserProfile());
